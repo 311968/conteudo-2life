@@ -1,0 +1,3 @@
+# Guardar todos os ficheiros exatamente como estao (sem converter fins de linha):
+# as copias de producao tem de manter as mesmas impressoes digitais.
+* -text

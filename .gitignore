@@ -1,0 +1,6 @@
+# Ficheiros temporarios das geracoes de imagens
+.previa.html
+.grelha.html
+.slide-*.html
+*.crdownload
+Thumbs.db
