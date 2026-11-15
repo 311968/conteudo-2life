@@ -1,0 +1,158 @@
+{
+  "segundos": 59,
+  "aberturas": {
+    "ganchos": [
+      {
+        "tipo": "problema",
+        "frase": "Ela não respondeu à mensagem e tu já decidiste que fizeste algo errado.",
+        "tela": "Já decidiste que fizeste algo errado",
+        "situacao": "Passas a tarde a rever o que disseste, a procurar o erro, sem nenhuma prova de que há erro nenhum.",
+        "porque": "A cena do silêncio interpretado como culpa é reconhecível e entra direto, sem precisar de explicação prévia.",
+        "recomendado": true
+      },
+      {
+        "tipo": "contraintuitiva",
+        "frase": "Não é o que te acontece que te faz sofrer. É o significado que dás a isso, antes de pensares.",
+        "tela": "Não é o que acontece. É o significado.",
+        "situacao": "Alguém cancela um café contigo e, em segundos, já sentes que não és prioridade para ninguém.",
+        "porque": "Contesta a crença comum de que o sofrimento vem direto do acontecimento, abrindo espaço para a distinção central do tema.",
+        "recomendado": false
+      },
+      {
+        "tipo": "curiosidade",
+        "frase": "Entre o que acontece e o que sentes, existe uma frase automática que nem chegas a ouvir.",
+        "tela": "Há uma frase que não ouves",
+        "situacao": "O teu chefe pede para falar contigo mais logo e, antes de saberes do que se trata, já sentes o estômago apertado.",
+        "resposta": "Essa frase automática é o significado aprendido como proteção: antes de o acontecimento ser real, já decidiste o que ele diz sobre ti.",
+        "porque": "O mecanismo é invisível por natureza, e a curiosidade cria a tensão certa para a pessoa querer saber o que lhe escapa.",
+        "recomendado": false
+      }
+    ],
+    "recomendada": 0,
+    "razao": "A função é Conexão e o tema é um mecanismo quase sempre vivido sem ser visto, mas a abertura mais forte continua a ser o problema concreto porque a cena do silêncio interpretado como culpa gera identificação imediata, sem precisar de uma tese prévia, e prepara o terreno para o mecanismo ser revelado a seguir."
+  },
+  "roteiro": {
+    "blocos": [
+      {
+        "tempo": "0-3s",
+        "rotulo": "ABERTURA",
+        "fala": "Ela não respondeu à mensagem e tu já decidiste que fizeste algo errado.",
+        "tela": "Já decidiste que fizeste algo errado",
+        "camera": "Plano de peito, câmara frontal, olhar direto para a lente, tom calmo e direto desde a primeira palavra."
+      },
+      {
+        "tempo": "3-15s",
+        "rotulo": "SITUAÇÃO",
+        "fala": "Passas a tarde a rever o que disseste. Procuras o erro numa frase, numa palavra, num tom. E não há nenhuma prova de que fizeste alguma coisa errada.",
+        "tela": "Revês a conversa inteira. Sem prova nenhuma.",
+        "camera": "Mantém o mesmo plano. Leve aproximação lenta da câmara enquanto fala, quase impercetível."
+      },
+      {
+        "tempo": "15-40s",
+        "rotulo": "MECANISMO",
+        "fala": "O silêncio dela não te diz nada. Quem está a falar é a tua cabeça. Ela não respondeu e tu deste logo um significado a isso. Aprendeste, algures, que o silêncio do outro é perigo. Que se alguém se afasta, a culpa é tua. Essa leitura automática protegeu-te um dia. Talvez numa relação onde o afastamento vinha sempre a seguir a um erro teu. Hoje, continua a decidir por ti antes de pensares.",
+        "tela": "Não é o que acontece. É o significado que dás.",
+        "camera": "Corta para plano mais próximo, só o rosto. Fala mais devagar nesta parte, sem pressa."
+      },
+      {
+        "tempo": "40-52s",
+        "rotulo": "NOVA POSSIBILIDADE",
+        "fala": "Reconhecer isto não muda o silêncio dela. Muda o que fazes com ele. Podes notar o significado automático a aparecer e perguntar, antes de o acreditares: é isto que é verdade ou é isto que aprendi a temer?",
+        "tela": "Podes escolher outra leitura",
+        "camera": "Volta ao plano de peito. Postura mais firme, ligeiro sorriso de quem fala com serenidade, não com pressa."
+      },
+      {
+        "tempo": "52-60s",
+        "rotulo": "CTA",
+        "fala": "Se isto te aconteceu esta semana, guarda este vídeo. Vais precisar dele na próxima vez.",
+        "tela": "Guarda para a próxima vez",
+        "camera": "Plano frontal fixo, olhar direto, sem movimento de câmara até ao corte final."
+      }
+    ],
+    "legenda": "Ela não respondeu e tu já decidiste que fizeste algo errado.\n\nA tarde passa a rever a conversa. Uma frase, uma palavra, um tom. À procura do erro que talvez nem exista.\n\nO silêncio do outro não tem significado nenhum até alguém o dar. E muitas vezes quem dá esse significado não és tu agora. É a parte de ti que aprendeu, um dia, que o afastamento vinha sempre depois de um erro.\n\nEssa leitura protegeu-te nessa altura.\n\nHoje continua a decidir por ti antes de pensares.\n\nReconhecer isto não muda o silêncio do outro. Muda o que fazes com ele.\n\nGuarda este vídeo se isto te aconteceu esta semana.",
+    "primeiro_comentario": "Quantas vezes já reviveste uma conversa à procura de um erro que não existia?",
+    "capa": {
+      "intro": "Ela não respondeu",
+      "titulo": "Já decidiste que fizeste algo errado",
+      "manuscrita": "Não é o que acontece, é o significado"
+    },
+    "imagem_ideia": "Simone sentada, telemóvel na mão virado para baixo na mesa, olhar afastado dele, luz natural suave, expressão pensativa mas serena, sem dramatismo."
+  },
+  "aberturasR3": {
+    "ganchos": [
+      {
+        "tipo": "sessao",
+        "frase": "Quando alguém me diz \"ele nem respondeu à mensagem, já sei que faz de propósito\", não olho para a mensagem. Olho para o significado que lhe deu.",
+        "tela": "Já sei que faz de propósito",
+        "situacao": "Uma interpretação automática e imediata a um facto neutro, apresentada como certeza.",
+        "porque": "Mostra de forma muito concreta o salto entre facto e significado, que é o tema central, sem precisar de explicar nada ainda.",
+        "recomendado": false
+      },
+      {
+        "tipo": "sessao",
+        "frase": "Quando alguém me diz \"se calhar fiz algo de errado\", a primeira pergunta que me fica não é o que fez. É porque é sempre essa a primeira leitura.",
+        "tela": "A primeira leitura é sempre: fiz mal",
+        "situacao": "Autoculpabilização automática perante uma situação ambígua, sem factos que a sustentem.",
+        "porque": "Revela o padrão de atribuir sempre a si o significado negativo, muito reconhecível em quem vive a provar valor ou evitar culpa.",
+        "recomendado": false
+      },
+      {
+        "tipo": "sessao",
+        "frase": "Quando alguém me diz \"isto significa que não sou importante para ela\", não respondo logo. Pergunto onde aprendeu a ler assim.",
+        "tela": "Isto significa que não sou importante",
+        "situacao": "Um acontecimento pequeno transformado numa conclusão definitiva sobre o próprio valor.",
+        "porque": "Liga diretamente o significado automático à questão do valor pessoal, central no público, e abre espaço para a ideia de que a leitura foi aprendida, não é verdade absoluta.",
+        "recomendado": true
+      }
+    ],
+    "recomendada": 2,
+    "razao": "Esta abertura expõe com mais clareza o mecanismo do tema (significado aprendido versus facto) e toca na ferida nuclear do público, a necessidade de provar valor, o que facilita a ponte para o mecanismo e a nova possibilidade."
+  },
+  "roteiroR3": {
+    "blocos": [
+      {
+        "tempo": "0-3s",
+        "rotulo": "ABERTURA",
+        "fala": "Quando alguém me diz \"isto significa que não sou importante para ela\", não respondo logo. Pergunto onde aprendeu a ler assim.",
+        "tela": "Isto significa que não sou importante",
+        "camera": "Plano de peito, câmara frontal, olhar direto para a lente, tom calmo e pausado."
+      },
+      {
+        "tempo": "3-15s",
+        "rotulo": "SITUAÇÃO",
+        "fala": "Uma mensagem sem resposta. Um convite que não chegou. Um comentário seco ao telefone. São factos pequenos. Mas a cabeça já fez a conta toda: não sou prioridade, não sou importante, não sou suficiente. E o corpo reage como se aquilo já fosse verdade confirmada.",
+        "tela": "Um facto pequeno vira uma sentença",
+        "camera": "Mantém o mesmo plano. Pequena pausa entre as frases, sem cortes bruscos."
+      },
+      {
+        "tempo": "15-40s",
+        "rotulo": "MECANISMO",
+        "fala": "Eu não olho apenas para o acontecimento. Procuro perceber que significado automático a pessoa já aprendeu a dar a este tipo de situação. Porque esse significado não nasceu agora. Nasceu algures no passado, numa altura em que precisava de uma explicação rápida para uma ausência, um silêncio ou uma distância. E essa leitura ficou guardada como proteção. Hoje volta sozinha, sem ser convocada, e decide o que sentes antes de perceberes que escolheste acreditar nela.",
+        "tela": "O significado é aprendido. Não é a verdade do facto.",
+        "camera": "Aproxima ligeiramente o enquadramento para o rosto. Gesto contido com as mãos ao explicar \"aprendeu\"."
+      },
+      {
+        "tempo": "40-52s",
+        "rotulo": "NOVA POSSIBILIDADE",
+        "fala": "Quando reconheces esse significado automático, abre-se um espaço novo. O facto continua a ser o mesmo. Mas já não és obrigada a ler sempre pela mesma frase antiga. Podes perguntar: será mesmo isto que está a acontecer, ou é a leitura que já trago comigo?",
+        "tela": "O facto é o mesmo. A leitura pode mudar.",
+        "camera": "Volta ao plano inicial. Postura mais aberta, ritmo mais lento nesta parte."
+      },
+      {
+        "tempo": "52-60s",
+        "rotulo": "CTA",
+        "fala": "Se isto fez sentido, envia-me uma mensagem e conversamos sobre o teu momento.",
+        "tela": "Manda-me mensagem. Vamos falar sobre isto.",
+        "camera": "Plano fixo, olhar direto, sem gestos adicionais, encerra com uma pequena pausa antes do corte."
+      }
+    ],
+    "legenda": "\"Isto significa que não sou importante para ela.\" É a frase que ouço em sessão, dita com uma certeza que não admite dúvida.\n\nMas o facto que a gerou é quase sempre pequeno. Uma mensagem sem resposta. Um silêncio ao telefone.\n\nO problema não é o facto. É o significado automático que já aprendeste a dar a este tipo de situação, muito antes de hoje.\n\nEsse significado nasceu como proteção. Deu-te uma explicação rápida numa altura em que precisavas de uma, para uma ausência ou uma distância que não sabias ler de outra forma.\n\nHoje volta sozinho e decide o que sentes antes de perceberes que escolheste acreditar nele.\n\nReconhecer este mecanismo não muda o facto. Muda a possibilidade de leres outra coisa a partir dele.\n\nSe isto fez sentido, envia-me uma mensagem e conversamos sobre o teu momento.",
+    "primeiro_comentario": "O facto é um. As leituras possíveis são várias. Qual é a tua?",
+    "capa": {
+      "intro": "Em sessão, ouço isto quase todas as semanas",
+      "titulo": "Isto significa que não sou importante",
+      "manuscrita": "ou é só o que aprendi a pensar?"
+    },
+    "imagem_ideia": "Simone em plano de peito, luz natural suave, fundo neutro de consultório, expressão séria e atenta, olhar direto para a câmara, sem sorriso forçado, transmitindo escuta clínica."
+  }
+}

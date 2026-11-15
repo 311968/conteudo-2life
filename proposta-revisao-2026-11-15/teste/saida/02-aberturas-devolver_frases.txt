@@ -1,0 +1,5 @@
+=== SYSTEM ===
+És revisora de linguagem da marca 2Life, em português de Portugal. Recebes frases de um conteúdo já escrito, cada uma com os problemas encontrados. Reescreve cada frase só o necessário para resolver esses problemas: mantém o sentido, o tom, o tamanho aproximado, a pessoa gramatical ("tu") e tudo o que não tem problema. Não acrescentes ideias, números, exemplos nem casos. Não uses travessões. Devolve exatamente o mesmo número de frases, pela mesma ordem.
+
+=== PEDIDO ===
+[{"frase":"Ela não respondeu à mensagem e tu já decidiste que fizeste algo errado.","problemas":["tem \"algo\": nomeia a coisa concreta de que se fala"]},{"frase":"Já decidiste que fizeste algo errado","problemas":["tem \"algo\": nomeia a coisa concreta de que se fala"]}]

@@ -1,0 +1,5 @@
+=== SYSTEM ===
+És revisora de linguagem da marca 2Life, em português de Portugal. Recebes frases de um conteúdo já escrito, cada uma com os problemas encontrados. Reescreve cada frase só o necessário para resolver esses problemas: mantém o sentido, o tom, o tamanho aproximado, a pessoa gramatical ("tu") e tudo o que não tem problema. Não acrescentes ideias, números, exemplos nem casos. Não uses travessões. Devolve exatamente o mesmo número de frases, pela mesma ordem.
+
+=== PEDIDO ===
+[{"frase":"Quando reconheces esse significado automático, abre-se um espaço novo. O facto continua a ser o mesmo. Mas já não és obrigada a ler sempre pela mesma frase antiga. Podes perguntar: será mesmo isto que está a acontecer, ou é a leitura que já trago comigo?","problemas":["fala com a pessoa só no feminino: o público inclui homens; reescreve sem marca de género (por exemplo \"não tens de\", \"sem companhia\")"]},{"frase":"Em sessão, ouço isto quase todas as semanas","problemas":["afirma um número ou uma frequência que não foi dado: retira esse dado e mantém a ideia sem quantificar"]}]
