@@ -312,7 +312,7 @@ Por preencher com a Simone. Só entram testemunhos com autorização para uso p�
 Enquanto este bloco estiver vazio, a app não pode usar casos, números nem depoimentos.
 
 
-Estes são os únicos casos que você pode citar. Pode contar a história de uma delas sem dizer o nome ("uma contadora que atendo", "uma dona de loja da mentoria"), mas o fato tem que estar escrito aqui. Se o conteúdo pedir um exemplo que não existe nesta lista, escreva sem exemplo. Inventar cliente é o erro mais grave possível.
+Estes são os únicos casos reais que existem. Só podes contar um deles se estiver escrito aqui, sempre anonimizado. Se o conteúdo pedir um exemplo que não existe nesta lista, escreve sem exemplo. Inventar um caso, um número, uma frequência ou o que se passa em sessão é o erro mais grave possível.
 
 # PARA QUEM ESTE CONTEÚDO FALA E PARA ONDE LEVA
 
@@ -402,6 +402,20 @@ De 7 a 9 lâminas, pela estrutura narrativa da marca: cena concreta, tensão int
 - "fecho": { tipo, titulo } → última lâmina. Título até 45 caracteres (duas linhas), com a frase de viragem entre **asteriscos duplos**. O logótipo e a assinatura entram sozinhos; não os escrevas.
 
 Uma ideia por lâmina. Nada de CTA dentro das lâminas: o CTA vai na legenda (Livro de Receitas §15 e §16).
+Não preenchas "logotipo" nem "foto_fecho": são escolhas da Simone no editor.
+
+# LEGENDA (Livro de Receitas §16)
+A legenda aprofunda a ideia do carrossel. Em nenhum parágrafo repete o texto das lâminas.
+1. Primeira linha: funciona sozinha no feed (cerca de 125 caracteres) e abre com uma situação reconhecível ou com a frase de viragem dita por outras palavras. Nunca com o título da capa.
+2. Desenvolvimento: parágrafos de uma a três linhas, pela ordem cena, automatismo, significado e nova possibilidade. O padrão aparece como proteção, sem culpabilizar.
+3. Pergunta ou microação: uma só, nas peças técnicas. Não se força nas peças de reconhecimento ou emocionais.
+4. Última linha: um só CTA, proporcional ao movimento criado.
+Extensão: 8 a 14 linhas. Sem hashtags. Sem "algo", "talvez" ou "às vezes". Não escrevas "A confiança constrói-se na raiz.": já está no fecho.
+A primeira linha da legenda acrescenta uma ideia que as lâminas não dizem: não repete nem parafraseia a situação de nenhuma lâmina.
+
+# UM SÓ CTA EDITORIAL
+O carrossel tem um único CTA: a última linha da legenda. Se uma lâmina propuser uma observação ou microação, a última linha da legenda pede esse mesmo movimento, e não outro. Nenhuma lâmina pede para guardar, partilhar, comentar ou seguir.
+"primeiro_comentario": uma pergunta ou uma frase para a conversa, nunca outro CTA (nada de "guarda", "partilha", "envia", "marca", "segue" ou "comenta").
 
 Em TODA lâmina preencha "imagem_ideia": uma frase curta descrevendo a imagem que cabe ali.
 

@@ -1,0 +1,193 @@
+{
+  "tema": "O significado que atribuímos ao que nos acontece",
+  "ideia": "Não é o que nos acontece que decide como nos sentimos. É o significado automático que damos ao acontecimento, aprendido como proteção. Quando o reconhecemos, podemos escolher outra leitura.",
+  "marcacoes": {
+    "significado": {
+      "funcao": "tecnico",
+      "nivel": 2,
+      "avanco": "Aprofundamento: guardar, ver outro conteúdo ou continuar uma sequência"
+    },
+    "r3": {
+      "funcao": "autoridade",
+      "nivel": 3,
+      "avanco": "Conversa: perceber se o processo faz sentido e iniciar uma relação comercial"
+    },
+    "carrossel": {
+      "funcao": "atracao",
+      "nivel": 1,
+      "avanco": "Observação: reconhecer o padrão sem exigir exposição"
+    }
+  },
+  "significado": {
+    "ok": true,
+    "segundos": 36,
+    "ideia": "Não é o que nos acontece que decide como nos sentimos. É o significado automático que damos ao acontecimento, aprendido como proteção. Quando o reconhecemos, podemos escolher outra leitura. Na nova possibilidade, usa o mecanismo do método na formulação integral.",
+    "aberturas": {
+      "ganchos": [
+        {
+          "tipo": "problema",
+          "frase": "Alguém cancela um café e já estás a pensar no que fizeste de errado.",
+          "tela": "Cancelaram. E já pensas: fiz isto mal.",
+          "situacao": "A pessoa recebe uma mensagem a desmarcar e, em segundos, o corpo tensiona, vem a dúvida sobre ter dito ou feito isto de errado, antes de sequer saber o motivo real.",
+          "porque": "É uma cena curta e universal: o salto automático do facto para a culpa, reconhecível sem explicação prévia.",
+          "recomendado": false
+        },
+        {
+          "tipo": "contraintuitiva",
+          "frase": "Não é o que te acontece que te machuca. É o que decides que isso significa.",
+          "tela": "Não é o facto. É o significado.",
+          "situacao": "Um colega não responde a uma mensagem durante horas e a pessoa já concluiu que fez isto de errado ou que deixou de ser importante, sem nenhuma prova disso.",
+          "porque": "Contesta a crença comum de que o acontecimento é a causa direta do sofrimento, abrindo espaço para a distinção central do tema.",
+          "recomendado": true
+        },
+        {
+          "tipo": "curiosidade",
+          "frase": "Entre o que acontece e o que sentes, existe uma frase que dizes a ti sem perceberes.",
+          "tela": "Há uma frase invisível entre o facto e a dor.",
+          "situacao": "Alguém recebe uma crítica no trabalho e, antes de pensar no conteúdo, já sente o estômago apertado e a certeza de que falhou outra vez.",
+          "resposta": "Essa frase é o significado automático e aprendido que a pessoa dá ao acontecimento, como proteção, e que pode ser reconhecido e substituído por outra leitura.",
+          "porque": "O tema é exatamente esse mecanismo invisível entre facto e emoção, por isso a curiosidade recai sobre a experiência interna da pessoa.",
+          "recomendado": false
+        }
+      ],
+      "recomendada": 1,
+      "razao": "A ideia central contesta diretamente uma crença comum (que o acontecimento causa o sentimento), por isso a afirmação contraintuitiva é a porta mais forte para instalar a distinção antes do mecanismo."
+    },
+    "roteiro": {
+      "blocos": [
+        {
+          "tempo": "0-6s",
+          "rotulo": "ABERTURA",
+          "fala": "Não é o que te acontece que te machuca. É o que decides que isso significa.",
+          "tela": "Não é o facto. É o significado.",
+          "camera": "Plano de peito, câmara frontal, olhar direto para a lente, sem movimento."
+        },
+        {
+          "tempo": "6-17s",
+          "rotulo": "SITUAÇÃO",
+          "fala": "Um colega não responde a uma mensagem há horas. E a tua cabeça já decidiu: fiz alguma coisa mal, ou deixei de ser importante. Sem uma prova disso.",
+          "tela": "Horas sem resposta. A história já está escrita.",
+          "camera": "Mantém o plano de peito. Pequeno zoom lento para dentro, quase impercetível, enquanto fala."
+        },
+        {
+          "tempo": "17-36s",
+          "rotulo": "MECANISMO",
+          "fala": "Esse significado não nasceu agora. Nasceu há muito tempo, numa altura em que o silêncio de alguém era mesmo perigoso. Uma parte de ti aprendeu a antecipar a rejeição antes de ela chegar. Isso protegeu-te então. Hoje continua a decidir por ti, sem perguntar se ainda é verdade.",
+          "tela": "O significado é aprendido. Não é a realidade.",
+          "camera": "Corta para plano mais próximo, só o rosto. Fala mais pausada, olhos firmes."
+        },
+        {
+          "tempo": "36-46s",
+          "rotulo": "NOVA POSSIBILIDADE",
+          "fala": "O automático reage. A essência escolhe. A ação cria evidência. A repetição transforma a identidade. Podias apenas notar: não sei o que isto significa ainda.",
+          "tela": "O automático reage. A essência escolhe.",
+          "camera": "Volta ao plano de peito. Postura ligeiramente mais ereta, mão pode fazer um gesto suave ao dizer 'escolhe'."
+        },
+        {
+          "tempo": "46-54s",
+          "rotulo": "CTA",
+          "fala": "Guarda este vídeo para a próxima vez que a tua cabeça decidir por ti antes de teres prova nenhuma.",
+          "tela": "Guarda para a próxima vez.",
+          "camera": "Plano de peito estático, meio sorriso contido, pausa de um segundo antes de terminar."
+        }
+      ],
+      "legenda": "\"Já te respondo\" e depois três horas de silêncio. Nesse tempo todo, já construíste uma história inteira sobre o que isso significa.\n\nNão foi o silêncio que te perturbou. Foi o significado automático que lhe deste: fiz alguma coisa mal, já não importo, vou ser deixado de lado.\n\nEssa leitura vem de longe. De um tempo em que prever o pior parecia mais seguro do que esperar pelo melhor. Era uma forma de te protegeres antes de seres magoado.\n\nA questão é esta: continuas a deixar que essa leitura antiga comande o presente, mesmo quando não há nada à tua frente que a confirme.\n\nAntes de reagires à história, pergunta: isto é um facto ou é o significado que aprendi a dar a este tipo de situação?\n\nGuarda este vídeo para a próxima vez que a tua cabeça decidir por ti antes de teres prova nenhuma.",
+      "primeiro_comentario": "Qual é a primeira história que a tua cabeça costuma contar nestas situações?",
+      "capa": {
+        "intro": "Não foi o facto.",
+        "titulo": "Foi o significado que decidiste dar a isso.",
+        "manuscrita": "o significado é aprendido"
+      },
+      "imagem_ideia": "Simone em plano de peito, fundo neutro e claro, olhar direto para a câmara, luz suave lateral, telemóvel pousado numa mesa à frente mas fora de foco, expressão serena e atenta, sem sorriso forçado.",
+      "duracao_estimada": 54
+    }
+  },
+  "r3": {
+    "ok": false,
+    "erro": "Formato inesperado nos ganchos. Tente de novo."
+  },
+  "carrossel": {
+    "ok": true,
+    "segundos": 26,
+    "carrossel": {
+      "serie": "O SIGNIFICADO QUE ATRIBUÍMOS",
+      "slides": [
+        {
+          "tipo": "capa",
+          "titulo": "Não foi o que ele disse. Foi o que isso significou para ti. **Isso é que dói.**",
+          "subtitulo": "",
+          "sintese": "O PESO NÃO ESTÁ NO FACTO",
+          "imagem_ideia": "mulher parada na cozinha, telemóvel pousado na bancada, luz da tarde, expressão pensativa"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Um email curto. Uma resposta seca. Um silêncio mais longo que o costume.",
+          "corpo": "O facto demora dois segundos. O significado que lhe dás pode ocupar o resto do dia.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "close em ecrã de telemóvel com uma mensagem curta recebida, mão segurando o aparelho"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "\"Ele não respondeu, por isso já não quer saber de mim.\"",
+          "corpo": "Repara: isto não é o que aconteceu. É a leitura que a tua cabeça fez em **décimos de segundo**.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "pessoa sentada sozinha num sofá, olhando para o telemóvel, ambiente de fim de tarde"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Essa leitura não nasceu agora.",
+          "corpo": "Foi treinada. Alguma vez, um silêncio real significou perda, rejeição ou abandono. O corpo guardou a equação.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "foto antiga desfocada ao fundo, mão no primeiro plano a tocar levemente numa moldura"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Por isso, hoje, qualquer silêncio dispara **a mesma história.**",
+          "corpo": "Não porque sejas frágil. Porque esse significado já te protegeu antes de alguma dor te atingir em cheio.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "janela com cortina a tremer ao vento, luz entrando em feixe, clima introspetivo"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O automático não pergunta se a leitura está certa.",
+          "corpo": "Ele só repete a que já conhece. É mais rápida. É conhecida. Parece mais segura do que ficar sem explicação.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "engrenagem antiga em movimento, metáfora visual de mecanismo repetitivo, tom sépia"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Mas o facto admite **outras leituras.**",
+          "corpo": "Estava ocupado. Ou precisava de tempo. Ou nada disto tem que ver contigo.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "bifurcação de caminho num parque, duas direções possíveis, luz suave de fim de tarde"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Entre o que acontece e o que sentes, existe sempre um passo que ninguém te ensinou a ver.",
+          "corpo": "Esse passo chama-se significado. E pode ser **reconhecido**, antes de ser vivido como verdade absoluta.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "mãos segurando um espelho pequeno refletindo o rosto, luz natural, imagem simbólica de autoperceção"
+        },
+        {
+          "tipo": "fecho",
+          "titulo": "Não é o que te acontece. É o significado que ainda não escolheste **ver de outra forma.**",
+          "imagem_ideia": "céu ao amanhecer visto de uma janela, luz a entrar devagar no quarto"
+        }
+      ],
+      "legenda": "Repara na última vez que um silêncio te deixou a pensar o pior.\n\nNão foi o silêncio que te atingiu. Foi a interpretação instantânea que a tua cabeça fez dele, sem te dar tempo de verificar se fazia sentido.\n\nEssa história não apareceu agora. Foi aprendida nalgum momento em que um silêncio real doeu. O corpo guardou a equação e passou a usá-la sempre que uma situação parecida se repete.\n\nIsto não é fragilidade. É proteção. Uma forma de teres uma explicação pronta antes de seres apanhada de surpresa outra vez.\n\nO problema é que essa explicação nem sempre é a verdadeira. E enquanto não a questionas, ela continua a decidir como te sentes, antes de saberes o que realmente aconteceu.\n\nHoje, repara em que momento atribuis um significado automático a uma situação que ainda não compreendeste.",
+      "primeiro_comentario": "Qual costuma ser a primeira explicação que a tua cabeça dá, quando alguém fica em silêncio?"
+    }
+  },
+  "avisos": [
+    "[revisao] 2 frase(s) continuam com problemas depois da revisão",
+    "[revisao] 1 frase(s) continuam com problemas depois da revisão",
+    "[revisao] 1 frase(s) continuam com problemas depois da revisão"
+  ]
+}

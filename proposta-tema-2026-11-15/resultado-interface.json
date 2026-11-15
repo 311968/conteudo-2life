@@ -1,0 +1,315 @@
+{
+  "reel": {
+    "id": 5,
+    "tema": "Pedir ajuda sem sentir que estou a falhar",
+    "aberturas": {
+      "ok": true,
+      "ganchos": [
+        {
+          "tipo": "problema",
+          "frase": "Precisas de ajuda e já estás a pensar em como pedir sem pareceres fraco.",
+          "tela": "Pedir ajuda = fraqueza?",
+          "situacao": "A pessoa adia o pedido, resolve sozinha mesmo exausta, ensaia frases para pedir ajuda sem parecer que não consegue.",
+          "porque": "A situação já gera identificação imediata: quem é competente reconhece-se a calcular o custo de pedir ajuda antes de pedir.",
+          "recomendado": true
+        },
+        {
+          "tipo": "contraintuitiva",
+          "frase": "Pedir ajuda não é a prova de que falhaste. É a prova de que confias em ti.",
+          "tela": "Pedir ajuda não é falhar",
+          "situacao": "Achas que pedir ajuda mostra que não consegues por tua conta, por isso adias, justificas, ou acabas por fazer tudo por tua conta outra vez.",
+          "porque": "Contesta a crença comum (pedir ajuda = incompetência) e abre espaço para uma leitura nova baseada na identidade, não na tarefa.",
+          "recomendado": false
+        },
+        {
+          "tipo": "curiosidade",
+          "frase": "Há uma frase que dizes a ti mesmo antes de pedir ajuda. Raramente a ouves.",
+          "tela": "A frase que não ouves",
+          "situacao": "Estás perante uma dificuldade, pensas em pedir ajuda, e sem dares conta já decidiste que não vais pedir.",
+          "resposta": "A frase é 'se pedir, vão perceber que não sou tão competente como pareço'. Essa frase protege um valor antigo: ser visto como capaz, e decide por ti antes de escolheres.",
+          "porque": "Nomeia o mecanismo invisível (crença automática) descrito na persona, cria curiosidade real sobre si próprio e entrega a resposta antes do CTA.",
+          "recomendado": false
+        }
+      ],
+      "recomendada": 0,
+      "razao": "O tema toca uma situação tão reconhecível (adiar pedir ajuda para não parecer incapaz) que a abertura mais forte é mostrar a cena diretamente, sem rodeios, deixando a pessoa ver-se antes de qualquer explicação."
+    },
+    "roteiro": {
+      "ok": true,
+      "blocos": [
+        {
+          "tempo": "0-6s",
+          "rotulo": "ABERTURA",
+          "fala": "Precisas de ajuda e já estás a pensar em como pedir sem pareceres fraco.",
+          "tela": "Pedir ajuda = fraqueza?",
+          "camera": "Plano de peito, câmara frontal, olhar direto para a lente, sem movimento."
+        },
+        {
+          "tempo": "6-7s",
+          "rotulo": "SITUAÇÃO",
+          "fala": "Adias pedidos, resolves exausto.",
+          "tela": "Resolver tudo sozinho, outra vez",
+          "camera": "Mantém plano de peito, leve aproximação na câmara para criar proximidade."
+        },
+        {
+          "tempo": "7-16s",
+          "rotulo": "MECANISMO",
+          "fala": "Não é coragem. Pedir ajuda soa a falhar. O automático reage. A essência escolhe. A ação cria evidência. A repetição transforma a identidade.",
+          "tela": "Não é fraqueza. É proteção.",
+          "camera": "Plano fixo, gesto calmo com a mão ao dizer 'a essência escolhe'."
+        },
+        {
+          "tempo": "16-18s",
+          "rotulo": "NOVA POSSIBILIDADE",
+          "fala": "Pedir ajuda é escolha possível.",
+          "tela": "Pedir é uma escolha",
+          "camera": "Plano de peito, câmara estável, ligeira inclinação de cabeça."
+        },
+        {
+          "tempo": "18-23s",
+          "rotulo": "CTA",
+          "fala": "Se isto faz sentido, conta-me nos comentários onde sentes mais isto.",
+          "tela": "Conta nos comentários",
+          "camera": "Plano de peito, câmara frontal, pausa final antes do corte."
+        }
+      ],
+      "legenda": "Achas que dependências dos outros é sinal de fragilidade. Isto soa-te familiar?\n\nHá uma lógica silenciosa por trás disto. Quando o teu valor ficou ligado a dares sempre conta de tudo, pedir ajuda é sentido como admitir uma falha, não como um gesto de maturidade.\n\nPor isso ensaias frases, adias o pedido, escolhes aguentar mais um pouco sozinho.\n\nIsto não é fraqueza. É um automatismo que te protegeu em algum momento.\n\nMas protegeu-te à custa de te manteres sempre a resolver tudo por ti, mesmo exausto.\n\nEscolher apoiar-te em alguém não belisca o teu valor. Mostra que confias.\n\nConta-me nos comentários onde sentes mais isto.",
+      "primeiro_comentario": "Onde é que isto pesa mais em ti? No trabalho, em casa ou contigo mesmo?",
+      "capa": {
+        "intro": "Pedir ajuda",
+        "titulo": "Pedir ajuda não é falhar. É uma escolha.",
+        "manuscrita": "não é fraqueza"
+      },
+      "imagem_ideia": "Simone em plano de peito, olhar sereno e direto para a câmara, fundo neutro e luz suave, expressão calma e firme, sem gestos dramáticos, transmitindo autoridade tranquila.",
+      "duracao_estimada": 23
+    },
+    "guardado": false,
+    "final": {
+      "id": 5,
+      "tema": "Pedir ajuda sem sentir que estou a falhar",
+      "ideia": "",
+      "serie": "Teste da app · 15/11",
+      "layout": "post",
+      "slides": [
+        {
+          "tipo": "frase",
+          "intro": "Pedir ajuda",
+          "titulo": "Pedir ajuda não é falhar. É uma escolha.",
+          "manuscrita": "não é fraqueza",
+          "imagem_ideia": "Simone em plano de peito, olhar sereno e direto para a câmara, fundo neutro e luz suave, expressão calma e firme, sem gestos dramáticos, transmitindo autoridade tranquila."
+        }
+      ],
+      "legenda": "Achas que dependências dos outros é sinal de fragilidade. Isto soa-te familiar?\n\nHá uma lógica silenciosa por trás disto. Quando o teu valor ficou ligado a dares sempre conta de tudo, pedir ajuda é sentido como admitir uma falha, não como um gesto de maturidade.\n\nPor isso ensaias frases, adias o pedido, escolhes aguentar mais um pouco sozinho.\n\nIsto não é fraqueza. É um automatismo que te protegeu em algum momento.\n\nMas protegeu-te à custa de te manteres sempre a resolver tudo por ti, mesmo exausto.\n\nEscolher apoiar-te em alguém não belisca o teu valor. Mostra que confias.\n\nConta-me nos comentários onde sentes mais isto.",
+      "status": "rascunho",
+      "criado_em": "2026-11-15T22:42:41.838Z",
+      "atualizado_em": "2026-11-15T22:43:09.610Z",
+      "tom": "clara",
+      "foto": null,
+      "comentario": "Onde é que isto pesa mais em ti? No trabalho, em casa ou contigo mesmo?",
+      "formato": "reels",
+      "funcao": null,
+      "nivel": null,
+      "avanco": null,
+      "roteiro": {
+        "blocos": [
+          {
+            "tempo": "0-6s",
+            "rotulo": "ABERTURA",
+            "fala": "Precisas de ajuda e já estás a pensar em como pedir sem pareceres fraco.",
+            "tela": "Pedir ajuda = fraqueza?",
+            "camera": "Plano de peito, câmara frontal, olhar direto para a lente, sem movimento."
+          },
+          {
+            "tempo": "6-7s",
+            "rotulo": "SITUAÇÃO",
+            "fala": "Adias pedidos, resolves exausto.",
+            "tela": "Resolver tudo sozinho, outra vez",
+            "camera": "Mantém plano de peito, leve aproximação na câmara para criar proximidade."
+          },
+          {
+            "tempo": "7-16s",
+            "rotulo": "MECANISMO",
+            "fala": "Não é coragem. Pedir ajuda soa a falhar. O automático reage. A essência escolhe. A ação cria evidência. A repetição transforma a identidade.",
+            "tela": "Não é fraqueza. É proteção.",
+            "camera": "Plano fixo, gesto calmo com a mão ao dizer 'a essência escolhe'."
+          },
+          {
+            "tempo": "16-18s",
+            "rotulo": "NOVA POSSIBILIDADE",
+            "fala": "Pedir ajuda é escolha possível.",
+            "tela": "Pedir é uma escolha",
+            "camera": "Plano de peito, câmara estável, ligeira inclinação de cabeça."
+          },
+          {
+            "tempo": "18-23s",
+            "rotulo": "CTA",
+            "fala": "Se isto faz sentido, conta-me nos comentários onde sentes mais isto.",
+            "tela": "Conta nos comentários",
+            "camera": "Plano de peito, câmara frontal, pausa final antes do corte."
+          }
+        ]
+      },
+      "duracao": 30,
+      "cta": null,
+      "agendado_para": null
+    }
+  },
+  "carrossel": {
+    "id": 6,
+    "tema": "A culpa que aparece quando paro para descansar",
+    "gerado": {
+      "ok": true,
+      "id": 6,
+      "serie": "PILOTO AUTOMÁTICO",
+      "legenda": "Marcas uma pausa no telemóvel e já sentes que estás a adiar uma decisão importante.\n\nDeitas-te no sofá e o corpo não relaxa. Alguma coisa dentro de ti continua a trabalhar, mesmo parada.\n\nPara muita gente, descansar foi aprendido como um risco. Se paro, posso deixar de ser útil. E se deixar de ser útil, deixo de ter lugar.\n\nNão é fraqueza de carácter. É um mecanismo antigo que confundiu descansar com deixar de merecer o teu espaço.\n\nA questão não é aprender a descansar melhor. É perceber o que temes que aconteça se parares.\n\nHoje tenta ficar cinco minutos sem ecrã nem lista. Vê que desculpa a tua mente inventa para te tirar dali.\n\nSe esta pergunta te interessa, a Conversa 2Life é um bom espaço para a levares.",
+      "primeiro_comentario": "O que costuma aparecer na tua cabeça assim que paras?",
+      "slides": [
+        {
+          "tipo": "capa",
+          "titulo": "Paras dois minutos e já sentes que devias estar a fazer alguma tarefa. A culpa não é sobre descanso. **É sobre valor.**",
+          "subtitulo": "Porque parar parece sempre errado",
+          "imagem_ideia": "Pessoa sentada no sofá a meio da tarde, chávena na mão, olhar perdido, casa com luz natural suave, postura tensa apesar de estar parada"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Sentas-te. Dez minutos depois já estás a pensar no que falta fazer.",
+          "corpo": "O corpo até obedece. Fica quieto. Mas a cabeça não desliga. Continua a somar tarefas, a rever o dia, a preparar o seguinte.",
+          "alinhar": "centro",
+          "imagem_ideia": "Close em mãos sobre o colo, parcialmente relaxadas, telemóvel ao lado com ecrã aceso, luz de fim de tarde"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Descansar devia ser simples. Para muitos de nós, **não é**.",
+          "corpo": "Assim que paras, surge uma voz interna: ainda não mereces, falta fazer isto, depois descansas. A culpa chega antes do descanso começar.",
+          "alinhar": "centro",
+          "imagem_ideia": "Pessoa a levantar-se do sofá a meio do descanso, a caminhar na direção da secretária, movimento capturado em desfoque suave"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Isto não é falta de disciplina. É um **automatismo**.",
+          "corpo": "Uma parte de ti aprendeu que parar é arriscado. Que se não estiveres sempre a fazer, podes deixar de ser necessária, útil ou suficiente.",
+          "alinhar": "centro",
+          "imagem_ideia": "Retrato de rosto sereno mas com testa levemente franzida, luz lateral, ambiente neutro"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Por trás da culpa está uma pergunta que nunca fizeste em voz alta.",
+          "corpo": "**\"Se eu parar, deixo de ter lugar?\"** Essa crença instalou-se cedo. E continua a decidir por ti sempre que tentas descansar.",
+          "alinhar": "centro",
+          "imagem_ideia": "Janela aberta, cortina a mexer com o vento, mesa de trabalho visível ao fundo fora de foco"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O piloto automático não é o inimigo. **Teve uma função.**",
+          "corpo": "Manteve-te em segurança quando aprendeste que o teu valor dependia de fazer. Protegeu-te então. Hoje já não precisas de pagar este preço.",
+          "alinhar": "centro",
+          "imagem_ideia": "Mãos pousadas sobre uma mesa de madeira, chávena de café ao lado, luz quente de fim de tarde, ambiente calmo"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Não precisas de esperar sentir-te merecedora para parar.",
+          "corpo": "A permissão não chega depois da certeza. Chega quando escolhes parar, mesmo com a culpa a falar. É aí que ela começa a perder força.",
+          "alinhar": "centro",
+          "imagem_ideia": "Pessoa a fechar o portátil ao fim do dia, luz a baixar, gesto decidido e calmo"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Experimenta parar sem resolver nada antes.",
+          "corpo": "Cinco minutos. Sem lista. Sem justificação. Só para observares o que a culpa tenta proteger em ti.",
+          "alinhar": "centro",
+          "imagem_ideia": "Relógio de parede marcando o fim da tarde, luz dourada a entrar pela janela, espaço vazio e silencioso"
+        },
+        {
+          "tipo": "fecho",
+          "titulo": "Não precisas de merecer o descanso. **Precisas de te permitir.**",
+          "imagem_ideia": "Sofá vazio com manta dobrada, luz suave de fim de dia, ambiente acolhedor e em silêncio"
+        }
+      ]
+    },
+    "guardado": true,
+    "final": {
+      "id": 6,
+      "tema": "A culpa que aparece quando paro para descansar",
+      "ideia": "",
+      "serie": "Teste da app · 15/11",
+      "layout": "modelo2life",
+      "slides": [
+        {
+          "tipo": "capa",
+          "titulo": "Paras dois minutos e já sentes que devias estar a fazer alguma tarefa. A culpa não é sobre descanso. **É sobre valor.**",
+          "subtitulo": "Porque parar parece sempre errado",
+          "imagem_ideia": "Pessoa sentada no sofá a meio da tarde, chávena na mão, olhar perdido, casa com luz natural suave, postura tensa apesar de estar parada"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Sentas-te. Dez minutos depois já estás a pensar no que falta fazer.",
+          "corpo": "O corpo até obedece. Fica quieto. Mas a cabeça não desliga. Continua a somar tarefas, a rever o dia, a preparar o seguinte.",
+          "alinhar": "centro",
+          "imagem_ideia": "Close em mãos sobre o colo, parcialmente relaxadas, telemóvel ao lado com ecrã aceso, luz de fim de tarde"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Descansar devia ser simples. Para muitos de nós, **não é**.",
+          "corpo": "Assim que paras, surge uma voz interna: ainda não mereces, falta fazer isto, depois descansas. A culpa chega antes do descanso começar.",
+          "alinhar": "centro",
+          "imagem_ideia": "Pessoa a levantar-se do sofá a meio do descanso, a caminhar na direção da secretária, movimento capturado em desfoque suave"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Isto não é falta de disciplina. É um **automatismo**.",
+          "corpo": "Uma parte de ti aprendeu que parar é arriscado. Que se não estiveres sempre a fazer, podes deixar de ser necessária, útil ou suficiente.",
+          "alinhar": "centro",
+          "imagem_ideia": "Retrato de rosto sereno mas com testa levemente franzida, luz lateral, ambiente neutro"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Por trás da culpa está uma pergunta que nunca fizeste em voz alta.",
+          "corpo": "**\"Se eu parar, deixo de ter lugar?\"** Essa crença instalou-se cedo. E continua a decidir por ti sempre que tentas descansar.",
+          "alinhar": "centro",
+          "imagem_ideia": "Janela aberta, cortina a mexer com o vento, mesa de trabalho visível ao fundo fora de foco"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O piloto automático não é o inimigo. **Teve uma função.**",
+          "corpo": "Manteve-te em segurança quando aprendeste que o teu valor dependia de fazer. Protegeu-te então. Hoje já não precisas de pagar este preço.",
+          "alinhar": "centro",
+          "imagem_ideia": "Mãos pousadas sobre uma mesa de madeira, chávena de café ao lado, luz quente de fim de tarde, ambiente calmo"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Não precisas de esperar sentir-te merecedora para parar.",
+          "corpo": "A permissão não chega depois da certeza. Chega quando escolhes parar, mesmo com a culpa a falar. É aí que ela começa a perder força.",
+          "alinhar": "centro",
+          "imagem_ideia": "Pessoa a fechar o portátil ao fim do dia, luz a baixar, gesto decidido e calmo"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Experimenta parar sem resolver nada antes.",
+          "corpo": "Cinco minutos. Sem lista. Sem justificação. Só para observares o que a culpa tenta proteger em ti.",
+          "alinhar": "centro",
+          "imagem_ideia": "Relógio de parede marcando o fim da tarde, luz dourada a entrar pela janela, espaço vazio e silencioso"
+        },
+        {
+          "tipo": "fecho",
+          "titulo": "Não precisas de merecer o descanso. **Precisas de te permitir.**",
+          "imagem_ideia": "Sofá vazio com manta dobrada, luz suave de fim de dia, ambiente acolhedor e em silêncio"
+        }
+      ],
+      "legenda": "Marcas uma pausa no telemóvel e já sentes que estás a adiar uma decisão importante.\n\nDeitas-te no sofá e o corpo não relaxa. Alguma coisa dentro de ti continua a trabalhar, mesmo parada.\n\nPara muita gente, descansar foi aprendido como um risco. Se paro, posso deixar de ser útil. E se deixar de ser útil, deixo de ter lugar.\n\nNão é fraqueza de carácter. É um mecanismo antigo que confundiu descansar com deixar de merecer o teu espaço.\n\nA questão não é aprender a descansar melhor. É perceber o que temes que aconteça se parares.\n\nHoje tenta ficar cinco minutos sem ecrã nem lista. Vê que desculpa a tua mente inventa para te tirar dali.\n\nSe esta pergunta te interessa, a Conversa 2Life é um bom espaço para a levares.",
+      "status": "rascunho",
+      "criado_em": "2026-11-15T22:43:09.564Z",
+      "atualizado_em": "2026-11-15T22:43:09.652Z",
+      "tom": "clara",
+      "foto": null,
+      "comentario": "O que costuma aparecer na tua cabeça assim que paras?",
+      "formato": "carrossel",
+      "funcao": null,
+      "nivel": null,
+      "avanco": null,
+      "roteiro": null,
+      "duracao": null,
+      "cta": null,
+      "agendado_para": null
+    }
+  }
+}

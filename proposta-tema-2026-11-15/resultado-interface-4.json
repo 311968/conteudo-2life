@@ -1,0 +1,303 @@
+{
+  "reel": {
+    "id": 11,
+    "tema": "Pedir ajuda sem sentir que estou a falhar",
+    "aberturas": {
+      "ok": true,
+      "ganchos": [
+        {
+          "tipo": "problema",
+          "frase": "Precisas de ajuda e dizes: ainda consigo resolver por minha conta, mais um bocado.",
+          "tela": "\"Ainda consigo resolver por minha conta.\"",
+          "situacao": "A pessoa adia o pedido de ajuda até a situação ficar insustentável, porque pedir ajuda foi aprendido como sinal de fraqueza.",
+          "porque": "A frase interna é imediatamente reconhecível e coloca a pessoa dentro da cena antes de qualquer explicação.",
+          "recomendado": false
+        },
+        {
+          "tipo": "contraintuitiva",
+          "frase": "Pedir ajuda não é a prova de que falhaste. É a prova de que confias em ti.",
+          "tela": "Pedir ajuda não é falhar.",
+          "situacao": "Quem cresceu a precisar de dar conta de tudo sem ajuda sente que pedir ajuda expõe uma falha, em vez de ser apenas um passo do processo.",
+          "porque": "Contesta diretamente a crença automática (pedir ajuda = fraqueza) e abre espaço para uma leitura nova.",
+          "recomendado": true
+        },
+        {
+          "tipo": "curiosidade",
+          "frase": "Há uma razão para evitares pedir ajuda que não tem nada a ver com força.",
+          "tela": "Não é falta de força.",
+          "situacao": "A pessoa recusa ajuda, insiste em resolver tudo por sua conta e sente esgotamento, sem perceber porque reage sempre assim.",
+          "resposta": "Pedir ajuda foi associado, no passado, a perder valor ou lugar. O automático protege recusando ajuda, não por fraqueza mas por medo de deixar de ser suficiente.",
+          "porque": "Levanta uma pergunta sobre o mecanismo invisível por trás do comportamento e o vídeo entrega a resposta antes do CTA.",
+          "recomendado": false
+        }
+      ],
+      "recomendada": 1,
+      "razao": "A crença de que pedir ajuda é falhar está tão enraizada no público (nível 2 a 3 de consciência) que contestá-la diretamente gera o maior impacto, abrindo espaço para uma nova leitura sem ficar só na dor do problema."
+    },
+    "roteiro": {
+      "ok": true,
+      "blocos": [
+        {
+          "tempo": "0-7s",
+          "rotulo": "ABERTURA",
+          "fala": "Pedir ajuda não é a prova de que falhaste. É a prova de que confias em ti.",
+          "tela": "Pedir ajuda não é falhar.",
+          "camera": "Plano de peito, câmara frontal, olhar direto para a lente, sem movimento."
+        },
+        {
+          "tempo": "7-17s",
+          "rotulo": "SITUAÇÃO",
+          "fala": "Quem cresceu a resolver tudo por conta própria sente que pedir ajuda expõe uma falha. Por isso adia e só fala quando já não aguenta mais.",
+          "tela": "Resolver tudo por tua conta não é força. É proteção antiga.",
+          "camera": "Mantém plano de peito, leve aproximação na frase 'Isto não é força de carácter', mão a gesticular de forma contida."
+        },
+        {
+          "tempo": "17-24s",
+          "rotulo": "CTA",
+          "fala": "O automático reage. A essência escolhe. Repara na próxima vez que adiares um pedido de ajuda.",
+          "tela": "Repara na próxima vez que adiares.",
+          "camera": "Volta ao plano inicial, ritmo mais lento, pausa antes do corte final."
+        }
+      ],
+      "legenda": "Dizes que está tudo sob controlo e por dentro contas os dias até aguentares sem ajuda mais um bocado.\n\nEsta pergunta nunca é dita em voz alta. Mas organiza decisões inteiras: o email que não envias a pedir apoio, a tarefa que acumulas em vez de dividir, o cansaço que escondes para não parecer menos capaz.\n\nEsse automático teve função. Numa fase da vida, dar conta de tudo por tua conta foi o que garantiu valor, lugar ou segurança.\n\nO risco não é pedires ajuda. É continuares a decidir sempre a partir do medo de parecer incapaz.\n\nPedir ajuda não reduz o teu valor. É uma escolha feita a partir de quem és, não a partir do medo de falhar.\n\nRepara na próxima vez que adiares um pedido de ajuda.",
+      "primeiro_comentario": "Qual foi a última vez que adiaste um pedido de ajuda?",
+      "capa": {
+        "intro": "Isto não é fraqueza",
+        "titulo": "Pedir ajuda não é falhar.",
+        "manuscrita": "é confiares em ti"
+      },
+      "imagem_ideia": "Simone em plano de peito, fundo neutro claro, expressão serena e direta, luz suave lateral, sem adereços, olhar fixo na câmara.",
+      "duracao_estimada": 24
+    },
+    "guardado": true,
+    "final": {
+      "id": 11,
+      "tema": "Pedir ajuda sem sentir que estou a falhar",
+      "ideia": "",
+      "serie": "Teste da app · 15/11",
+      "layout": "post",
+      "slides": [
+        {
+          "tipo": "frase",
+          "intro": "Isto não é fraqueza",
+          "titulo": "Pedir ajuda não é falhar.",
+          "manuscrita": "é confiares em ti",
+          "imagem_ideia": "Simone em plano de peito, fundo neutro claro, expressão serena e direta, luz suave lateral, sem adereços, olhar fixo na câmara."
+        }
+      ],
+      "legenda": "Dizes que está tudo sob controlo e por dentro contas os dias até aguentares sem ajuda mais um bocado.\n\nEsta pergunta nunca é dita em voz alta. Mas organiza decisões inteiras: o email que não envias a pedir apoio, a tarefa que acumulas em vez de dividir, o cansaço que escondes para não parecer menos capaz.\n\nEsse automático teve função. Numa fase da vida, dar conta de tudo por tua conta foi o que garantiu valor, lugar ou segurança.\n\nO risco não é pedires ajuda. É continuares a decidir sempre a partir do medo de parecer incapaz.\n\nPedir ajuda não reduz o teu valor. É uma escolha feita a partir de quem és, não a partir do medo de falhar.\n\nRepara na próxima vez que adiares um pedido de ajuda.",
+      "status": "rascunho",
+      "criado_em": "2026-11-15T22:53:40.886Z",
+      "atualizado_em": "2026-11-15T22:54:06.183Z",
+      "tom": "clara",
+      "foto": null,
+      "comentario": "Qual foi a última vez que adiaste um pedido de ajuda?",
+      "formato": "reels",
+      "funcao": null,
+      "nivel": null,
+      "avanco": null,
+      "roteiro": {
+        "blocos": [
+          {
+            "tempo": "0-7s",
+            "rotulo": "ABERTURA",
+            "fala": "Pedir ajuda não é a prova de que falhaste. É a prova de que confias em ti.",
+            "tela": "Pedir ajuda não é falhar.",
+            "camera": "Plano de peito, câmara frontal, olhar direto para a lente, sem movimento."
+          },
+          {
+            "tempo": "7-17s",
+            "rotulo": "SITUAÇÃO",
+            "fala": "Quem cresceu a resolver tudo por conta própria sente que pedir ajuda expõe uma falha. Por isso adia e só fala quando já não aguenta mais.",
+            "tela": "Resolver tudo por tua conta não é força. É proteção antiga.",
+            "camera": "Mantém plano de peito, leve aproximação na frase 'Isto não é força de carácter', mão a gesticular de forma contida."
+          },
+          {
+            "tempo": "17-24s",
+            "rotulo": "CTA",
+            "fala": "O automático reage. A essência escolhe. Repara na próxima vez que adiares um pedido de ajuda.",
+            "tela": "Repara na próxima vez que adiares.",
+            "camera": "Volta ao plano inicial, ritmo mais lento, pausa antes do corte final."
+          }
+        ]
+      },
+      "duracao": 30,
+      "cta": null,
+      "agendado_para": null
+    }
+  },
+  "carrossel": {
+    "id": 12,
+    "tema": "A culpa que aparece quando paro para descansar",
+    "gerado": {
+      "ok": true,
+      "id": 12,
+      "serie": "PADRÕES EM PILOTO AUTOMÁTICO",
+      "legenda": "A meio de uma tarefa simples, já sentes que devias estar a resolver outra coisa.\n\nÉ sábado de manhã. Estás no sofá, chávena na mão, e em vez de descansares, começas a fazer contas à lista do que falta.\n\nO corpo parou. A cabeça não.\n\nNão é falta de organização. É a crença antiga de que só mereces lugar quando estás a ser útil a alguém.\n\nPor isso parar ativa um alarme. Não porque descansar seja errado, mas porque uma parte de ti aprendeu que parar é arriscar deixarem de precisar de ti.\n\nReconhecer isto não significa deixar de sentir a culpa amanhã. Significa começar a distinguir o alarme da verdade.\n\nHoje, repara: quando paras, o que é que a culpa te diz que vais perder?",
+      "primeiro_comentario": "O que costuma aparecer primeiro quando paras: culpa, inquietação ou a lista mental do que falta fazer?",
+      "slides": [
+        {
+          "tipo": "capa",
+          "titulo": "Paras dez minutos e já sentes culpa. **Isso não é preguiça.**",
+          "subtitulo": "É um automatismo a proteger-te",
+          "sintese": "PILOTO AUTOMÁTICO EM AÇÃO",
+          "imagem_ideia": "pessoa sentada no sofá com chávena de café, corpo parado mas olhar tenso, luz de manhã de sábado"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O corpo parou. **A cabeça continua a trabalhar.**",
+          "corpo": "Olhas para o telemóvel. Pensas na lista por fazer. Sentes que devias estar a adiantar trabalho, não a descansar.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "mão a segurar telemóvel com lista de tarefas, fundo desfocado de sala de estar calma"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Não é falta de organização.",
+          "corpo": "É a sensação de que, se parares, deixas de ser **útil**. E se deixas de ser útil, deixas de ter lugar.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "cadeira vazia numa cozinha arrumada, sensação de ausência"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Esta proteção teve uma função.",
+          "corpo": "Aprendeste cedo que o teu valor dependia de fazer, ajudar, resolver. Descansar nunca foi ensinado como seguro.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "foto antiga desfocada de infância, tons sépia, sugerindo memória"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O automático confunde descanso com ameaça.",
+          "corpo": "Por isso a culpa aparece antes de a cabeça escolher. É o corpo a reagir, não a essência a decidir.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "close em mãos apertadas sobre o colo, tensão visível, fundo neutro"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Compreender isto não apaga a culpa amanhã.",
+          "corpo": "Mas separa duas vozes: a que protege do passado e a que escolhe no presente.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "duas sombras sobrepostas na parede, uma mais nítida que a outra"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "A essência não precisa de provar nada para descansar.",
+          "corpo": "**Permitir-te** parar não é desistir de nada. É reconhecer que já fizeste o suficiente.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "pessoa deitada no sofá, olhos fechados, luz suave, expressão tranquila"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Não precisas de esperar sentir-te confiante para parar.",
+          "corpo": "A confiança para descansar sem culpa constrói-se cada vez que escolhes parar e não desapareces por isso.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "relógio de parede sem pressa, luz dourada de fim de tarde"
+        },
+        {
+          "tipo": "fecho",
+          "titulo": "**A confiança constrói-se na raiz.**",
+          "imagem_ideia": "espaço vazio e sereno, cadeira junto a janela com luz natural, clima de calma"
+        }
+      ]
+    },
+    "guardado": true,
+    "final": {
+      "id": 12,
+      "tema": "A culpa que aparece quando paro para descansar",
+      "ideia": "",
+      "serie": "Teste da app · 15/11",
+      "layout": "modelo2life",
+      "slides": [
+        {
+          "tipo": "capa",
+          "titulo": "Paras dez minutos e já sentes culpa. **Isso não é preguiça.**",
+          "subtitulo": "É um automatismo a proteger-te",
+          "sintese": "PILOTO AUTOMÁTICO EM AÇÃO",
+          "imagem_ideia": "pessoa sentada no sofá com chávena de café, corpo parado mas olhar tenso, luz de manhã de sábado"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O corpo parou. **A cabeça continua a trabalhar.**",
+          "corpo": "Olhas para o telemóvel. Pensas na lista por fazer. Sentes que devias estar a adiantar trabalho, não a descansar.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "mão a segurar telemóvel com lista de tarefas, fundo desfocado de sala de estar calma"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Não é falta de organização.",
+          "corpo": "É a sensação de que, se parares, deixas de ser **útil**. E se deixas de ser útil, deixas de ter lugar.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "cadeira vazia numa cozinha arrumada, sensação de ausência"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Esta proteção teve uma função.",
+          "corpo": "Aprendeste cedo que o teu valor dependia de fazer, ajudar, resolver. Descansar nunca foi ensinado como seguro.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "foto antiga desfocada de infância, tons sépia, sugerindo memória"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O automático confunde descanso com ameaça.",
+          "corpo": "Por isso a culpa aparece antes de a cabeça escolher. É o corpo a reagir, não a essência a decidir.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "close em mãos apertadas sobre o colo, tensão visível, fundo neutro"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Compreender isto não apaga a culpa amanhã.",
+          "corpo": "Mas separa duas vozes: a que protege do passado e a que escolhe no presente.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "duas sombras sobrepostas na parede, uma mais nítida que a outra"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "A essência não precisa de provar nada para descansar.",
+          "corpo": "**Permitir-te** parar não é desistir de nada. É reconhecer que já fizeste o suficiente.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "pessoa deitada no sofá, olhos fechados, luz suave, expressão tranquila"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Não precisas de esperar sentir-te confiante para parar.",
+          "corpo": "A confiança para descansar sem culpa constrói-se cada vez que escolhes parar e não desapareces por isso.",
+          "sintese": "",
+          "alinhar": "centro",
+          "imagem_ideia": "relógio de parede sem pressa, luz dourada de fim de tarde"
+        },
+        {
+          "tipo": "fecho",
+          "titulo": "**A confiança constrói-se na raiz.**",
+          "imagem_ideia": "espaço vazio e sereno, cadeira junto a janela com luz natural, clima de calma"
+        }
+      ],
+      "legenda": "A meio de uma tarefa simples, já sentes que devias estar a resolver outra coisa.\n\nÉ sábado de manhã. Estás no sofá, chávena na mão, e em vez de descansares, começas a fazer contas à lista do que falta.\n\nO corpo parou. A cabeça não.\n\nNão é falta de organização. É a crença antiga de que só mereces lugar quando estás a ser útil a alguém.\n\nPor isso parar ativa um alarme. Não porque descansar seja errado, mas porque uma parte de ti aprendeu que parar é arriscar deixarem de precisar de ti.\n\nReconhecer isto não significa deixar de sentir a culpa amanhã. Significa começar a distinguir o alarme da verdade.\n\nHoje, repara: quando paras, o que é que a culpa te diz que vais perder?",
+      "status": "rascunho",
+      "criado_em": "2026-11-15T22:54:06.109Z",
+      "atualizado_em": "2026-11-15T22:54:06.238Z",
+      "tom": "clara",
+      "foto": null,
+      "comentario": "O que costuma aparecer primeiro quando paras: culpa, inquietação ou a lista mental do que falta fazer?",
+      "formato": "carrossel",
+      "funcao": null,
+      "nivel": null,
+      "avanco": null,
+      "roteiro": null,
+      "duracao": null,
+      "cta": null,
+      "agendado_para": null
+    }
+  }
+}

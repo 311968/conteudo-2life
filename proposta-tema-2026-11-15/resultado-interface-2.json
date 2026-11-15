@@ -1,0 +1,303 @@
+{
+  "reel": {
+    "id": 7,
+    "tema": "Pedir ajuda sem sentir que estou a falhar",
+    "aberturas": {
+      "ok": true,
+      "ganchos": [
+        {
+          "tipo": "problema",
+          "frase": "Precisas de ajuda e dizes que ainda consegues resolver por tua conta.",
+          "tela": "\"Ainda consigo sozinho.\"",
+          "situacao": "Adias o pedido, carregas mais um bocado, justificas que não é assim tão grave.",
+          "porque": "A frase interna é imediatamente reconhecível e dispensa explicação prévia.",
+          "recomendado": true
+        },
+        {
+          "tipo": "contraintuitiva",
+          "frase": "Pedir ajuda não é a prova de que falhaste. É a prova de que confias.",
+          "tela": "Pedir ajuda não é falhar",
+          "situacao": "Precisas de apoio, mas calas, porque pedir parece admitir que não deste conta.",
+          "porque": "Contesta a crença de que pedir ajuda expõe incompetência, abrindo espaço para outra leitura.",
+          "recomendado": false
+        },
+        {
+          "tipo": "curiosidade",
+          "frase": "Há uma razão para custar tanto pedir ajuda. Não é falta de coragem.",
+          "tela": "Porque custa tanto pedir ajuda",
+          "situacao": "Precisas de apoio, calculas o que vais parecer, e acabas por resolver tudo por tua conta outra vez.",
+          "resposta": "O teu valor ficou ligado a seres capaz sem ajuda. Pedir ativa o medo de deixar de ser visto como competente.",
+          "porque": "O mecanismo é invisível para quem o vive, e a curiosidade convida a descobrir a raiz antes do CTA.",
+          "recomendado": false
+        }
+      ],
+      "recomendada": 0,
+      "razao": "A situação de adiar o pedido de ajuda e justificar-se é tão reconhecível que a identificação direta funciona melhor do que qualquer rodeio."
+    },
+    "roteiro": {
+      "ok": true,
+      "blocos": [
+        {
+          "tempo": "0-5s",
+          "rotulo": "ABERTURA",
+          "fala": "Precisas de ajuda e dizes que ainda consegues resolver por tua conta.",
+          "tela": "Ainda consigo sozinho.",
+          "camera": "Plano de peito, câmara frontal, olhar direto, sem movimento."
+        },
+        {
+          "tempo": "5-22s",
+          "rotulo": "SITUAÇÃO",
+          "fala": "Adias o pedido. Carregas mais um bocado. Achas que pedir ajuda é mostrar que não és capaz. Mas pedir ajuda não é fraqueza, é reconhecer que fazes parte de um sistema. Esse automatismo protegeu-te um dia. Hoje só te deixa mais sozinho.",
+          "tela": "Pedir ajuda não é falhar.",
+          "camera": "Plano médio, leve aproximação lenta até ao final da fala."
+        },
+        {
+          "tempo": "22-27s",
+          "rotulo": "CTA",
+          "fala": "O automático reage. A essência escolhe. Se isto te faz sentido, manda-me mensagem.",
+          "tela": "Manda-me mensagem.",
+          "camera": "Volta ao plano de peito, câmara fixa, tom calmo e direto."
+        }
+      ],
+      "legenda": "\"Se eu pedir, vão achar que não consigo.\" É essa a frase que te prende, muito antes de a dizeres em voz alta.\n\nHá quem cresça a aprender que pedir ajuda é mostrar fragilidade. E que o valor se mede pela quantidade de coisas que consegues resolver sem ninguém.\n\nEsse automatismo teve uma função: manteve-te competente aos olhos dos outros, manteve-te em segurança. Mas também te manteve sem ninguém a ajudar-te a carregar o que não precisavas de carregar sozinho.\n\nReconhecer isto não é fraqueza. É o primeiro passo para deixares de reagir a partir do medo de pareceres incapaz.\n\nA confiança constrói-se na raiz.\n\nSe isto te faz sentido, manda-me mensagem.",
+      "primeiro_comentario": "Qual é a frase que repetes a ti próprio antes de pedir ajuda?",
+      "capa": {
+        "intro": "Ainda consigo sozinho.",
+        "titulo": "Pedir ajuda não é falhar",
+        "manuscrita": "a raiz disto"
+      },
+      "imagem_ideia": "Simone em plano de peito, fundo neutro e claro, luz suave frontal, expressão serena e direta, sem adereços, olhar fixo na câmara.",
+      "duracao_estimada": 27
+    },
+    "guardado": true,
+    "final": {
+      "id": 7,
+      "tema": "Pedir ajuda sem sentir que estou a falhar",
+      "ideia": "",
+      "serie": "Teste da app · 15/11",
+      "layout": "post",
+      "slides": [
+        {
+          "tipo": "frase",
+          "intro": "Ainda consigo sozinho.",
+          "titulo": "Pedir ajuda não é falhar",
+          "manuscrita": "a raiz disto",
+          "imagem_ideia": "Simone em plano de peito, fundo neutro e claro, luz suave frontal, expressão serena e direta, sem adereços, olhar fixo na câmara."
+        }
+      ],
+      "legenda": "\"Se eu pedir, vão achar que não consigo.\" É essa a frase que te prende, muito antes de a dizeres em voz alta.\n\nHá quem cresça a aprender que pedir ajuda é mostrar fragilidade. E que o valor se mede pela quantidade de coisas que consegues resolver sem ninguém.\n\nEsse automatismo teve uma função: manteve-te competente aos olhos dos outros, manteve-te em segurança. Mas também te manteve sem ninguém a ajudar-te a carregar o que não precisavas de carregar sozinho.\n\nReconhecer isto não é fraqueza. É o primeiro passo para deixares de reagir a partir do medo de pareceres incapaz.\n\nA confiança constrói-se na raiz.\n\nSe isto te faz sentido, manda-me mensagem.",
+      "status": "rascunho",
+      "criado_em": "2026-11-15T22:47:47.068Z",
+      "atualizado_em": "2026-11-15T22:48:15.631Z",
+      "tom": "clara",
+      "foto": null,
+      "comentario": "Qual é a frase que repetes a ti próprio antes de pedir ajuda?",
+      "formato": "reels",
+      "funcao": null,
+      "nivel": null,
+      "avanco": null,
+      "roteiro": {
+        "blocos": [
+          {
+            "tempo": "0-5s",
+            "rotulo": "ABERTURA",
+            "fala": "Precisas de ajuda e dizes que ainda consegues resolver por tua conta.",
+            "tela": "Ainda consigo sozinho.",
+            "camera": "Plano de peito, câmara frontal, olhar direto, sem movimento."
+          },
+          {
+            "tempo": "5-22s",
+            "rotulo": "SITUAÇÃO",
+            "fala": "Adias o pedido. Carregas mais um bocado. Achas que pedir ajuda é mostrar que não és capaz. Mas pedir ajuda não é fraqueza, é reconhecer que fazes parte de um sistema. Esse automatismo protegeu-te um dia. Hoje só te deixa mais sozinho.",
+            "tela": "Pedir ajuda não é falhar.",
+            "camera": "Plano médio, leve aproximação lenta até ao final da fala."
+          },
+          {
+            "tempo": "22-27s",
+            "rotulo": "CTA",
+            "fala": "O automático reage. A essência escolhe. Se isto te faz sentido, manda-me mensagem.",
+            "tela": "Manda-me mensagem.",
+            "camera": "Volta ao plano de peito, câmara fixa, tom calmo e direto."
+          }
+        ]
+      },
+      "duracao": 30,
+      "cta": null,
+      "agendado_para": null
+    }
+  },
+  "carrossel": {
+    "id": 8,
+    "tema": "A culpa que aparece quando paro para descansar",
+    "gerado": {
+      "ok": true,
+      "id": 8,
+      "serie": "PADRÕES EM PAUSA",
+      "legenda": "Reconheces o gesto: mais uma tarefa adiada só para não parar de todo.\n\nIsto não é gestão de tempo. É uma crença antiga a trabalhar.\n\nPara muita gente, descansar nunca foi neutro. Foi preciso merecer. Foi preciso terminar tudo primeiro. Foi preciso provar que valia a pena existir, antes de existir sem fazer nada.\n\nEssa crença protegeu-te nalgum momento. Evitaste críticas, garantiste lugar, mantiveste o amor por perto.\n\nMas hoje, essa mesma proteção transforma o descanso num risco, e não num direito.\n\nReparar nisto já é um movimento. Não precisas de resolver a crença toda hoje. Precisas de a ver a acontecer.\n\nDa próxima vez que parares e vier a culpa, experimenta só observar o pensamento, sem lhe obedecer de imediato.\n\nConta nos comentários: o que costuma vir primeiro quando paras, culpa ou alívio?",
+      "primeiro_comentario": "O que costuma vir primeiro quando paras: culpa ou alívio?",
+      "slides": [
+        {
+          "tipo": "capa",
+          "titulo": "Paras. **E a culpa chega antes do descanso.**",
+          "subtitulo": "É um padrão a proteger-te de uma dor antiga.",
+          "sintese": "A CULPA DE DESCANSAR",
+          "imagem_ideia": "pessoa sentada no sofá a meio da tarde, chávena na mão, olhar tenso para o telemóvel ao lado, luz natural suave"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Sentas-te. Dois minutos depois, já pensas na lista por fazer.",
+          "corpo": "O corpo parou. A cabeça continua a trabalhar. Isso não é falta de disciplina, é um alarme interno ligado.",
+          "sintese": "O CORPO PARA, A CABEÇA NÃO",
+          "alinhar": "centro",
+          "imagem_ideia": "close em mãos sobre um livro fechado, olhar desfocado ao fundo, ambiente de sala tranquila"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Há uma voz que diz: **\"ainda não mereces parar\".**",
+          "corpo": "Essa voz nasceu nalgum momento em que parar foi visto como fraqueza, ou como falta ao que se esperava de ti.",
+          "sintese": "UMA VOZ ANTIGA",
+          "alinhar": "centro",
+          "imagem_ideia": "janela com cortina meio fechada, luz entrando em feixe, cadeira vazia ao lado"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O corpo para. **A cabeça insiste que falta clareza.**",
+          "corpo": "Não é falta de vontade de parar. É um **automatismo** que aprendeu a associar valor a produzir sem interrupção.",
+          "sintese": "PRODUZIR VIROU IDENTIDADE",
+          "alinhar": "centro",
+          "imagem_ideia": "mesa de trabalho com agenda aberta e um relógio, cadeira vazia empurrada para trás"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Esse padrão teve uma função. Evitaste críticas. Garantiste lugar.",
+          "corpo": "Reconhecer isto não é desculpa. É o primeiro passo para deixar de obedecer sem perceber porquê.",
+          "sintese": "PROTEGEU, NÃO DEFINE",
+          "alinhar": "centro",
+          "imagem_ideia": "foto antiga em preto e branco sobre uma mesa, mão a tocar levemente na moldura"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "A culpa não é ordem para voltar ao trabalho. É só um sinal antigo a disparar.",
+          "corpo": "Podes ouvir o sinal e **escolher** continuar parado, sem precisar de o calar primeiro.",
+          "sintese": "A CULPA NÃO MANDA",
+          "alinhar": "centro",
+          "imagem_ideia": "pessoa deitada no sofá com os olhos fechados, respiração calma, luz dourada de fim de tarde"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Muda-se devagar. **Passo a passo, sem pressa.**",
+          "corpo": "Cada vez que paras e não te justificas, estás a construir uma relação nova contigo.",
+          "sintese": "A REPETIÇÃO CONSTRÓI",
+          "alinhar": "centro",
+          "imagem_ideia": "calendário simples com alguns dias marcados discretamente, ambiente neutro"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Não precisas de merecer o descanso. Só precisas de o viver.",
+          "corpo": "A pausa não é prémio por teres feito o suficiente. É parte de quem já és, sem condições.",
+          "sintese": "SEM MERECER, SÓ VIVER",
+          "alinhar": "centro",
+          "imagem_ideia": "chá a fumegar numa chávena sobre a mesa, sem telemóvel por perto, luz suave de manhã"
+        },
+        {
+          "tipo": "fecho",
+          "titulo": "Sem tudo pronto. **A base já é sólida.**",
+          "imagem_ideia": "espaço vazio e calmo, cadeira ao sol, fundo neutro para o logótipo"
+        }
+      ]
+    },
+    "guardado": true,
+    "final": {
+      "id": 8,
+      "tema": "A culpa que aparece quando paro para descansar",
+      "ideia": "",
+      "serie": "Teste da app · 15/11",
+      "layout": "modelo2life",
+      "slides": [
+        {
+          "tipo": "capa",
+          "titulo": "Paras. **E a culpa chega antes do descanso.**",
+          "subtitulo": "É um padrão a proteger-te de uma dor antiga.",
+          "sintese": "A CULPA DE DESCANSAR",
+          "imagem_ideia": "pessoa sentada no sofá a meio da tarde, chávena na mão, olhar tenso para o telemóvel ao lado, luz natural suave"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Sentas-te. Dois minutos depois, já pensas na lista por fazer.",
+          "corpo": "O corpo parou. A cabeça continua a trabalhar. Isso não é falta de disciplina, é um alarme interno ligado.",
+          "sintese": "O CORPO PARA, A CABEÇA NÃO",
+          "alinhar": "centro",
+          "imagem_ideia": "close em mãos sobre um livro fechado, olhar desfocado ao fundo, ambiente de sala tranquila"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Há uma voz que diz: **\"ainda não mereces parar\".**",
+          "corpo": "Essa voz nasceu nalgum momento em que parar foi visto como fraqueza, ou como falta ao que se esperava de ti.",
+          "sintese": "UMA VOZ ANTIGA",
+          "alinhar": "centro",
+          "imagem_ideia": "janela com cortina meio fechada, luz entrando em feixe, cadeira vazia ao lado"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O corpo para. **A cabeça insiste que falta clareza.**",
+          "corpo": "Não é falta de vontade de parar. É um **automatismo** que aprendeu a associar valor a produzir sem interrupção.",
+          "sintese": "PRODUZIR VIROU IDENTIDADE",
+          "alinhar": "centro",
+          "imagem_ideia": "mesa de trabalho com agenda aberta e um relógio, cadeira vazia empurrada para trás"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Esse padrão teve uma função. Evitaste críticas. Garantiste lugar.",
+          "corpo": "Reconhecer isto não é desculpa. É o primeiro passo para deixar de obedecer sem perceber porquê.",
+          "sintese": "PROTEGEU, NÃO DEFINE",
+          "alinhar": "centro",
+          "imagem_ideia": "foto antiga em preto e branco sobre uma mesa, mão a tocar levemente na moldura"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "A culpa não é ordem para voltar ao trabalho. É só um sinal antigo a disparar.",
+          "corpo": "Podes ouvir o sinal e **escolher** continuar parado, sem precisar de o calar primeiro.",
+          "sintese": "A CULPA NÃO MANDA",
+          "alinhar": "centro",
+          "imagem_ideia": "pessoa deitada no sofá com os olhos fechados, respiração calma, luz dourada de fim de tarde"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Muda-se devagar. **Passo a passo, sem pressa.**",
+          "corpo": "Cada vez que paras e não te justificas, estás a construir uma relação nova contigo.",
+          "sintese": "A REPETIÇÃO CONSTRÓI",
+          "alinhar": "centro",
+          "imagem_ideia": "calendário simples com alguns dias marcados discretamente, ambiente neutro"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Não precisas de merecer o descanso. Só precisas de o viver.",
+          "corpo": "A pausa não é prémio por teres feito o suficiente. É parte de quem já és, sem condições.",
+          "sintese": "SEM MERECER, SÓ VIVER",
+          "alinhar": "centro",
+          "imagem_ideia": "chá a fumegar numa chávena sobre a mesa, sem telemóvel por perto, luz suave de manhã"
+        },
+        {
+          "tipo": "fecho",
+          "titulo": "Sem tudo pronto. **A base já é sólida.**",
+          "imagem_ideia": "espaço vazio e calmo, cadeira ao sol, fundo neutro para o logótipo"
+        }
+      ],
+      "legenda": "Reconheces o gesto: mais uma tarefa adiada só para não parar de todo.\n\nIsto não é gestão de tempo. É uma crença antiga a trabalhar.\n\nPara muita gente, descansar nunca foi neutro. Foi preciso merecer. Foi preciso terminar tudo primeiro. Foi preciso provar que valia a pena existir, antes de existir sem fazer nada.\n\nEssa crença protegeu-te nalgum momento. Evitaste críticas, garantiste lugar, mantiveste o amor por perto.\n\nMas hoje, essa mesma proteção transforma o descanso num risco, e não num direito.\n\nReparar nisto já é um movimento. Não precisas de resolver a crença toda hoje. Precisas de a ver a acontecer.\n\nDa próxima vez que parares e vier a culpa, experimenta só observar o pensamento, sem lhe obedecer de imediato.\n\nConta nos comentários: o que costuma vir primeiro quando paras, culpa ou alívio?",
+      "status": "rascunho",
+      "criado_em": "2026-11-15T22:48:15.584Z",
+      "atualizado_em": "2026-11-15T22:48:15.684Z",
+      "tom": "clara",
+      "foto": null,
+      "comentario": "O que costuma vir primeiro quando paras: culpa ou alívio?",
+      "formato": "carrossel",
+      "funcao": null,
+      "nivel": null,
+      "avanco": null,
+      "roteiro": null,
+      "duracao": null,
+      "cta": null,
+      "agendado_para": null
+    }
+  }
+}

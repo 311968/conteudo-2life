@@ -56,11 +56,13 @@ APP = [
      """const CAMPOS_POR_LAYOUT = {
   modelo2life: {
     capa:     [['titulo', 'Título (frase de viragem entre **asteriscos**)', 'input'], ['subtitulo', 'Subtítulo', 'input'],
-               ['sintese', 'Síntese em versaletes (opcional)', 'input']],
+               ['sintese', 'Síntese em versaletes (opcional)', 'input'],
+               ['logotipo', 'Logótipo: selo (por defeito), completo (só sem foto) ou sem', 'input']],
     interior: [['titulo', 'Título (parte a realçar entre **asteriscos**)', 'input'], ['corpo', 'Texto', 'textarea'],
                ['sintese', 'Síntese em versaletes (opcional)', 'input'], ['alinhar', 'Alinhar: centro ou esquerda', 'input']],
     fecho:    [['titulo', 'Frase final (viragem entre **asteriscos**)', 'input'],
-               ['foto_fecho', 'Foto no fecho? (sim só se a foto tiver zona calma)', 'input']],
+               ['foto_fecho', 'Foto no fecho? sim só se a foto tiver zona calma, fora do rosto; senão, fica em Marfim', 'input'],
+               ['logotipo', 'Logótipo: completo (por defeito) ou sem, se já estiver completo na capa', 'input']],
   },
 """),
     ("  layout3: [],\n  post: ['foto', 'lateral'],", "  layout3: [],\n  modelo2life: ['capa', 'fecho'],\n  post: ['foto', 'lateral'],"),

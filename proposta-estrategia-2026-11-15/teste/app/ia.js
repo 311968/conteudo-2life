@@ -102,7 +102,7 @@ function faltaAcento(json) {
   return suspeitos >= 2;
 }
 
-async function corrigirAcentos(json, client) {
+async function corrigirSoAcentos(json, client) {
   if (!faltaAcento(json)) return json;
 
   const textos = textosDoJson(json);
@@ -142,6 +142,291 @@ async function corrigirAcentos(json, client) {
   return repor(json);
 }
 
+// ---------- REVISAO DE LINGUAGEM 2Life (proposta de 15/11/2026) ----------
+// Corre no fim de cada geracao, depois dos acentos. Primeiro procura, sem IA, as frases com problemas
+// (regras da Hierarquia §5 e da Matriz de Comunicacao). So se encontrar alguma, pede a IA que reescreva
+// APENAS essas frases. Sem problemas, nao ha pedido extra nem custo.
+// Limites de palavra que reconhecem letras acentuadas (o \b do JavaScript nao as reconhece).
+// String.raw guarda as barras invertidas tal como estão escritas.
+const I = String.raw`(?<![\p{L}\d])`;
+const F = String.raw`(?![\p{L}\d])`;
+const pal = (corpo) => new RegExp(I + '(?:' + corpo + ')' + F, 'iu');
+const PRATICA = 'ouço|oiço|vejo|recebo|acompanho|atendo|escuto';
+const FREQ = 'todas as semanas|todos os dias|todas as sessões|quase sempre|tantas vezes|muitas vezes|vezes sem conta';
+const REGRAS_LINGUAGEM = [
+  { re: pal('talvez'), regra: 'tem "talvez": afirma com clareza ou retira a hesitação' },
+  { re: pal('às vezes'), regra: 'tem "às vezes": substitui por uma formulação concreta (por exemplo "há dias em que", "quando")' },
+  { re: pal('algo'), regra: 'tem "algo": nomeia a coisa concreta de que se fala' },
+  { re: /[—–]/u, regra: 'tem travessão: usa vírgula, dois pontos ou ponto final' },
+  { re: pal('vocês?'), regra: 'tem "você": trata a pessoa por "tu"' },
+  // Formas com genero dirigidas a pessoa, no feminino ou no masculino (quarta ronda: tambem "seres", "estares")
+  { re: pal(String.raw`(?:és|estás|ficas|ficaste|foste|estavas|eras|seres|estares|ficares|sentes-te|sentiste-te|sentires-te|te sentes|te sentiste)(?:\s+(?:tão|muito|mais|sempre|logo|já|outra vez))?\s+(?!(?:uma|minha|tua|sua|nossa|toda|outra|pessoa|um|meu|teu|seu|nosso|todo|outro)` + F + String.raw`)\p{L}*(?:ada|ida|osa|inha|esa|usta|ado|ido|oso|inho|usto)`),
+    regra: 'fala com a pessoa só num género: o público inclui homens e mulheres; reescreve sem marca de género (por exemplo "não tens de", "sem companhia", "de te desiludirem")' },
+  // Numeros e frequencias sobre a pratica da Simone (nao apanha "repete isto todos os dias")
+  { re: new RegExp(String.raw`\d+\s?%|` + I + '(?:' + PRATICA + ')' + F + '[^.!?]{0,40}' + I + '(?:' + FREQ + ')' + F + '|'
+      + I + '(?:' + FREQ + ')' + F + '[^.!?]{0,40}' + I + '(?:' + PRATICA + ')' + F + '|'
+      + I + '(?:a maioria|muitas|imensas) (?:das pessoas|pessoas|clientes|alunas?|alunos) (?:que|com quem) (?:acompanho|atendo|recebo)' + F + '|'
+      + I + String.raw`\d+ (?:pessoas|clientes|alunas?|alunos|casos|sessões)` + F, 'iu'),
+    regra: 'afirma um número ou uma frequência que não foi dado: retira esse dado e mantém a ideia sem quantificar' },
+  // Experiencia em sessao afirmada (a R3 usa so o molde "Quando alguem me diz", que nao e apanhado)
+  { re: new RegExp(I + '(?:' + PRATICA + '|ouvi|vi)' + F + '[^.!?]{0,40}' + I + '(?:em sessão|nas sessões|no consultório|nas minhas sessões)' + F + '|'
+      + I + '(?:em sessão|nas sessões|no consultório|nas minhas sessões)' + F + '[^.!?]{0,40}' + I + '(?:' + PRATICA + '|ouvi|vi)' + F, 'iu'),
+    regra: 'afirma o que a Simone ouve ou vê em sessão, um dado que não foi dado: retira essa afirmação e mantém a ideia' },
+  // Grafia e construcoes do Brasil (quarta ronda, 15/11/2026)
+  { re: pal(String.raw`decepç\p{L}*|decepcion\p{L}*|contatos?|registros?|equipes?|celulares?|planej\p{L}*|ônibus|cardápios?|xícaras?|banheiros?|geladeiras?|esportes?|café da manhã|tela do celular`),
+    regra: 'tem uma grafia ou palavra do Brasil: escreve como em Portugal (por exemplo dececionar, deceção, contacto, registo, equipa, telemóvel, planear)' },
+  { re: pal(String.raw`(?:estou|estás|está|estamos|estão|estava|estavas|fico|ficas|fica|ando|andas|anda|continuo|continuas|continua)\s+\p{L}+ndo`),
+    regra: 'usa o gerúndio do Brasil ("estás fazendo"): escreve como em Portugal ("estás a fazer")' },
+  // Hifen em falta ou pronome antes do verbo a maneira do Brasil ("chama se", "a pessoa se sente")
+  { re: new RegExp(I + String.raw`(?!(?:que|não|já|também|como|onde|quando|porque|se|nunca|sempre|ainda|mais|só|quem|ninguém|alguém|tudo|isto|isso|nada|cada|bem|mal|logo|e|ou|mas|nem|de|em|por|para|com|sem|qualquer|todo|toda|muito|pouco|tanto|assim|lhe|me|te|nos|eu|tu|ele|ela)` + F + String.raw`)\p{L}+[aeo]m?\s(?:se|me|te)\s+[*"“'(]*\p{L}{2,}`, 'iu'),
+    regra: 'tem o pronome antes do verbo à maneira do Brasil ou falta o hífen ("chama se", "a pessoa se sente"): escreve como em Portugal ("chama-se", "a pessoa sente-se")' },
+];
+
+// Frases protegidas (Hierarquia §7): a revisao nunca as pode alterar
+const PROTEGIDAS = [
+  'Toda a dificuldade em expandir revela um afastamento da essência.',
+  'A confiança constrói-se na raiz.',
+  'O 2Life transforma aquilo que já sabes sobre ti na confiança para te posicionares, agires e expandires a partir de quem és.',
+  'O automático reage. A essência escolhe. A ação cria evidência. A repetição transforma a identidade.',
+];
+const protegidasEm = (t) => PROTEGIDAS.filter(f => t.includes(f));
+
+function problemasDe(texto) {
+  return REGRAS_LINGUAGEM.filter(r => r.re.test(texto)).map(r => r.regra);
+}
+
+async function reverLinguagem(json, client) {
+  const textos = textosDoJson(json);
+  const marcados = [];
+  textos.forEach((t, i) => { const p = problemasDe(t); if (p.length) marcados.push({ i, texto: t, problemas: p }); });
+  if (!marcados.length) return json;
+
+  let r;
+  try {
+    r = await client.messages.create({
+      model: 'claude-sonnet-5',
+      max_tokens: 6000,
+      system: 'És revisora de linguagem da marca 2Life, em português de Portugal. Recebes frases de um conteúdo já escrito, cada uma com os problemas encontrados. Reescreve cada frase só o necessário para resolver esses problemas: mantém o sentido, o tom, o tamanho aproximado, a pessoa gramatical ("tu") e tudo o que não tem problema. Não acrescentes ideias, números, exemplos nem casos. Não uses travessões. Se a frase contiver uma destas frases protegidas, mantém-na literalmente, sem mudar uma palavra: ' + PROTEGIDAS.map(f => `"${f}"`).join(' ') + ' Devolve exatamente o mesmo número de frases, pela mesma ordem.',
+      tools: [{
+        name: 'devolver_frases',
+        description: 'Devolve as frases revistas, pela mesma ordem.',
+        input_schema: {
+          type: 'object',
+          properties: { frases: { type: 'array', items: { type: 'string' } } },
+          required: ['frases'],
+        },
+      }],
+      tool_choice: { type: 'tool', name: 'devolver_frases' },
+      messages: [{ role: 'user', content: JSON.stringify(marcados.map(m => ({ frase: m.texto, problemas: m.problemas }))) }],
+    });
+  } catch (e) {
+    console.warn('[revisao] pedido falhou, fica o texto original:', e.message);
+    return json;
+  }
+
+  const uso = r.content.find(b => b.type === 'tool_use');
+  const frases = uso && uso.input && uso.input.frases;
+  if (!Array.isArray(frases) || frases.length !== marcados.length) return json;
+
+  const novos = textos.slice();
+  marcados.forEach((m, k) => {
+    const f = frases[k];
+    if (typeof f !== 'string' || !f.trim()) return;
+    // Se a revisao mexeu numa frase protegida, fica o texto original
+    if (protegidasEm(m.texto).some(p => !f.includes(p))) { console.warn('[revisao] frase protegida alterada; fica o original'); return; }
+    novos[m.i] = f;
+  });
+  const resta = novos.filter(t => problemasDe(t).length).length;
+  if (resta) console.warn(`[revisao] ${resta} frase(s) continuam com problemas depois da revisão`);
+
+  // Troca posicao a posicao, na mesma ordem em que foram lidos (igual aos acentos)
+  let n = 0;
+  const repor = (o) => {
+    if (Array.isArray(o)) return o.map(repor);
+    if (o && typeof o === 'object') {
+      const novo = {};
+      for (const k of Object.keys(o)) novo[k] = repor(o[k]);
+      return novo;
+    }
+    if (typeof o === 'string' && o.trim()) return novos[n++];
+    return o;
+  };
+  return repor(json);
+}
+
+// ---------- REVISAO DA PECA (quarta ronda, 15/11/2026) ----------
+// Legenda (Livro §16): a primeira linha acrescenta uma ideia e nao repete a peca.
+// Um so CTA editorial: o primeiro comentario nunca e outro CTA.
+const VAZIAS = new Set(('a o as os um uma uns umas e é de da do das dos em no na nos nas que se não já mais por para com sem ao à aos às '
+  + 'te ti tu teu tua teus tuas me mim eu ele ela isto isso aquilo este esta esse essa foi ser ter tem estás estou está como quando '
+  + 'porque mas ou nem lhe lhes sua seu sobre entre ainda muito alguma algum alguém coisa coisas tudo nada cada depois antes '
+  + 'outra outro sempre também quem onde então assim aqui agora').split(' '));
+const radicais = (t) => new Set((String(t || '').toLowerCase().match(/\p{L}+/gu) || [])
+  .filter(w => w.length >= 4 && !VAZIAS.has(w)).map(w => w.slice(0, 5)));
+// Parte das palavras principais da linha que ja aparece numa lamina ou num bloco (0 a 1)
+function repete(linha, outros) {
+  const a = radicais(linha);
+  if (a.size < 3) return 0;
+  let max = 0;
+  for (const o of outros) {
+    const b = radicais(o);
+    let c = 0;
+    for (const x of a) if (b.has(x)) c++;
+    max = Math.max(max, c / a.size);
+  }
+  return max;
+}
+const REPETE_DEMAIS = 0.34;      // primeira linha da legenda contra cada bloco ou lamina
+const REPETE_PARAGRAFO = 0.7;    // outros paragrafos contra a peca inteira (palavras do tema repetem-se naturalmente)
+
+// A abertura escolhida entra literal no primeiro bloco do roteiro (Livro §6; regra "usa exatamente a fala")
+function fixarAbertura(bruto, gancho) {
+  if (!bruto || !Array.isArray(bruto.blocos) || !bruto.blocos.length || !gancho || !gancho.frase) return bruto;
+  const b0 = { ...bruto.blocos[0], fala: gancho.frase };
+  if (gancho.tela && !bruto.blocos[0].tela) b0.tela = gancho.tela;
+  return { ...bruto, blocos: [b0, ...bruto.blocos.slice(1)] };
+}
+const CTA_COMENTARIO = pal('guarda|guardar|guardes|partilha|partilhar|envia|enviar|manda|mandar|marca|marcar|segue|seguir|clica|link|comenta|comentar|subscreve|inscreve|reserva|candidata');
+const textoDaPeca = (json) => Array.isArray(json.blocos) ? json.blocos.map(b => b.fala || '')
+  : Array.isArray(json.slides) ? json.slides.map(s => [s.titulo, s.subtitulo, s.corpo].filter(Boolean).join(' ').replace(/\*\*/g, '')) : [];
+
+async function reverPeca(json, client) {
+  if (!json || typeof json !== 'object' || typeof json.legenda !== 'string') return json;
+  const peca = textoDaPeca(json);
+  const pars = json.legenda.split('\n');
+  const iPrim = pars.findIndex(p => p.trim());
+  const pedidos = [];
+  if (iPrim >= 0 && peca.length && repete(pars[iPrim], peca) >= REPETE_DEMAIS) {
+    pedidos.push({ campo: 'primeira_linha', texto: pars[iPrim],
+      problema: 'repete ou parafraseia a peça. Reescreve-a para acrescentar uma ideia que a peça não diz (outra situação reconhecível ligada ao mesmo mecanismo, ou o significado por trás dela), até 125 caracteres, sem repetir as palavras principais da peça.' });
+  }
+  // Paragrafos do meio que repetem frases da peca (quarta ronda). A ultima linha e o CTA e fica igual.
+  const iUlt = pars.map(p => p.trim()).lastIndexOf(pars.filter(p => p.trim()).slice(-1)[0] || '');
+  const tudoDaPeca = [peca.join(' ')];
+  pars.forEach((p, i) => {
+    if (!p.trim() || i === iPrim || i === iUlt || radicais(p).size < 4) return;
+    if (repete(p, tudoDaPeca) >= REPETE_PARAGRAFO) {
+      pedidos.push({ campo: 'paragrafo', i, texto: p,
+        problema: 'repete uma frase da peça. Reescreve-o para aprofundar a mesma ideia com outras palavras ou para acrescentar o que a peça não diz, com o mesmo tamanho aproximado.' });
+    }
+  });
+  if (typeof json.primeiro_comentario === 'string' && CTA_COMENTARIO.test(json.primeiro_comentario)) {
+    pedidos.push({ campo: 'primeiro_comentario', texto: json.primeiro_comentario,
+      problema: 'é outro CTA. Reescreve-o como uma pergunta curta que convida a pessoa a olhar para a própria experiência, sem pedir nenhuma ação.' });
+  }
+  if (!pedidos.length) return json;
+
+  let r;
+  try {
+    r = await client.messages.create({
+      model: 'claude-sonnet-5',
+      max_tokens: 1500,
+      system: 'És revisora editorial da marca 2Life, em português de Portugal, a tratar a pessoa por "tu". Recebes uma peça (vídeo ou carrossel), a sua legenda e um ou mais textos a reescrever, cada um com o problema. Reescreve só esses textos. Sem "algo", "talvez" ou "às vezes", sem travessões, sem números nem experiência em sessão que não estejam na peça, sem hashtags. Devolve os textos pela mesma ordem.',
+      tools: [{
+        name: 'devolver_textos_peca',
+        description: 'Devolve os textos reescritos, pela mesma ordem.',
+        input_schema: { type: 'object', properties: { textos: { type: 'array', items: { type: 'string' } } }, required: ['textos'] },
+      }],
+      tool_choice: { type: 'tool', name: 'devolver_textos_peca' },
+      messages: [{ role: 'user', content: JSON.stringify({ peca: peca.join('\n'), legenda: json.legenda,
+        reescrever: pedidos.map(p => ({ texto: p.texto, problema: p.problema })) }) }],
+    });
+  } catch (e) {
+    console.warn('[revisao] pedido da peça falhou, fica o texto original:', e.message);
+    return json;
+  }
+  const uso = r.content.find(b => b.type === 'tool_use');
+  const textos = uso && uso.input && uso.input.textos;
+  if (!Array.isArray(textos) || textos.length !== pedidos.length) return json;
+
+  const novo = { ...json };
+  pedidos.forEach((p, k) => {
+    const t = typeof textos[k] === 'string' ? textos[k].trim() : '';
+    if (!t) return;
+    if (p.campo === 'primeira_linha') {
+      if (repete(t, peca) >= REPETE_DEMAIS) console.warn('[revisao] a primeira linha da legenda continua perto da peça');
+      pars[iPrim] = t;
+      novo.legenda = pars.join('\n');
+    } else if (p.campo === 'paragrafo') {
+      if (repete(t, tudoDaPeca) >= REPETE_PARAGRAFO) console.warn('[revisao] um parágrafo da legenda continua a repetir a peça');
+      pars[p.i] = t;
+      novo.legenda = pars.join('\n');
+    } else if (p.campo === 'primeiro_comentario') {
+      if (CTA_COMENTARIO.test(t)) { console.warn('[revisao] o primeiro comentário continua a pedir uma ação'); return; }
+      novo.primeiro_comentario = t;
+    }
+  });
+  return novo;
+}
+
+// ---------- DURACAO DOS REELS (quarta ronda, 15/11/2026) ----------
+// Metrica da app: 2,5 palavras por segundo, a ritmo calmo. Se a fala passar o limite, encurta os blocos do meio
+// (a abertura escolhida e o CTA ficam iguais). No fim, os tempos dos blocos passam a ser os estimados.
+const PALAVRAS_SEGUNDO = 2.5;
+const palavras = (t) => (String(t || '').match(/[\p{L}\d]+(?:[-’'][\p{L}]+)*/gu) || []).length;
+
+function marcarTempos(json) {
+  let t = 0;
+  const blocos = json.blocos.map(b => {
+    const a = t;
+    t += palavras(b.fala) / PALAVRAS_SEGUNDO;
+    return { ...b, tempo: `${Math.round(a)}-${Math.round(t)}s` };
+  });
+  return { ...json, blocos, duracao_estimada: Math.round(t) };
+}
+
+async function ajustarReel(json, duracao, client) {
+  if (!json || !Array.isArray(json.blocos) || json.blocos.length < 3) return json;
+  const limite = Math.floor((Number(duracao) || 30) * PALAVRAS_SEGUNDO);
+  let atual = json;
+  for (let tentativa = 0; tentativa < 2; tentativa++) {
+    const b = atual.blocos;
+    const total = b.reduce((s, x) => s + palavras(x.fala), 0);
+    if (total <= limite) break;
+    const fixas = palavras(b[0].fala) + palavras(b[b.length - 1].fala);
+    const meio = b.slice(1, -1);
+    const somaMeio = total - fixas;
+    const alvo = Math.floor(limite * 0.95) - fixas;
+    if (alvo <= meio.length * 6) { console.warn('[revisao] a abertura e o CTA já ocupam quase todo o tempo'); break; }
+    const metas = meio.map(x => Math.max(6, Math.floor(palavras(x.fala) * alvo / somaMeio)));
+    let r;
+    try {
+      r = await client.messages.create({
+        model: 'claude-sonnet-5',
+        max_tokens: 2500,
+        system: 'Encurtas a fala de blocos de um reel da marca 2Life, em português de Portugal, a tratar a pessoa por "tu", para o vídeo caber no tempo. Cada bloco tem um máximo de palavras. Mantém a função de cada bloco (o rótulo) e o sentido; corta repetições e explicações a mais; não acrescentes nada. Frases protegidas ficam literais: ' + PROTEGIDAS.map(f => `"${f}"`).join(' ') + ' Sem "algo", "talvez", "às vezes" nem travessões. Devolve as falas pela mesma ordem.',
+        tools: [{
+          name: 'devolver_falas',
+          description: 'Devolve as falas encurtadas, pela mesma ordem.',
+          input_schema: { type: 'object', properties: { falas: { type: 'array', items: { type: 'string' } } }, required: ['falas'] },
+        }],
+        tool_choice: { type: 'tool', name: 'devolver_falas' },
+        messages: [{ role: 'user', content: JSON.stringify(meio.map((x, i) => ({ rotulo: x.rotulo, fala: x.fala, max_palavras: metas[i] }))) }],
+      });
+    } catch (e) {
+      console.warn('[revisao] pedido da duração falhou, fica o texto original:', e.message);
+      break;
+    }
+    const uso = r.content.find(x => x.type === 'tool_use');
+    const falas = uso && uso.input && uso.input.falas;
+    if (!Array.isArray(falas) || falas.length !== meio.length) break;
+    const blocos = b.map((x, i) => {
+      if (i === 0 || i === b.length - 1) return x;
+      const f = typeof falas[i - 1] === 'string' ? falas[i - 1].trim() : '';
+      if (!f || protegidasEm(x.fala).some(p => !f.includes(p))) return x;
+      return { ...x, fala: f };
+    });
+    atual = { ...atual, blocos };
+  }
+  atual = marcarTempos(atual);
+  if (atual.duracao_estimada > Number(duracao || 30)) console.warn(`[revisao] o reel continua com cerca de ${atual.duracao_estimada} s`);
+  return await reverLinguagem(atual, client);
+}
+
+async function corrigirAcentos(json, client) {
+  return await reverPeca(await reverLinguagem(await corrigirSoAcentos(json, client), client), client);
+}
+
 // ---------- GERACAO DO CARROSSEL (Claude) ----------
 function contexto() {
   const linhas = db.prepare('SELECT tipo, conteudo FROM identidade').all();
@@ -176,7 +461,7 @@ ${(c.produtos || '').slice(0, 6000)}
 ## PROVAS (os únicos casos reais que existem)
 ${c.provas || 'Nenhuma prova cadastrada.'}
 
-Estes são os únicos casos que você pode citar. Pode contar a história de uma delas sem dizer o nome ("uma contadora que atendo", "uma dona de loja da mentoria"), mas o fato tem que estar escrito aqui. Se o conteúdo pedir um exemplo que não existe nesta lista, escreva sem exemplo. Inventar cliente é o erro mais grave possível.
+Estes são os únicos casos reais que existem. Só podes contar um deles se estiver escrito aqui, sempre anonimizado. Se o conteúdo pedir um exemplo que não existe nesta lista, escreve sem exemplo. Inventar um caso, um número, uma frequência ou o que se passa em sessão é o erro mais grave possível.
 
 ${alvo}
 
@@ -663,7 +948,7 @@ ${cta ? `O CTA pedido é: ${cta}.` : 'Escolhe um só CTA, proporcional ao movime
     if (o && typeof o === 'object') { const n = {}; for (const k of Object.keys(o)) n[k] = limpar(o[k]); return n; }
     return semTravessao(o);
   };
-  return await corrigirAcentos(limpar(bruto), client);
+  return await ajustarReel(await corrigirAcentos(limpar(fixarAbertura(bruto, gancho)), client), duracao, client);
 }
 
 

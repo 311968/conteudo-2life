@@ -1,0 +1,99 @@
+{
+  "origem": "resultado-final.json (decima ronda) com as alteracoes pedidas pela Simone a 15/11 (segunda revisao dos rascunhos)",
+  "significado": {
+    "blocos": [
+      {
+        "tempo": "0-6s",
+        "rotulo": "ABERTURA",
+        "fala": "Um comentário dura segundos. A leitura que fazes dele pode ficar contigo o dia todo.",
+        "tela": "Não é o facto. É o significado.",
+        "camera": "Plano de peito, câmara frontal, olhar direto para a lente, sem movimento."
+      },
+      {
+        "tempo": "6-18s",
+        "rotulo": "SITUAÇÃO",
+        "fala": "Um comentário direto numa reunião e ficas o dia todo a remoer. A frase não mudou. O que mudou foi a leitura que lhe deste, numa fração de segundo.",
+        "tela": "A frase não mudou.",
+        "camera": "Mantém o plano de peito. Leve aproximação lenta até médio close no fim do bloco."
+      },
+      {
+        "tempo": "18-35s",
+        "rotulo": "MECANISMO",
+        "fala": "Esse significado não nasceu agora. Foi aprendido. Em algum momento, perceberes um erro como ameaça manteve-te a salvo. Hoje, a mesma leitura automática dispara antes de pensares. Não é fraqueza. É proteção. O problema é quando essa leitura decide por ti, sem te consultar.",
+        "tela": "Aprendeste essa leitura. Não nasceste com ela.",
+        "camera": "Plano médio close, estático. Pausa breve antes de \"Não é fraqueza\"."
+      },
+      {
+        "tempo": "35-44s",
+        "rotulo": "NOVA POSSIBILIDADE",
+        "fala": "Quando reconheces essa leitura, podes escolher outra. O automático reage. A essência escolhe. A ação cria evidência. A repetição transforma a identidade.",
+        "tela": "Podes escolher outra leitura.",
+        "camera": "Afasta ligeiramente para plano de peito. Voz mais calma e pausada."
+      },
+      {
+        "tempo": "44-52s",
+        "rotulo": "CTA",
+        "fala": "Guarda este vídeo para o veres da próxima vez que um comentário te ficar a remoer o dia todo.",
+        "tela": "Guarda para a próxima vez.",
+        "camera": "Plano de peito, olhar fixo na câmara, sem movimento até ao corte final."
+      }
+    ],
+    "legenda": "Reescreves uma mensagem três vezes antes de a enviares, a tentar perceber se soou mal.\n\nA mensagem é a mesma nas três versões. O que muda é o significado que imaginas que a outra pessoa lhe vai dar.\n\nEssa leitura automática instalou-se numa altura em que interpretar tudo como ameaça te protegeu de alguma coisa. Uma crítica, uma rejeição, um erro visto por quem importava.\n\nHoje continua a disparar antes de perceberes o que está a acontecer. Não é defeito nem exagero. É uma proteção que já cumpriu a função dela.\n\nReconhecer essa leitura automática é o primeiro passo para deixar de lhe entregar a decisão de como te sentes e como respondes.\n\nA pergunta não é o que aconteceu. É que significado deste a isso, sem teres escolhido conscientemente.\n\nGuarda este vídeo para o veres da próxima vez que um comentário te ficar a remoer o dia todo.",
+    "primeiro_comentario": "Qual foi a última vez que um comentário te ficou a remoer o dia todo?",
+    "capa": {
+      "intro": "Não é o facto que magoa.",
+      "titulo": "É o significado que decidiste que ele tem.",
+      "manuscrita": "aprendido, não nato"
+    },
+    "imagem_ideia": "Simone em plano de peito, luz natural suave, expressão serena e atenta, fundo neutro desfocado, olhar direto para a câmara, sem adereços que distraiam.",
+    "duracao_estimada": 52
+  },
+  "r3": {
+    "blocos": [
+      {
+        "tempo": "0-8s",
+        "rotulo": "ABERTURA",
+        "fala": "Quando alguém me diz \"isto quer dizer que não sou suficiente\", não olho apenas para a frase que acabou de dizer.",
+        "tela": "\"Não sou suficiente\"",
+        "camera": "Plano de peito, câmara frontal, olhar direto para a lente, sem movimento."
+      },
+      {
+        "tempo": "8-22s",
+        "rotulo": "SITUAÇÃO",
+        "fala": "Um email sem resposta. Um projeto que não avançou. Uma pessoa que se afastou. A leitura chega antes de pensar: não sou suficiente. O acontecimento é pequeno. O significado toma conta do corpo.",
+        "tela": "O acontecimento é pequeno. O significado é que pesa.",
+        "camera": "Mantém plano de peito. Pequena pausa antes de \"o significado toma conta do corpo inteiro\", para dar peso à frase."
+      },
+      {
+        "tempo": "22-44s",
+        "rotulo": "MECANISMO",
+        "fala": "Procuro perceber onde essa pessoa aprendeu que um resultado define o seu valor. O facto não diz nada sobre quem és. É a leitura automática, aprendida para te proteger, que decide isso. Quando um filho recebe atenção sobretudo pelos bons resultados, pode aprender a medir o seu valor pelo desempenho. Anos depois, qualquer erro reativa essa leitura.",
+        "tela": "O facto não decide. A leitura automática, sim.",
+        "camera": "Aproxima ligeiramente para plano de rosto na frase \"não diz nada sobre quem és\". Volta ao plano de peito para a frase final."
+      },
+      {
+        "tempo": "44-56s",
+        "rotulo": "NOVA POSSIBILIDADE",
+        "fala": "Quando reconheces essa leitura, o acontecimento continua a acontecer, mas deixa de dizer quem és. Podes sentir a frustração sem a transformar em sentença sobre o teu valor.",
+        "tela": "O facto acontece. O significado, escolhes.",
+        "camera": "Plano de peito, gesto calmo com a mão ao dizer \"escolhes\"."
+      },
+      {
+        "tempo": "56-61s",
+        "rotulo": "CTA",
+        "fala": "Se queres perceber que leitura automática repetes sem saber, marca uma Conversa 2Life.",
+        "tela": "Marca uma Conversa 2Life",
+        "camera": "Plano de peito, câmara estática, olhar direto até ao corte final."
+      }
+    ],
+    "legenda": "Há quem receba uma crítica no trabalho e saia dali a duvidar de tudo o que construiu até hoje.\n\nO acontecimento é concreto: um email, uma resposta seca, um projeto recusado.\n\nMas o que dói não é o facto em si. É a história antiga que esse facto reativa, escrita muito antes de saberes defender-te dela.\n\nEsse significado nasceu algures. Numa fase em que o valor ficou ligado a resultado, a desempenho, a nunca falhar.\n\nReconhecer essa leitura não apaga o desconforto do momento. Mas tira-lhe o poder de decidir quem és.\n\nToda a dificuldade em expandir revela um afastamento da essência.\n\nSe queres perceber que leitura automática repetes sem saber, marca uma Conversa 2Life.",
+    "primeiro_comentario": "Que acontecimento costuma ativar em ti essa leitura sobre o teu valor?",
+    "capa": {
+      "intro": "Em sessão",
+      "titulo": "\"Isto quer dizer que não sou suficiente\"",
+      "manuscrita": "o facto não decide"
+    },
+    "imagem_ideia": "Simone em plano de peito, luz natural suave, fundo neutro e desfocado, expressão serena e atenta, sem adereços que distraiam do rosto.",
+    "duracao_estimada": 61
+  }
+}

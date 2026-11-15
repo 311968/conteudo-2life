@@ -1,0 +1,290 @@
+{
+  "reel": {
+    "id": 9,
+    "tema": "Pedir ajuda sem sentir que estou a falhar",
+    "aberturas": {
+      "ok": true,
+      "ganchos": [
+        {
+          "tipo": "problema",
+          "frase": "Precisas de ajuda e dizes que ainda consegues por tua conta.",
+          "tela": "Ainda consigo sozinho.",
+          "situacao": "Adias o pedido, resolves tudo por fora e sentes o peso a crescer por dentro, sem o mostrar a ninguém.",
+          "porque": "A cena é imediatamente reconhecível para quem é competente e já carregou demasiado sozinho, sem precisar de explicação prévia.",
+          "recomendado": true
+        },
+        {
+          "tipo": "contraintuitiva",
+          "frase": "Pedir ajuda não é a prova de que falhaste. É a prova de que confias.",
+          "situacao": "Antes de pedires, repetes por dentro: se não conseguir sozinho, não sou capaz. E ficas em silêncio mais um dia.",
+          "porque": "Contesta a crença de que competência significa autossuficiência, abrindo espaço para outra leitura do mesmo gesto.",
+          "recomendado": false
+        },
+        {
+          "tipo": "curiosidade",
+          "frase": "Há uma frase que dizes a ti antes de cada pedido de ajuda. Quase nunca a ouves.",
+          "tela": "A frase antes do pedido",
+          "situacao": "Vais pedir ajuda, hesitas, e acabas por dizer: deixa, eu resolvo. Sem saber bem porquê.",
+          "resposta": "Essa frase é uma crença antiga, ligada a provar valor, que associa pedir ajuda a falhar. Reconhecê-la é o primeiro passo para a desligar da decisão.",
+          "porque": "Nomeia um mecanismo invisível e cria tensão que o vídeo resolve antes do CTA, gerando retenção até ao fim.",
+          "recomendado": false
+        }
+      ],
+      "recomendada": 0,
+      "razao": "O tema gera identificação imediata através de uma cena concreta e comum em pessoas funcionais, por isso o problema concreto é a porta mais forte para captar atenção nos primeiros segundos."
+    },
+    "roteiro": {
+      "ok": true,
+      "blocos": [
+        {
+          "tempo": "0-4s",
+          "rotulo": "ABERTURA",
+          "fala": "Precisas de ajuda e dizes que ainda consegues por tua conta.",
+          "tela": "Ainda consigo sozinha.",
+          "camera": "Plano de peito, câmara frontal, olhar direto para a lente, sem movimento."
+        },
+        {
+          "tempo": "4-19s",
+          "rotulo": "SITUAÇÃO",
+          "fala": "Adias o pedido. Resolves tudo por tua conta e o peso cresce por dentro. Achas que pedir ajuda é admitir que falhaste. Isso não é fraqueza. É uma proteção antiga, que já não precisa de decidir por ti.",
+          "tela": "Pedir ajuda não é falhar.",
+          "camera": "Mantém o mesmo plano. Aproxima ligeiramente a câmara na frase 'proteção antiga', sem cortes bruscos."
+        },
+        {
+          "tempo": "19-26s",
+          "rotulo": "CTA",
+          "fala": "A confiança constrói-se na raiz. Guarda este vídeo para o dia em que precisares de o lembrar.",
+          "tela": "Guarda para esse dia.",
+          "camera": "Plano fixo, leve recuo, encerra com olhar firme e calmo para a câmara."
+        }
+      ],
+      "legenda": "Há quem só peça ajuda quando já não aguenta mais carregar sem ajuda.\n\nNesse momento, já não é um pedido. É um pedido de socorro.\n\nIsto acontece porque, algures no teu percurso, pedir ajuda ficou associado a mostrar que não eras suficiente. Então aprendeste a resolver tudo por tua conta, sempre, mesmo quando o peso já não cabia dentro de ti.\n\nEssa forma de funcionar protegeu-te. De te verem como incapaz, de desiludir alguém, de perder o lugar que ocupavas.\n\nMas uma coisa é reconhecer o padrão. Outra é continuar a deixá-lo decidir por ti, sessão após sessão da tua vida.\n\nPedir ajuda não é a prova de que falhaste. É um ato de quem já não quer continuar sozinha.\n\nA confiança constrói-se na raiz.\n\nGuarda este vídeo para o dia em que precisares de o lembrar.",
+      "primeiro_comentario": "O que costuma travar-te mais: pedir ajuda ou admitir que precisas dela?",
+      "capa": {
+        "intro": "Ainda não pediste ajuda?",
+        "titulo": "Pedir ajuda não é a prova de que falhaste.",
+        "manuscrita": "a raiz disto não é fraqueza"
+      },
+      "imagem_ideia": "Simone em plano de peito, fundo neutro e claro, luz suave frontal, expressão serena e firme, olhar direto para a câmara, sem adereços, transmitindo presença calma e autoridade próxima.",
+      "duracao_estimada": 26
+    },
+    "guardado": true,
+    "final": {
+      "id": 9,
+      "tema": "Pedir ajuda sem sentir que estou a falhar",
+      "ideia": "",
+      "serie": "Teste da app · 15/11",
+      "layout": "post",
+      "slides": [
+        {
+          "tipo": "frase",
+          "intro": "Ainda não pediste ajuda?",
+          "titulo": "Pedir ajuda não é a prova de que falhaste.",
+          "manuscrita": "a raiz disto não é fraqueza",
+          "imagem_ideia": "Simone em plano de peito, fundo neutro e claro, luz suave frontal, expressão serena e firme, olhar direto para a câmara, sem adereços, transmitindo presença calma e autoridade próxima."
+        }
+      ],
+      "legenda": "Há quem só peça ajuda quando já não aguenta mais carregar sem ajuda.\n\nNesse momento, já não é um pedido. É um pedido de socorro.\n\nIsto acontece porque, algures no teu percurso, pedir ajuda ficou associado a mostrar que não eras suficiente. Então aprendeste a resolver tudo por tua conta, sempre, mesmo quando o peso já não cabia dentro de ti.\n\nEssa forma de funcionar protegeu-te. De te verem como incapaz, de desiludir alguém, de perder o lugar que ocupavas.\n\nMas uma coisa é reconhecer o padrão. Outra é continuar a deixá-lo decidir por ti, sessão após sessão da tua vida.\n\nPedir ajuda não é a prova de que falhaste. É um ato de quem já não quer continuar sozinha.\n\nA confiança constrói-se na raiz.\n\nGuarda este vídeo para o dia em que precisares de o lembrar.",
+      "status": "rascunho",
+      "criado_em": "2026-11-15T22:50:35.613Z",
+      "atualizado_em": "2026-11-15T22:51:03.707Z",
+      "tom": "clara",
+      "foto": null,
+      "comentario": "O que costuma travar-te mais: pedir ajuda ou admitir que precisas dela?",
+      "formato": "reels",
+      "funcao": null,
+      "nivel": null,
+      "avanco": null,
+      "roteiro": {
+        "blocos": [
+          {
+            "tempo": "0-4s",
+            "rotulo": "ABERTURA",
+            "fala": "Precisas de ajuda e dizes que ainda consegues por tua conta.",
+            "tela": "Ainda consigo sozinha.",
+            "camera": "Plano de peito, câmara frontal, olhar direto para a lente, sem movimento."
+          },
+          {
+            "tempo": "4-19s",
+            "rotulo": "SITUAÇÃO",
+            "fala": "Adias o pedido. Resolves tudo por tua conta e o peso cresce por dentro. Achas que pedir ajuda é admitir que falhaste. Isso não é fraqueza. É uma proteção antiga, que já não precisa de decidir por ti.",
+            "tela": "Pedir ajuda não é falhar.",
+            "camera": "Mantém o mesmo plano. Aproxima ligeiramente a câmara na frase 'proteção antiga', sem cortes bruscos."
+          },
+          {
+            "tempo": "19-26s",
+            "rotulo": "CTA",
+            "fala": "A confiança constrói-se na raiz. Guarda este vídeo para o dia em que precisares de o lembrar.",
+            "tela": "Guarda para esse dia.",
+            "camera": "Plano fixo, leve recuo, encerra com olhar firme e calmo para a câmara."
+          }
+        ]
+      },
+      "duracao": 30,
+      "cta": null,
+      "agendado_para": null
+    }
+  },
+  "carrossel": {
+    "id": 10,
+    "tema": "A culpa que aparece quando paro para descansar",
+    "gerado": {
+      "ok": true,
+      "id": 10,
+      "serie": "PILOTO AUTOMÁTICO",
+      "legenda": "Até ao café a meio da tarde já voltaste a pensar na próxima tarefa.\n\nO corpo parou. A cabeça não.\n\nAparece uma inquietação difusa, quase física, como se descansar fosse um desperdício de tempo que podias estar a aproveitar.\n\nNão é preguiça nem falta de organização. É um reflexo que confunde o teu valor com aquilo que entregas aos outros.\n\nFazer compra o direito de existir sem perguntas. Parar reabre essa conta, e a dúvida volta toda de uma vez.\n\nO corpo pede pausa, mas por dentro soa como alarme: se não fores precisa, podes deixar de contar para alguém.\n\nPor isso o descanso é sentido como risco, não como direito.\n\nNão precisas de resolver isto com mais um método de produtividade. Precisas de reconhecer o automatismo que associa o teu valor ao que fazes.\n\nRepara hoje nesse instante de paragem: o que chega primeiro, o cansaço no corpo ou a culpa na cabeça?\n\nObserva essa resposta sem a corrigir ainda. Só observa.",
+      "primeiro_comentario": "Quando paras, o que aparece primeiro: o cansaço ou a culpa?",
+      "slides": [
+        {
+          "tipo": "capa",
+          "titulo": "Paras e já pensas em trabalho. **Isso tem nome.**",
+          "subtitulo": "Não é falta de gestão de tempo",
+          "sintese": "A CULPA DE DESCANSAR",
+          "imagem_ideia": "pessoa sentada no sofá a meio da tarde, olhar perdido, mãos sobre as pernas, luz natural suave, ambiente de casa real"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O corpo para. **A cabeça continua a trabalhar.**",
+          "corpo": "Sentas-te, respiras, e passado um minuto já estás a pensar no que ainda falta fazer.",
+          "alinhar": "centro",
+          "imagem_ideia": "close em mãos seguras numa chávena de café, olhar desviado para uma lista de tarefas ao lado"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Descansar devia ser simples. Mas sentes isto como **desperdício**.",
+          "corpo": "Como se cada minuto parado fosse tempo roubado a alguém ou a alguma coisa.",
+          "alinhar": "centro",
+          "imagem_ideia": "relógio de parede visível por cima do ombro de alguém deitado no sofá, luz de fim de tarde"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Não é preguiça. É um automatismo **antigo**.",
+          "corpo": "Aprendeste, algures no caminho, que o teu lugar dependia daquilo que fazias por outros.",
+          "alinhar": "esquerda",
+          "imagem_ideia": "fotografia desfocada de criança a ajudar em tarefas domésticas, tom nostálgico"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Enquanto fores útil, **estás seguro/a**.",
+          "corpo": "Enquanto estiveres a fazer, ninguém questiona o teu valor. Parar expõe essa certeza a uma dúvida antiga.",
+          "alinhar": "centro",
+          "imagem_ideia": "mulher a meio de uma sala, parada, com objetos de trabalho ao fundo fora de foco"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O medo não é descansar. É deixar de ser **necessário/a**.",
+          "corpo": "Se não houver nada para fazer, o que resta de ti? Essa pergunta é mais incómoda do que o cansaço.",
+          "alinhar": "centro",
+          "imagem_ideia": "cadeira vazia numa sala organizada, luz lateral, sensação de pausa"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Compreender isto não muda a culpa. **Reconhecê-la, sim.**",
+          "corpo": "Saber que é um padrão de proteção já é diferente de viver dentro dele sem perceber porquê.",
+          "alinhar": "esquerda",
+          "imagem_ideia": "página de caderno aberta com algumas anotações manuscritas, caneta pousada ao lado"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Hoje, repara: o que vem primeiro quando paras, **o cansaço ou a culpa**?",
+          "corpo": "Não precisas de corrigir a resposta. Só precisas de a observar.",
+          "alinhar": "centro",
+          "sintese": "SÓ OBSERVA, SEM CORRIGIR",
+          "imagem_ideia": "pessoa sentada à janela, luz suave de final de tarde, postura de quem apenas observa"
+        },
+        {
+          "tipo": "fecho",
+          "titulo": "O valor não vem do que fazes. **A raiz é a confiança.**",
+          "imagem_ideia": "fundo neutro e sereno, luz suave, espaço para logótipo"
+        }
+      ]
+    },
+    "guardado": true,
+    "final": {
+      "id": 10,
+      "tema": "A culpa que aparece quando paro para descansar",
+      "ideia": "",
+      "serie": "Teste da app · 15/11",
+      "layout": "modelo2life",
+      "slides": [
+        {
+          "tipo": "capa",
+          "titulo": "Paras e já pensas em trabalho. **Isso tem nome.**",
+          "subtitulo": "Não é falta de gestão de tempo",
+          "sintese": "A CULPA DE DESCANSAR",
+          "imagem_ideia": "pessoa sentada no sofá a meio da tarde, olhar perdido, mãos sobre as pernas, luz natural suave, ambiente de casa real"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O corpo para. **A cabeça continua a trabalhar.**",
+          "corpo": "Sentas-te, respiras, e passado um minuto já estás a pensar no que ainda falta fazer.",
+          "alinhar": "centro",
+          "imagem_ideia": "close em mãos seguras numa chávena de café, olhar desviado para uma lista de tarefas ao lado"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Descansar devia ser simples. Mas sentes isto como **desperdício**.",
+          "corpo": "Como se cada minuto parado fosse tempo roubado a alguém ou a alguma coisa.",
+          "alinhar": "centro",
+          "imagem_ideia": "relógio de parede visível por cima do ombro de alguém deitado no sofá, luz de fim de tarde"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Não é preguiça. É um automatismo **antigo**.",
+          "corpo": "Aprendeste, algures no caminho, que o teu lugar dependia daquilo que fazias por outros.",
+          "alinhar": "esquerda",
+          "imagem_ideia": "fotografia desfocada de criança a ajudar em tarefas domésticas, tom nostálgico"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Enquanto fores útil, **estás seguro/a**.",
+          "corpo": "Enquanto estiveres a fazer, ninguém questiona o teu valor. Parar expõe essa certeza a uma dúvida antiga.",
+          "alinhar": "centro",
+          "imagem_ideia": "mulher a meio de uma sala, parada, com objetos de trabalho ao fundo fora de foco"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O medo não é descansar. É deixar de ser **necessário/a**.",
+          "corpo": "Se não houver nada para fazer, o que resta de ti? Essa pergunta é mais incómoda do que o cansaço.",
+          "alinhar": "centro",
+          "imagem_ideia": "cadeira vazia numa sala organizada, luz lateral, sensação de pausa"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Compreender isto não muda a culpa. **Reconhecê-la, sim.**",
+          "corpo": "Saber que é um padrão de proteção já é diferente de viver dentro dele sem perceber porquê.",
+          "alinhar": "esquerda",
+          "imagem_ideia": "página de caderno aberta com algumas anotações manuscritas, caneta pousada ao lado"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Hoje, repara: o que vem primeiro quando paras, **o cansaço ou a culpa**?",
+          "corpo": "Não precisas de corrigir a resposta. Só precisas de a observar.",
+          "alinhar": "centro",
+          "sintese": "SÓ OBSERVA, SEM CORRIGIR",
+          "imagem_ideia": "pessoa sentada à janela, luz suave de final de tarde, postura de quem apenas observa"
+        },
+        {
+          "tipo": "fecho",
+          "titulo": "O valor não vem do que fazes. **A raiz é a confiança.**",
+          "imagem_ideia": "fundo neutro e sereno, luz suave, espaço para logótipo"
+        }
+      ],
+      "legenda": "Até ao café a meio da tarde já voltaste a pensar na próxima tarefa.\n\nO corpo parou. A cabeça não.\n\nAparece uma inquietação difusa, quase física, como se descansar fosse um desperdício de tempo que podias estar a aproveitar.\n\nNão é preguiça nem falta de organização. É um reflexo que confunde o teu valor com aquilo que entregas aos outros.\n\nFazer compra o direito de existir sem perguntas. Parar reabre essa conta, e a dúvida volta toda de uma vez.\n\nO corpo pede pausa, mas por dentro soa como alarme: se não fores precisa, podes deixar de contar para alguém.\n\nPor isso o descanso é sentido como risco, não como direito.\n\nNão precisas de resolver isto com mais um método de produtividade. Precisas de reconhecer o automatismo que associa o teu valor ao que fazes.\n\nRepara hoje nesse instante de paragem: o que chega primeiro, o cansaço no corpo ou a culpa na cabeça?\n\nObserva essa resposta sem a corrigir ainda. Só observa.",
+      "status": "rascunho",
+      "criado_em": "2026-11-15T22:51:03.639Z",
+      "atualizado_em": "2026-11-15T22:51:03.774Z",
+      "tom": "clara",
+      "foto": null,
+      "comentario": "Quando paras, o que aparece primeiro: o cansaço ou a culpa?",
+      "formato": "carrossel",
+      "funcao": null,
+      "nivel": null,
+      "avanco": null,
+      "roteiro": null,
+      "duracao": null,
+      "cta": null,
+      "agendado_para": null
+    }
+  }
+}

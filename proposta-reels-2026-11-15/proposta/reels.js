@@ -1,5 +1,7 @@
 // REELS: roteiro para gravar, adaptado ao Metodo 2Life.
-// Fonte: Livro de Receitas v2.3, §4 (estrutura narrativa), §6 (abertura dos reels) e §13 (hooks).
+// Fonte: Livro de Receitas v2.4, §4 (estrutura narrativa), §6 (abertura dos reels), §13 (hooks) e §16 (legendas).
+// Revisto a 15/11/2026, segunda ronda: duracao realista, publico de homens e mulheres, sem numeros nem
+// experiencia em sessao inventados, frases protegidas literais, legenda que aprofunda sem repetir a fala.
 // A app entrega roteiro, texto no ecra, direcao de camara, legenda e capa. Nao gera video.
 // Proposta de 15/11/2026, ainda nao aplicada em producao.
 
@@ -81,7 +83,30 @@ const PROIBIDO = `- Abrir com "Sabias que…"
 - Lista longa de benefícios
 - Promessa que o vídeo não sustenta
 - Linguagem de guru, motivacional ou de hype
-- Travessões em qualquer texto`;
+- Travessões em qualquer texto
+- "Algo", "talvez" e "às vezes": nomeia a coisa concreta (em vez de "fizeste algo errado", "disseste o que não devias")
+- Números, percentagens ou frequências ("todas as semanas", "muitas pessoas que acompanho") que não estejam no tema, na ideia ou no material marcado
+- Afirmações sobre o que a Simone ouve ou vê em sessão, para além do molde da R3`;
+
+// Ritmo de fala calmo em portugues de Portugal: cerca de 2,5 palavras por segundo
+const PALAVRAS_POR_SEGUNDO = 2.5;
+
+// Frases protegidas (Hierarquia §7): se entrarem, entram literais
+const PROTEGIDAS = [
+  'Toda a dificuldade em expandir revela um afastamento da essência.',
+  'A confiança constrói-se na raiz.',
+  'O 2Life transforma aquilo que já sabes sobre ti na confiança para te posicionares, agires e expandires a partir de quem és.',
+  'O automático reage. A essência escolhe. A ação cria evidência. A repetição transforma a identidade.',
+];
+
+// Livro de Receitas v2.4, §16 "Legendas", aplicado aos reels
+const REGRA_LEGENDA = `## LEGENDA (Livro de Receitas §16)
+A legenda aprofunda a ideia do vídeo. Em nenhum parágrafo repete ou parafraseia a fala: nem a abertura, nem outra frase dita no vídeo. Só a última linha repete o CTA.
+1. Primeira linha: funciona sozinha no feed, antes do "mais" (cerca de 125 caracteres). Abre com OUTRA situação reconhecível, ligada ao mesmo mecanismo, ou com a frase de viragem dita por outras palavras. Nunca com a frase da abertura.
+2. Desenvolvimento: parágrafos de uma a três linhas, pela ordem cena, automatismo, significado e nova possibilidade. Acrescenta o que o vídeo não teve tempo de dizer. O padrão aparece como proteção, sem culpabilizar.
+3. Pergunta ou microação: uma só, nas peças técnicas. Não se força nas peças de reconhecimento ou emocionais.
+4. Última linha: um só CTA, o mesmo do vídeo.
+Extensão: 6 a 10 linhas. Sem hashtags. "Sessão", nunca "consulta". A assinatura "A confiança constrói-se na raiz." só entra se ainda não estiver no vídeo.`;
 
 function bloco(duracao) {
   const d = DURACOES[duracao] || DURACOES[30];
@@ -96,6 +121,20 @@ Primeiro, a pessoa vê-se. Depois compreende. Antes de qualquer explicação, a 
 
 ## ESTRUTURA DESTA DURAÇÃO
 ${d.estrutura}
+Usa exatamente ${d.blocos} blocos, com estes rótulos e por esta ordem. Não acrescentes blocos de outra duração.
+
+## DURAÇÃO REALISTA
+A fala é dita a ritmo calmo: cerca de ${PALAVRAS_POR_SEGUNDO} palavras por segundo. A fala de cada bloco cabe no tempo do bloco (3 segundos são cerca de 8 palavras; 12 segundos, cerca de 30; 25 segundos, cerca de 60). Em todo o vídeo, no máximo ${Math.round(Number(duracao in DURACOES ? duracao : 30) * PALAVRAS_POR_SEGUNDO)} palavras faladas. Se a abertura precisar de mais tempo, ajusta os tempos dos blocos para que somem a duração do vídeo.
+
+## PÚBLICO
+O público são pessoas funcionais e competentes, homens e mulheres. Escreve de forma que ambos se reconheçam: quando falas com a pessoa ("tu"), evita adjetivos só no feminino ou só no masculino ("estás cansada", "és obrigada"); prefere formas sem género ("não tens de", "sem descanso"). Vale também para a voz interior da pessoa e para o texto no ecrã ("ainda consigo sozinha" → "ainda consigo sem ajuda"). Nunca uses barras ("o/a").
+
+## FRASES PROTEGIDAS
+Se usares alguma destas frases, usa-a literalmente, sem mudar uma palavra:
+${PROTEGIDAS.map(f => `- "${f}"`).join('\n')}
+${Number(duracao) >= 60
+    ? 'O mecanismo do método usa-se sempre na formulação integral, com as quatro frases. A forma curta "O automático reage. A essência escolhe." é a mensagem-mãe da Matriz de Comunicação e também se escreve literal, mas não substitui o mecanismo.'
+    : 'Num reel de 30 segundos não cabe o mecanismo integral: não o uses. Se quiseres, usa só a mensagem-mãe da Matriz de Comunicação, literal: "O automático reage. A essência escolhe."'}
 
 ## O QUE NUNCA ENTRA
 ${PROIBIDO}
@@ -122,7 +161,7 @@ Escreve TRÊS variações da abertura R3, todas do tipo "sessao":
 
 Cada abertura leva:
 - "tipo": "sessao"
-- "frase": a frase falada de abertura, até 140 caracteres
+- "frase": a frase falada de abertura, completa até ao fim do molde, com a frase da pessoa entre aspas e sem reticências: Quando alguém me diz "[frase]", não olho apenas para [problema aparente]. Sem dizer quantas vezes a ouves; no máximo 22 palavras (cerca de nove segundos de fala)
 - "tela": o texto no ecrã nesse momento, até 45 caracteres
 - "situacao": o que é visível nessa frase (o problema aparente), numa linha
 - "porque": uma linha a explicar porque funciona para este tema
@@ -141,7 +180,7 @@ Regras:
 
 Cada abertura leva:
 - "tipo": o id do tipo ("problema", "contraintuitiva" ou "curiosidade")
-- "frase": a frase falada de abertura, até 140 caracteres. Tem de caber em três segundos de fala.
+- "frase": a frase falada de abertura, até 110 caracteres (cerca de 8 a 14 palavras, três a cinco segundos de fala). Linguagem concreta: nada de "algo", "talvez" ou "às vezes".
 - "tela": o texto no ecrã nesse momento, até 45 caracteres
 - "situacao": a situação reconhecível que vem logo a seguir (no problema concreto, a própria situação)
 - "resposta": só na curiosidade, o que o vídeo revela
@@ -153,7 +192,9 @@ Depois, em "recomendada", indica o número (0, 1 ou 2) da abertura mais adequada
 // Regras para o roteiro, conforme a abertura escolhida
 function regrasRoteiro(gancho) {
   const g = gancho || {};
-  const linhas = ['O primeiro bloco usa exatamente a fala da abertura escolhida.'];
+  const linhas = ['O primeiro bloco usa exatamente a fala da abertura escolhida.', REGRA_LEGENDA,
+    'A capa e o primeiro comentário seguem as mesmas regras de linguagem: sem "algo", "talvez" ou "às vezes", sem números ou frequências que não foram dados, sem afirmações sobre o que acontece em sessão.',
+    'Um só CTA editorial: o do último bloco, repetido na última linha da legenda. O primeiro comentário é uma pergunta ou uma frase para a conversa, nunca outro CTA (nada de "guarda", "partilha", "envia", "marca", "segue" ou "comenta").'];
   if (g.tipo === 'contraintuitiva' || g.tipo === 'curiosidade') {
     linhas.push(`O segundo bloco traz logo a situação reconhecível${g.situacao ? `: ${g.situacao}` : ''}. Nada de explicação antes dela.`);
   }
@@ -168,7 +209,9 @@ function regrasRoteiro(gancho) {
 4. O critério clínico ou a distinção.
 5. A possibilidade de transformação.
 Molde: Quando alguém me diz "[frase]", eu não olho apenas para [problema aparente]. Procuro perceber [pergunta ou mecanismo]. Porque [leitura clínica]. É aqui que começa a diferença entre compreender e transformar.
-Usa sempre "sessão", nunca "consulta". Sem casos reais, sem dados clínicos, sem nada que identifique alguém.`);
+Usa sempre "sessão", nunca "consulta". Sem casos reais, sem dados clínicos, sem nada que identifique alguém.
+O bloco do mecanismo começa pelo passo 3, dito pela Simone: "Procuro perceber…" (o que procura por baixo do comportamento), e só depois o critério ou a distinção.
+A frase de sessão entra só pelo molde ("Quando alguém me diz…"). Não digas quantas vezes a ouves, há quanto tempo, nem a quantas pessoas: nem na fala, nem na capa, nem na legenda.`);
   }
   return linhas.join('\n');
 }

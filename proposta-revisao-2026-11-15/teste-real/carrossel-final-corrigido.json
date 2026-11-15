@@ -1,0 +1,57 @@
+{
+  "origem": "resultado-final.json (decima ronda), com duas correcoes pedidas pela Simone a 15/11: referencia da lamina 7 alinhada com a lamina 3; \"em que quase nunca reparamos\" na legenda",
+  "carrossel": {
+    "serie": "O SIGNIFICADO QUE DÁS",
+    "slides": [
+      {
+        "tipo": "capa",
+        "titulo": "Não foi o que aconteceu. Foi o que decidiste que aquilo **significava.**",
+        "subtitulo": "E essa leitura ficou a decidir por ti",
+        "imagem_ideia": "pessoa parada no corredor de casa, luz da tarde a entrar pela janela, telemóvel na mão, expressão pensativa e parada"
+      },
+      {
+        "tipo": "interior",
+        "titulo": "Ele não respondeu à mensagem. E a tua cabeça já escreveu a história toda.",
+        "corpo": "\"Fiz alguma coisa errada.\" \"Já não quer saber.\" \"Isto é sempre assim comigo.\" Em dois segundos, um silêncio virou **um veredito.**",
+        "imagem_ideia": "ecrã de telemóvel com conversa sem resposta, relógio ao lado marcando horas passadas, ambiente de quarto escuro"
+      },
+      {
+        "tipo": "interior",
+        "titulo": "O chefe fez uma cara séria numa reunião. E tu já sabes o que isso quer dizer.",
+        "corpo": "\"Vão apanhar-me de surpresa.\" \"Vão despedir-me.\" \"Não fui suficiente outra vez.\" Uma cara. Uma **certeza inteira.**",
+        "imagem_ideia": "sala de reuniões vista de lado, uma pessoa de expressão séria ao fundo desfocada, outra pessoa em primeiro plano com olhar baixo"
+      },
+      {
+        "tipo": "interior",
+        "titulo": "O acontecimento dura segundos. O significado que lhe dás dura o dia todo.",
+        "corpo": "Não é o silêncio, a cara séria ou o atraso que te tira o sono. É a história que construíste a partir disso, **em piloto automático.**",
+        "imagem_ideia": "relógio de parede com ponteiros a correr rápido, sobreposto a uma pessoa deitada de olhos abertos à noite"
+      },
+      {
+        "tipo": "interior",
+        "titulo": "Esse significado não nasceu agora. Foi aprendido para te proteger de te magoarem.",
+        "corpo": "Se cresceste a precisar de antecipar o pior para não te apanharem de surpresa, interpretar tudo como ameaça **manteve-te em segurança.** Durante muito tempo, fez sentido.",
+        "imagem_ideia": "criança pequena a espreitar por uma porta entreaberta, corredor escuro, luz vindo de uma sala ao fundo"
+      },
+      {
+        "tipo": "interior",
+        "titulo": "O problema não é sentires isto. É não saberes que **escolheste** esta leitura.",
+        "corpo": "Quando a interpretação acontece sozinha, parece um facto. Quando a reconheces como um hábito, deixa de ser a única versão possível.",
+        "imagem_ideia": "duas portas lado a lado num corredor simples, uma entreaberta com luz, outra fechada, escolha visual clara"
+      },
+      {
+        "tipo": "interior",
+        "titulo": "A mesma cena pode ter outra leitura. Não a certa. Uma possível.",
+        "corpo": "\"Vão despedir-me\" e \"está cansado hoje\" cabem na mesma cara séria. A diferença não está no facto. Está em **qual história escolhes sustentar.**",
+        "imagem_ideia": "mesa com um único objeto, uma chávena de café pela metade, iluminação neutra, sensação de pausa para pensar"
+      },
+      {
+        "tipo": "fecho",
+        "titulo": "Não é o que te acontece. É o que decides que aquilo **significa.**",
+        "imagem_ideia": "janela aberta com cortina leve a mexer com o vento, luz suave da manhã, ambiente calmo e respirável"
+      }
+    ],
+    "legenda": "Olhas o relógio, ele atrasa-se cinco minutos e já decidiste que deixaste de importar.\n\nEntre os dois, aconteceu uma coisa em que quase nunca reparamos: demos um significado automático ao que vimos.\n\nNão respondeu, logo já não gosta de mim. Fez uma cara séria, logo fiz alguma coisa errada. Chegou atrasado, logo não sou prioridade.\n\nEsta leitura não nasceu agora. Nasceu numa altura em que antecipar o pior, ou assumir a culpa primeiro, te protegeu de alguma coisa. Fez sentido durante muito tempo.\n\nO problema é quando essa leitura continua a decidir sozinha, sem te chamarem a confirmar se ainda é verdade.\n\nA mesma cena admite mais do que uma história. Reconhecer isso não muda o que aconteceu. Muda o que fazes a seguir.\n\nRepara, hoje, numa situação em que reagiste antes de verificar. Que significado deste automaticamente? E que outra leitura caberia ali, igualmente possível?",
+    "primeiro_comentario": "Qual foi a última vez que decidiste o pior antes de teres a certeza de alguma coisa?"
+  }
+}

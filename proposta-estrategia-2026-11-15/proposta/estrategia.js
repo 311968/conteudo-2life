@@ -110,7 +110,8 @@ function movimento(avanco) {
 
 // O bloco que entra no prompt (ficha de decisao do Livro §3)
 function bloco({ funcao, nivel, avanco }) {
-  if (!funcao && !nivel && !avanco) return '';
+  // Sem marcacao (a Simone so escreveu o tema): a IA escolhe a ficha pela Matriz, em vez de ficar sem estrategia.
+  if (!funcao && !nivel && !avanco) return SEM_MARCACAO();
   const f = FUNCOES[funcao];
   const n = NIVEIS[nivel];
   const m = movimento(avanco);
@@ -142,6 +143,22 @@ function bloco({ funcao, nivel, avanco }) {
     `- ${REGRA_CTA} Um só CTA, subtil e proporcional.`,
     '- Nenhum nível justifica promessa, garantia de resultado ou pressão.');
   return linhas.join('\n');
+}
+
+// Quando a ficha nao foi preenchida (15/11/2026: fluxo "so tema + formato")
+function SEM_MARCACAO() {
+  const funcoes = Object.values(FUNCOES).map(f => `- ${f.nome}: ${f.resumo}. Pergunta de resultado: ${f.pergunta} Movimentos coerentes: ${f.movimentos}.`).join('\n');
+  const niveis = Object.entries(NIVEIS).map(([id, n]) => `- Nível ${id}: ${n.estado} Objetivo: "${n.objetivo}".`).join('\n');
+  return `# PARA QUEM ESTE CONTEÚDO FALA E PARA ONDE LEVA
+
+A ficha de decisão não foi preenchida (Livro de Receitas §3). Antes de escrever, escolhe tu, a partir do tema:
+1. a função ATA predominante (Matriz de Comunicação §14):
+${funcoes}
+2. o nível de consciência com quem falas (Matriz §8):
+${niveis}
+3. um só próximo movimento, coerente com a função (Matriz §15, "Relação ATA e CTA"): Atração pede observar, guardar, partilhar ou responder; Técnico pede refletir, experimentar, aprofundar ou fazer diagnóstico; só a Autoridade pede conhecer o método, enviar mensagem, marcar conversa ou entrar. Como a Simone não marcou a função, o CTA é leve: Observação, Microação, Interação ou Aprofundamento. Nada de "envia-me mensagem", "manda-me mensagem", "marca uma Conversa" nem convite para entrar: esses ficam para quando ela marcar Autoridade.
+
+${REGRA_CTA} Um só CTA, subtil e proporcional. Nenhum nível justifica promessa, garantia de resultado ou pressão.`;
 }
 
 // Lembrete no fim das instrucoes do carrossel, antes da ultima conferencia

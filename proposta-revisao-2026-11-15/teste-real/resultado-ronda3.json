@@ -1,0 +1,242 @@
+{
+  "marcacoes": {
+    "significado": {
+      "funcao": "tecnico",
+      "nivel": 2,
+      "avanco": "Aprofundamento: guardar, ver outro conteúdo ou continuar uma sequência"
+    },
+    "r3": {
+      "funcao": "autoridade",
+      "nivel": 3,
+      "avanco": "Conversa: perceber se o processo faz sentido e iniciar uma relação comercial"
+    },
+    "carrossel": {
+      "funcao": "atracao",
+      "nivel": 1,
+      "avanco": "Observação: reconhecer o padrão sem exigir exposição"
+    }
+  },
+  "significado": {
+    "ok": true,
+    "segundos": 26,
+    "aberturas": {
+      "ganchos": [
+        {
+          "tipo": "problema",
+          "frase": "Alguém não responde à mensagem e já pensas: fiz alguma coisa errada.",
+          "tela": "Fiz alguma coisa errada?",
+          "situacao": "O telemóvel fica sem resposta durante horas. A cabeça começa a construir uma história: ficou chateado, disse uma coisa a mais, devia ter escrito de outra forma. A reunião foi cancelada e a primeira leitura é: não fiz bem o meu trabalho.",
+          "porque": "A situação já gera identificação imediata porque qualquer pessoa reconhece este salto automático entre o facto e a interpretação ansiosa.",
+          "recomendado": false
+        },
+        {
+          "tipo": "contraintuitiva",
+          "frase": "Não é o silêncio do outro que te dói. É a frase que dizes a ti sobre esse silêncio.",
+          "tela": "Não dói o facto. Dói a leitura.",
+          "situacao": "Alguém não responde à mensagem. Antes de qualquer informação nova, já decidiste o que isso significa: que fizeste uma coisa errada, que já não interessas, que falhaste.",
+          "porque": "Contesta a crença comum de que o acontecimento causa diretamente a emoção e abre espaço para mostrar o mecanismo do significado automático.",
+          "recomendado": false
+        },
+        {
+          "tipo": "curiosidade",
+          "frase": "Entre o que acontece e o que sentes, existe uma frase que inventas em meio segundo.",
+          "tela": "A frase que inventas em meio segundo",
+          "situacao": "Uma mensagem sem resposta. Uma reunião cancelada. Um comentário seco. O facto é neutro, mas em meio segundo já decidiste o que ele significa sobre ti.",
+          "resposta": "Essa frase não é a verdade do que aconteceu. É um significado aprendido para te proteger, uma forma antiga de antecipar rejeição ou de manter controlo. Reconhecê-la permite escolher outra leitura, sem negar o facto.",
+          "porque": "O tema é um mecanismo invisível vivido constantemente; a curiosidade convida a pessoa a procurar essa frase na sua própria experiência antes de a nomear.",
+          "recomendado": true
+        }
+      ],
+      "recomendada": 2,
+      "razao": "O tema é essencialmente um mecanismo que a pessoa vive sem ver (o salto automático entre facto e significado), por isso a curiosidade é a porta mais coerente com a função Técnico e o nível 2 de consciência, pois prepara a pessoa para o insight 'isto é um padrão, não a verdade dos factos'."
+    },
+    "roteiro": {
+      "blocos": [
+        {
+          "tempo": "0-3s",
+          "rotulo": "ABERTURA",
+          "fala": "Entre o que acontece e o que sentes, existe uma frase que inventas em meio segundo.",
+          "tela": "A frase que inventas em meio segundo",
+          "camera": "Plano de peito, câmara frontal, olhar direto para a lente, sem movimento."
+        },
+        {
+          "tempo": "3-15s",
+          "rotulo": "SITUAÇÃO",
+          "fala": "Uma mensagem sem resposta. Uma reunião cancelada. Um comentário seco. O facto é neutro. Mas em meio segundo já decidiste o que ele significa sobre ti.",
+          "tela": "O facto é neutro. O significado não.",
+          "camera": "Mantém plano de peito. Leve aproximação da câmara ao dizer \"já decidiste\"."
+        },
+        {
+          "tempo": "15-40s",
+          "rotulo": "MECANISMO",
+          "fala": "Não gostaram de mim. Fiz asneira. Vou ficar sozinho. Essa frase não é a verdade do que aconteceu. É um significado aprendido para te proteger, uma forma antiga de antecipar rejeição ou de manter controlo.",
+          "tela": "Aprendeste esse significado para te proteger",
+          "camera": "Corte para plano ligeiramente mais fechado no rosto. Gesto de mão a marcar \"essa frase não é a verdade\"."
+        },
+        {
+          "tempo": "40-52s",
+          "rotulo": "NOVA POSSIBILIDADE",
+          "fala": "Reconhecer essa frase permite escolher outra leitura, sem negar o facto. O automático reage. A essência escolhe.",
+          "tela": "Reconhecer. Depois, escolher outra leitura.",
+          "camera": "Volta ao plano de peito inicial. Tom mais calmo, pausa antes da frase final."
+        },
+        {
+          "tempo": "52-60s",
+          "rotulo": "CTA",
+          "fala": "Guarda este vídeo. Na próxima vez que sentires isto, volta aqui e pergunta-te: que frase acabei de inventar?",
+          "tela": "Guarda. Pergunta-te: que frase inventei?",
+          "camera": "Plano de peito fixo, olhar direto, sem corte até ao fim."
+        }
+      ],
+      "legenda": "Chegas a casa e repassas a reunião trinta vezes à procura do momento em que fizeste mal.\n\nEntre o facto e o que sentes, existe sempre uma frase. Ela nasce tão depressa que parece a própria verdade.\n\nEssa frase tem função. Foi construída para te proteger de alguma coisa: rejeição, julgamento, perda de controlo.\n\nNão precisas de a eliminar. Precisas de a reconhecer antes que decida por ti.\n\nQuando a vês, já tens espaço para escolher outra leitura, sem negar o que aconteceu.\n\nGuarda este vídeo para a próxima vez que sentires isto.",
+      "primeiro_comentario": "Qual foi a última frase que inventaste em meio segundo?",
+      "capa": {
+        "intro": "Entre o facto e o que sentes",
+        "titulo": "A frase que inventas em meio segundo",
+        "manuscrita": "não é a verdade"
+      },
+      "imagem_ideia": "Simone em plano de peito, fundo neutro e desfocado, luz suave lateral, olhar direto para a câmara, expressão serena e atenta, sem gestos, transmitindo quietude e observação."
+    }
+  },
+  "r3": {
+    "ok": true,
+    "segundos": 24,
+    "aberturas": {
+      "ganchos": [
+        {
+          "tipo": "sessao",
+          "frase": "Quando alguém me diz \"isto só acontece comigo\", não olho apenas para o acontecimento.",
+          "tela": "\"Isto só acontece comigo\"",
+          "situacao": "A pessoa sente que é alvo recorrente do azar ou do erro dos outros, como se houvesse um padrão a persegui-la.",
+          "porque": "Nomeia uma frase universal de vitimização que esconde um significado automático, abrindo caminho direto para falar de interpretação versus facto.",
+          "recomendado": false
+        },
+        {
+          "tipo": "sessao",
+          "frase": "Quando alguém me diz \"ele fez aquilo de propósito para me magoar\", não olho apenas para o que o outro fez.",
+          "tela": "\"Fez aquilo de propósito\"",
+          "situacao": "A pessoa interpreta a intenção do outro como ataque pessoal, antes de verificar se é essa a realidade.",
+          "porque": "Mostra com clareza a diferença entre o facto (o que o outro fez) e o significado atribuído (a intenção lida), ilustrando o tema sem explicar ainda.",
+          "recomendado": false
+        },
+        {
+          "tipo": "sessao",
+          "frase": "Quando alguém me diz \"isto quer dizer que não sou suficiente\", não olho apenas para o que aconteceu antes dessa frase.",
+          "tela": "\"Isto quer dizer que não sou suficiente\"",
+          "situacao": "A pessoa transforma um acontecimento concreto (uma crítica, um erro, uma recusa) numa conclusão sobre o seu valor.",
+          "porque": "Liga diretamente o acontecimento ao significado automático de insuficiência, o núcleo exato da ideia central, tornando o mecanismo imediatamente visível.",
+          "recomendado": true
+        }
+      ],
+      "recomendada": 2,
+      "razao": "Esta variação expõe com mais clareza a distinção central do tema (acontecimento versus significado atribuído), porque mostra o salto automático de um facto para uma conclusão identitária, o que prepara perfeitamente o bloco do mecanismo."
+    },
+    "roteiro": {
+      "blocos": [
+        {
+          "tempo": "0-3s",
+          "rotulo": "ABERTURA",
+          "fala": "Quando alguém me diz \"isto quer dizer que não sou suficiente\", não olho apenas para o que aconteceu antes dessa frase.",
+          "tela": "\"Isto quer dizer que não sou suficiente\"",
+          "camera": "Plano de peito, câmara frontal, olhar direto, sem movimento."
+        },
+        {
+          "tempo": "3-15s",
+          "rotulo": "SITUAÇÃO",
+          "fala": "Um comentário no trabalho. Um erro pequeno. Um não que recebeste. E, sem pensar, a mente já fechou a frase: isto prova que não sou suficiente. O acontecimento dura segundos. A conclusão fica semanas.",
+          "tela": "O facto dura segundos. A conclusão fica.",
+          "camera": "Mantém o plano de peito, leve aproximação a meio da fala."
+        },
+        {
+          "tempo": "15-40s",
+          "rotulo": "MECANISMO",
+          "fala": "Não procuro só o que aconteceu antes. Procuro o significado que a tua mente deu ao que aconteceu, e porque aprendeu a dar esse significado. Em criança, aprendeste que errar era perigoso, que decepcionar alguém custava caro. Essa leitura ficou pronta a usar. Hoje, qualquer crítica entra por essa porta, mesmo sem relação com o que ela significa de verdade.",
+          "tela": "Não é o facto. É o significado que aprendeste a dar-lhe.",
+          "camera": "Plano fixo, tom mais baixo e pausado, mãos paradas."
+        },
+        {
+          "tempo": "40-52s",
+          "rotulo": "NOVA POSSIBILIDADE",
+          "fala": "Quando reconheces essa leitura automática, podes separar o que aconteceu daquilo que concluíste. O erro continua a ser um erro. Deixa de ser prova do teu valor. E aí podes escolher outra leitura, mais perto da verdade.",
+          "tela": "Separar o facto da conclusão automática.",
+          "camera": "Pequena aproximação, ritmo mais lento, tom firme e sereno."
+        },
+        {
+          "tempo": "52-60s",
+          "rotulo": "CTA",
+          "fala": "Se queres perceber que leitura automática fazes do que te acontece, marca uma Conversa 2Life.",
+          "tela": "Marca uma Conversa 2Life",
+          "camera": "Plano de peito estável, olhar direto, encerra com leve sorriso."
+        }
+      ],
+      "legenda": "Uma crítica no trabalho. Um comentário de alguém próximo. E a mente já concluiu: estou a falhar.\n\nNão é o acontecimento que decide como te sentes. É o significado automático que lhe dás, aprendido muito antes de saberes que o estavas a aprender.\n\nEssa leitura teve uma função. Protegeu-te de alguma coisa, numa altura em que precisavas dela.\n\nO problema é quando continua a decidir por ti, hoje, sobre factos que já não pedem essa resposta.\n\nReconhecer essa leitura automática não apaga o que aconteceu. Abre espaço para uma conclusão diferente, mais perto da verdade.\n\nSe queres perceber que leitura automática fazes do que te acontece, marca uma Conversa 2Life.",
+      "primeiro_comentario": "A confiança constrói-se na raiz.",
+      "capa": {
+        "intro": "Quando alguém me diz",
+        "titulo": "\"Isto quer dizer que não sou suficiente\"",
+        "manuscrita": "não é o facto. é o significado."
+      },
+      "imagem_ideia": "Plano de peito da Simone, fundo neutro e luz suave, olhar direto para a câmara, expressão serena e atenta, sem gestos, transmitindo presença clínica."
+    }
+  },
+  "carrossel": {
+    "ok": true,
+    "segundos": 16,
+    "carrossel": {
+      "serie": "O significado automático",
+      "slides": [
+        {
+          "tipo": "capa",
+          "titulo": "Não é o que te acontece. **É o significado que lhe dás.**",
+          "subtitulo": "E esse significado aprendeste a dar",
+          "imagem_ideia": "pessoa parada no corredor de casa, olhando o telemóvel com uma mensagem recebida, luz de fim de tarde, expressão tensa"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Alguém não responde a uma mensagem.",
+          "corpo": "Numa fração de segundo já pensaste: **\"fiz alguma coisa errada\"**. Nem reparaste que foi um pensamento. Pareceu um facto.",
+          "imagem_ideia": "ecrã de telemóvel com conversa sem resposta há horas, visto de cima, dedos parados sobre o teclado"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O teu chefe franze a testa numa reunião.",
+          "corpo": "E tu já estás a rever tudo o que disseste. **O facto** foi uma expressão facial. O resto, construíste tu.",
+          "imagem_ideia": "sala de reunião, pessoa sentada à mesa olhando de lado para o chefe que franze a testa, tensão no ambiente"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Isto não acontece por seres demasiado sensível.",
+          "corpo": "Acontece porque, nalgum momento, aprendeste que silêncio significa rejeição e que uma cara séria significa perigo. Foi **proteção**.",
+          "imagem_ideia": "foto antiga desfocada de criança sozinha à espera, tom sépia, ambiente de infância"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O acontecimento é neutro.",
+          "corpo": "O significado é automático. E o automático decide antes de perguntares se aquela leitura ainda é **verdadeira**.",
+          "alinhar": "esquerda",
+          "imagem_ideia": "balança simples com dois pratos, um vazio e outro com uma pedra, fundo liso"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Repara na próxima vez que o estômago aperta.",
+          "corpo": "Antes de reagir, pergunta: isto é o que aconteceu ou é a história que aprendi a contar sobre isto?",
+          "imagem_ideia": "mão sobre o peito ou abdómen, close suave, pessoa sentada sozinha a respirar"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Não precisas de mudar o que sentes agora.",
+          "corpo": "Precisas de perceber que existe uma **escolha** entre o acontecimento e a reação. Essa escolha chama-se consciência.",
+          "imagem_ideia": "bifurcação de caminho num parque, duas direções possíveis, luz natural"
+        },
+        {
+          "tipo": "fecho",
+          "titulo": "O significado foi aprendido. **Pode ser reescrito.**",
+          "imagem_ideia": "página de caderno com uma frase riscada e outra escrita por baixo, luz de secretária"
+        }
+      ],
+      "legenda": "Alguém demora a responder e já decidiste que fizeste alguma coisa errada.\n\nNão foi o silêncio que te fez sentir assim. Foi o significado que deste a esse silêncio.\n\nEsse significado não nasceu agora. Foi construído há muito tempo, para te proteger de uma dor que já conheces bem.\n\nO problema é quando essa leitura automática continua a decidir por ti, mesmo quando a situação já não é a mesma.\n\nRepara na próxima vez que sentires o estômago apertar antes de teres a certeza de nada.\n\nPergunta: isto aconteceu ou é a história que aprendi a contar sobre isto?\n\nLeva esta pergunta contigo hoje.",
+      "primeiro_comentario": "Se te revês nisto, guarda este carrossel. Vais precisar dele na próxima vez que o estômago apertar antes de teres a certeza de nada."
+    }
+  },
+  "avisos": []
+}

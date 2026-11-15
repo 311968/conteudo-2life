@@ -1,0 +1,257 @@
+{
+  "marcacoes": {
+    "significado": {
+      "funcao": "tecnico",
+      "nivel": 2,
+      "avanco": "Aprofundamento: guardar, ver outro conteúdo ou continuar uma sequência"
+    },
+    "r3": {
+      "funcao": "autoridade",
+      "nivel": 3,
+      "avanco": "Conversa: perceber se o processo faz sentido e iniciar uma relação comercial"
+    },
+    "carrossel": {
+      "funcao": "atracao",
+      "nivel": 1,
+      "avanco": "Observação: reconhecer o padrão sem exigir exposição"
+    }
+  },
+  "significado": {
+    "ok": true,
+    "segundos": 38,
+    "ideia": "Não é o que nos acontece que decide como nos sentimos. É o significado automático que damos ao acontecimento, aprendido como proteção. Quando o reconhecemos, podemos escolher outra leitura. Na nova possibilidade, usa o mecanismo do método na formulação integral.",
+    "aberturas": {
+      "ganchos": [
+        {
+          "tipo": "problema",
+          "frase": "Alguém cancela um café e já estás a pensar no que fizeste de errado.",
+          "tela": "Cancelaram. E já é culpa tua?",
+          "situacao": "A pessoa recebe uma mensagem a desmarcar e em segundos passa de 'tudo bem' a 'fiz isto mal', sem nenhum facto novo que sustente essa leitura.",
+          "porque": "É uma cena concreta e comum, reconhecível de imediato, que mostra o salto automático entre facto e significado sem precisar de explicação prévia.",
+          "recomendado": true
+        },
+        {
+          "tipo": "contraintuitiva",
+          "frase": "Não é o que acontece que te dói. É a frase que dizes a ti sobre isso.",
+          "tela": "Não é o facto. É a leitura.",
+          "situacao": "Alguém não responde a uma mensagem durante horas e a pessoa já decidiu, sozinha, que fez isto que afastou o outro.",
+          "porque": "Contesta a crença comum de que a emoção vem direto do acontecimento, abrindo espaço para a distinção entre facto e significado atribuído.",
+          "recomendado": false
+        },
+        {
+          "tipo": "curiosidade",
+          "frase": "O mesmo silêncio de alguém pode significar duas coisas muito diferentes para ti.",
+          "tela": "Um silêncio. Dois significados.",
+          "situacao": "Num dia, um silêncio ao telefone sente-se neutro. Noutro dia, o mesmo silêncio sente-se como rejeição, sem nada de diferente ter acontecido de facto.",
+          "resposta": "O que muda não é o acontecimento, é o significado automático que aprendeste a dar-lhe para te protegeres, e esse significado pode tornar-se consciente e ser escolhido de outra forma.",
+          "porque": "Cria uma pergunta genuína sobre a própria experiência da pessoa (porque é que o mesmo facto pesa de forma diferente) que o vídeo depois resolve.",
+          "recomendado": false
+        }
+      ],
+      "recomendada": 0,
+      "razao": "A situação do cancelamento gera identificação imediata e concreta sem precisar de contexto adicional, por isso o problema concreto é a porta mais forte para este tema de nível 2 (reconhecer o padrão)."
+    },
+    "roteiro": {
+      "blocos": [
+        {
+          "tempo": "0-6s",
+          "rotulo": "ABERTURA",
+          "fala": "Alguém cancela um café e já estás a pensar no que fizeste de errado.",
+          "tela": "Cancelaram. E já é culpa tua?",
+          "camera": "Plano de peito, câmara frontal, olhar direto para a lente, sem movimento."
+        },
+        {
+          "tempo": "6-18s",
+          "rotulo": "SITUAÇÃO",
+          "fala": "Chega a mensagem. 'Não vou poder, desculpa.' Nenhum facto novo apareceu. Mas em segundos já estás a rever a última conversa, à procura do que disseste a mais ou a menos.",
+          "tela": "Nenhum facto novo. Só uma leitura.",
+          "camera": "Mesmo plano, leve zoom in lento ao longo do bloco."
+        },
+        {
+          "tempo": "18-40s",
+          "rotulo": "MECANISMO",
+          "fala": "Não é o cancelamento que decide o que sentes. É o significado automático que dás a isso. Para muita gente, esse significado foi aprendido cedo: se alguém se afasta, deve ser porque fiz alguma coisa mal. É uma leitura que protegeu em tempos. Hoje decide por ti antes de perceberes que podias escolher outra.",
+          "tela": "O significado é aprendido. Não é o único possível.",
+          "camera": "Plano de peito, câmara parada, sem zoom, para dar peso à explicação."
+        },
+        {
+          "tempo": "40-54s",
+          "rotulo": "NOVA POSSIBILIDADE",
+          "fala": "O automático reage. A essência escolhe. A ação cria evidência. A repetição transforma a identidade. Da próxima vez que alguém cancelar, podes notar o pensamento e perguntar: isto é facto ou é o meu significado de sempre?",
+          "tela": "Facto ou significado de sempre?",
+          "camera": "Plano de peito, leve inclinação de cabeça, tom mais pausado."
+        },
+        {
+          "tempo": "54-60s",
+          "rotulo": "CTA",
+          "fala": "Guarda este vídeo para voltares a esta pergunta da próxima vez que isto acontecer.",
+          "tela": "Guarda para a próxima vez.",
+          "camera": "Plano de peito, câmara estática, olhar direto, sem corte até ao fim."
+        }
+      ],
+      "legenda": "Alguém demora a responder e já procuras no que fizeste mal, antes de saberes sequer a razão.\n\nNenhum facto novo apareceu. Só um significado antigo, que decidiu mais depressa do que tu.\n\nEsse significado foi aprendido. Em alguma altura, associar o afastamento de alguém a um erro teu foi uma forma de te manteres em alerta, de te preparares antes de doer.\n\nO problema é quando essa leitura automática passa a decidir por ti sempre, mesmo sem provas.\n\nReconhecer isto não muda o que aconteceu. Muda a pergunta que fazes a seguir: isto é facto ou é o significado de sempre?\n\nGuarda este vídeo para voltares a esta pergunta da próxima vez que isto acontecer.",
+      "primeiro_comentario": "Qual costuma ser o teu primeiro pensamento quando alguém cancela um plano?",
+      "capa": {
+        "intro": "Cancelaram o café.",
+        "titulo": "E já é culpa tua?",
+        "manuscrita": "Não é facto. É leitura."
+      },
+      "imagem_ideia": "Simone sentada perto de uma janela, telemóvel na mão virado para baixo sobre a mesa, expressão pensativa mas serena, luz natural suave, enquadramento de peito, sem olhar para a câmara (foto de apoio para a capa, não o vídeo em si).",
+      "duracao_estimada": 60
+    }
+  },
+  "r3": {
+    "ok": true,
+    "segundos": 22,
+    "aberturas": {
+      "ganchos": [
+        {
+          "tipo": "sessao",
+          "frase": "Quando alguém me diz \"ele nem respondeu à mensagem, já sei que se afastou de mim\"...",
+          "tela": "\"Já sei que se afastou de mim\"",
+          "situacao": "A pessoa lê uma ausência de resposta como rejeição confirmada.",
+          "porque": "Mostra de forma concreta como um facto neutro recebe automaticamente um significado de abandono, sem que a pessoa dê por isso.",
+          "recomendado": false
+        },
+        {
+          "tipo": "sessao",
+          "frase": "Quando alguém me diz \"ela corrigiu-me à frente de todos, fez de propósito para me diminuir\"...",
+          "tela": "\"Fez de propósito para me diminuir\"",
+          "situacao": "A pessoa interpreta uma correção pública como ataque intencional à sua competência.",
+          "porque": "É uma cena de trabalho reconhecível, onde o significado atribuído (ataque) é diferente do facto (uma correção), ilustrando bem a distinção do tema.",
+          "recomendado": false
+        },
+        {
+          "tipo": "sessao",
+          "frase": "Quando alguém me diz \"ninguém se ofereceu para ajudar, isso prova que tenho de fazer tudo sozinho\"...",
+          "tela": "\"Prova que tenho de fazer tudo sozinho\"",
+          "situacao": "A pessoa transforma um silêncio alheio numa confirmação de uma crença antiga sobre si própria.",
+          "porque": "Liga o acontecimento (ninguém se ofereceu) a uma crença identitária profunda, o que aprofunda o tema para além da leitura superficial.",
+          "recomendado": true
+        }
+      ],
+      "recomendada": 2,
+      "razao": "Esta variação liga o acontecimento diretamente a uma crença identitária (\"tenho de fazer tudo sozinho\"), o que serve melhor o tema do significado automático e protetor, abrindo espaço claro para o mecanismo de escolher outra leitura."
+    },
+    "roteiro": {
+      "blocos": [
+        {
+          "tempo": "0-7s",
+          "rotulo": "ABERTURA",
+          "fala": "Quando alguém me diz, ninguém se ofereceu para ajudar, isso prova que tenho de fazer tudo sozinho...",
+          "tela": "Prova que tenho de fazer tudo sozinho",
+          "camera": "Plano de peito, câmara frontal, fixa, olhar direto para a lente."
+        },
+        {
+          "tempo": "7-18s",
+          "rotulo": "SITUAÇÃO",
+          "fala": "Ninguém respondeu. Ninguém se ofereceu. E naquele silêncio, a pessoa já tem uma certeza: é mesmo assim, só posso contar comigo. O acontecimento foi pequeno. A conclusão foi enorme.",
+          "tela": "O acontecimento foi pequeno. A conclusão foi enorme.",
+          "camera": "Mantém o plano de peito. Leve aproximação lenta durante a fala."
+        },
+        {
+          "tempo": "18-41s",
+          "rotulo": "MECANISMO",
+          "fala": "Não é o silêncio que dói. É o significado que lhe deste. Esse significado não nasceu agora. Nasceu há muito, a proteger-te de esperar e seres desiludido outra vez. Por isso o automático já tem a leitura pronta antes de pensares. E essa leitura confirma sempre a mesma crença: estás sozinho, tens de dar conta de tudo.",
+          "tela": "A leitura já estava pronta antes de pensares",
+          "camera": "Plano fixo. Gestos moderados das mãos a acompanhar a explicação."
+        },
+        {
+          "tempo": "41-52s",
+          "rotulo": "NOVA POSSIBILIDADE",
+          "fala": "O automático reage. A essência escolhe. A ação cria evidência. A repetição transforma a identidade. Podes reconhecer essa leitura automática e perguntar, que outro significado cabe aqui.",
+          "tela": "Que outro significado cabe aqui?",
+          "camera": "Leve afastamento da câmara, tom mais calmo, ritmo mais lento."
+        },
+        {
+          "tempo": "52-57s",
+          "rotulo": "CTA",
+          "fala": "Se queres perceber que significados automáticos estás a repetir, marca uma Conversa 2Life.",
+          "tela": "Marca uma Conversa 2Life",
+          "camera": "Plano de peito, fixo, olhar direto, sem movimento até ao corte final."
+        }
+      ],
+      "legenda": "Alguém não responde a uma mensagem e já sentes o peito a apertar com uma certeza antiga.\n\nNão é o facto que decide o que sentes. É o significado automático que lhe atribuis.\n\nQuando alguém me diz, ninguém se ofereceu para ajudar, isso prova que tenho de fazer tudo sozinho, eu não olho apenas para o que aconteceu.\n\nProcuro perceber que crença antiga essa leitura está a confirmar.\n\nPorque o automático não escolhe o significado ao acaso. Escolhe aquele que já conhece, o que te protegeu antes.\n\nÉ aqui que começa a diferença entre compreender e transformar.\n\nSe queres perceber que significados automáticos estás a repetir, marca uma Conversa 2Life.",
+      "primeiro_comentario": "Que significado costumas dar quando alguém fica em silêncio?",
+      "capa": {
+        "intro": "Na sessão",
+        "titulo": "Prova que tenho de fazer tudo sozinho",
+        "manuscrita": "ou é só o que aprendi a pensar?"
+      },
+      "imagem_ideia": "Simone sentada, plano de peito, luz natural lateral suave, expressão serena e atenta, fundo neutro desfocado, mão perto do rosto em gesto de reflexão, sem elementos de texto sobrepostos na foto em si.",
+      "duracao_estimada": 57
+    }
+  },
+  "carrossel": {
+    "ok": true,
+    "segundos": 21,
+    "carrossel": {
+      "serie": "SIGNIFICADO E PILOTO AUTOMÁTICO",
+      "legenda": "Alguém não responde a uma mensagem e a tua cabeça já escreveu a história toda.\n\n\"Fiz alguma coisa errada.\" \"Já não quer saber.\" \"Devia ter dito menos.\"\n\nRepara: o que aconteceu foi só isto, a mensagem não teve resposta ainda. O resto foi significado que o teu automático colou ao acontecimento, em meio segundo, sem perguntar.\n\nEsse significado não nasceu agora. Nasceu algures no teu percurso, a proteger-te de alguma coisa: de seres apanhada de surpresa, de confiares demais, de sentires que não importas.\n\nNão é fraqueza interpretar assim. É um mecanismo que aprendeu a andar à tua frente.\n\nA diferença começa quando separas o facto da leitura. Quando percebes que entre os dois há um espaço, e nesse espaço podias escolher outra coisa.\n\nRepara, hoje, numa situação onde sentiste mais do que o facto justificava. Só repara.",
+      "primeiro_comentario": "Qual costuma ser a tua primeira leitura automática: \"fiz isto errado\" ou \"não posso contar com isto\"?",
+      "slides": [
+        {
+          "tipo": "capa",
+          "titulo": "Não é o que te acontece. **É o que decides que isso significa.**",
+          "subtitulo": "E essa decisão é mais automática do que pensas",
+          "imagem_ideia": "mão a segurar o telemóvel, ecrã com uma mensagem sem resposta, luz de fim de tarde numa sala vazia"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Alguém cancela um café em cima da hora.",
+          "corpo": "Em segundos, já pensaste: **\"não sou prioridade para ninguém\"**. O facto foi pequeno. O significado, não.",
+          "alinhar": "centro",
+          "imagem_ideia": "chávena de café intacta numa mesa de esplanada vazia, cadeira em frente desarrumada"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "O chefe não comenta o teu trabalho.",
+          "corpo": "E tu ouves silêncio como **\"não correu bem\"**, mesmo sem nenhuma prova disso.",
+          "alinhar": "centro",
+          "imagem_ideia": "mesa de escritório com um relatório fechado, computador em stand by, pessoa de costas saindo da sala"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Entre o acontecimento e o sentimento, há sempre um passo invisível.",
+          "corpo": "Esse passo chama se **significado**. E a maior parte das vezes é dado sem a tua autorização consciente.",
+          "alinhar": "centro",
+          "imagem_ideia": "metáfora visual simples, uma porta entreaberta entre duas salas, luz a passar pela fresta"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Esse significado não apareceu agora.",
+          "corpo": "Foi aprendido numa altura em que precisavas dele para te **proteger** de alguma coisa que doía mais.",
+          "alinhar": "centro",
+          "imagem_ideia": "fotografia antiga desfocada em cima de uma mesa de madeira, luz suave, sem rosto visível"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Por isso não é fraqueza interpretar assim.",
+          "corpo": "É um mecanismo que aprendeu a andar à tua frente, a decidir antes de perguntares se é verdade.",
+          "alinhar": "centro",
+          "imagem_ideia": "sombra de uma pessoa a andar um passo à frente do próprio corpo, efeito de dupla exposição"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Mas o facto e a leitura do facto **não são a mesma coisa.**",
+          "corpo": "E entre os dois existe sempre um espaço onde outra leitura cabe.",
+          "alinhar": "centro",
+          "imagem_ideia": "close up de duas folhas de papel lado a lado em cima de uma secretária, uma em branco, outra com texto"
+        },
+        {
+          "tipo": "interior",
+          "titulo": "Hoje não precisas de mudar o que sentes.",
+          "corpo": "Precisas só de **reparar** no momento em que o significado aparece antes do facto estar confirmado.",
+          "alinhar": "centro",
+          "imagem_ideia": "pessoa sentada junto a uma janela, olhar parado, luz natural entrando, expressão pensativa"
+        },
+        {
+          "tipo": "fecho",
+          "titulo": "O que te acontece é um facto. **O significado, podes escolhê-lo.**",
+          "imagem_ideia": "janela aberta com cortina leve a mover se com o vento, luz quente de fim de tarde"
+        }
+      ]
+    }
+  },
+  "avisos": []
+}

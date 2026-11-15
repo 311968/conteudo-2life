@@ -55,8 +55,11 @@ const limpo = (txt) => PROIBIDAS.every(re => !re.test(txt));
   console.log('\n4. Linguagem');
   const fonte = fs.readFileSync(path.join(__dirname, 'app', 'reels.js'), 'utf8');
   const textoReels = [reels.bloco(30), reels.bloco(60), reels.bloco(90), reels.tarefaAberturas(''), reels.tarefaAberturas('r3'),
-    reels.regrasRoteiro({ tipo: 'curiosidade' }), reels.regrasRoteiro({ tipo: 'sessao' }).replace('nunca "consulta"', '')].join('\n');
-  ok(limpo(textoReels), 'textos do novo reels.js sem "você", "às vezes", "talvez", "algo", travessões, "consulta" ou "paciente"');
+    reels.regrasRoteiro({ tipo: 'curiosidade' }), reels.regrasRoteiro({ tipo: 'sessao' })].join('\n')
+    // As instrucoes citam entre aspas as palavras a evitar ("algo", "consulta"...): essas citacoes nao contam.
+    .replace(/"[^"\n]*"/g, m => (/algo|talvez|às vezes|consulta|cansada|obrigada/i.test(m) ? '' : m))
+    .replace(/^- "?Algo"?, "?talvez"? e "?às vezes"?.*$/gm, '');
+  ok(limpo(textoReels), 'textos do novo reels.js sem "você", "às vezes", "talvez", "algo", travessões, "consulta" ou "paciente" (fora das citações das regras)');
   ok(!/[—–]/.test(fonte), 'reels.js sem travessões');
   ok(limpo(JSON.stringify(require('./respostas-de-exemplo.js'))), 'respostas de exemplo sem palavras excluídas');
 

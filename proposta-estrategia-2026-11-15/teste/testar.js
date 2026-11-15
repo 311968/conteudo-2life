@@ -61,7 +61,9 @@ const tenta = async (fn) => { try { await fn(); } catch (e) { /* a IA falsa term
   const antigo = estrategia.bloco({ funcao: 'conexao', nivel: 2, avanco: 'perceber que isso tem um custo' });
   ok(/Nível de consciência 2/.test(antigo) && /Próximo movimento pretendido:\*\* perceber/.test(antigo) && !/Função ATA/.test(antigo),
     'marcações antigas não partem a app: a função antiga é ignorada e o texto livre passa tal como está');
-  ok(estrategia.bloco({}) === '' && estrategia.lembrete({}) === '', 'sem marcação, nada é acrescentado');
+  const semFicha = estrategia.bloco({});
+  ok(/A ficha de decisão não foi preenchida/.test(semFicha) && /Atração/.test(semFicha) && /Nível 5/.test(semFicha) && /O CTA não deve pedir/.test(semFicha) && estrategia.lembrete({}) === '',
+    'sem marcação (só tema), a IA recebe a Matriz para escolher função, nível e um só CTA');
 
   console.log('\n6. Linguagem');
   const tudo = [estrategia.bloco({ funcao: 'atracao', nivel: 1, avanco: estrategia.AVANCOS[1] }),
