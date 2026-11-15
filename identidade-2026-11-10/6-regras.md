@@ -23,14 +23,12 @@ Fonte: Hierarquia e Prompt-Mãe v1.2 (§5), Matriz de Comunicação v2.3 (§11, 
 - Primeiro a pessoa vê-se (cena, frase interna, escolha, corpo, consequência). Depois compreende o mecanismo.
 - Não comunicar só dor: incluir desejo, autenticidade, confiança, permissão e expansão.
 - Não reduzir o 2Life a autoconhecimento: ligar consciência, essência, postura interna, ação, evidência, repetição e identidade.
-- Um só CTA por peça, proporcional ao movimento criado. Atração: observar, guardar, partilhar ou responder. Ensino: refletir, experimentar, aprofundar ou fazer o Diagnóstico. Autoridade: conhecer o método, enviar mensagem, marcar Conversa 2Life ou entrar.
+- Um só CTA por peça, proporcional ao movimento criado. Atração: observar, guardar, partilhar ou responder. Técnico: refletir, experimentar, aprofundar ou fazer o Diagnóstico. Autoridade: conhecer o método, enviar mensagem, marcar Conversa 2Life ou entrar.
 
 ## Funções do conteúdo (sistema ATA da marca)
 - Atração: quero que a pessoa pense "isto acontece comigo".
 - Técnico: quero que pense "agora compreendo".
 - Autoridade: quero que pense "é com esta profissional que quero trabalhar".
-
-Correspondência com as funções desta app: Atração = Atração; Conexão = Técnico; Venda = Autoridade e convite.
 
 ## Frases protegidas (usar literais, nunca parafrasear)
 - Tese-mãe: "Toda a dificuldade em expandir revela um afastamento da essência."
