@@ -5,15 +5,52 @@
   "nivel": 2,
   "avanco": "Aprofundamento: guardar, ver outro conteúdo ou continuar uma sequência",
   "slides": [
-    { "tipo": "capa", "titulo": "Não te falta **assertividade.**", "subtitulo": "Falta-te sentir que podes desiludir alguém e continuar a ter **lugar**." },
-    { "tipo": "interior", "titulo": "Pensas que o problema é não saberes dizer **não**.", "corpo": "Por isso ensaias a frase, escolhes as palavras, esperas pelo momento certo. E quando chega a hora, sai um **sim**." },
-    { "tipo": "interior", "titulo": "Um limite não é uma **rejeição.**", "corpo": "É informação: mostra ao outro onde tu começas." },
-    { "tipo": "interior", "titulo": "Não é fraqueza. É **proteção.**", "corpo": "Quando aprendeste que o teu valor estava em seres útil aos outros, dizer não passou a ser sentido como perder o lugar. Por isso o corpo trava antes de a cabeça decidir." },
-    { "tipo": "interior", "titulo": "Pedem-te para ficares com mais um projeto.", "corpo": "Já estás no limite. Dizes \"claro, eu trato disso\". À noite, sentes cansaço e um **ressentimento** que não sabes onde pôr." },
-    { "tipo": "interior", "titulo": "Frases feitas para dizer não.", "corpo": "Mais técnicas de assertividade. Prometer a ti próprio que da próxima vez é diferente. Enquanto o não for sentido como **perigo**, o sim volta a sair." },
-    { "tipo": "interior", "titulo": "Perceber o que temes perder quando dizes **não.**", "corpo": "E sustentar um não pequeno, sem te justificares demais, para aprenderes por experiência que continuas a ter **lugar**." },
-    { "tipo": "interior", "titulo": "Completa esta frase: **«Se eu disser não, tenho medo de que…»**", "corpo": "Escreve a primeira resposta que surgir. É aí que começa a raiz." },
-    { "tipo": "fecho", "titulo": "O piloto automático protege-te. Mas não pode **decidir** a tua vida.", "logotipo": "sem" }
+    {
+      "tipo": "capa",
+      "titulo": "Não te falta **assertividade.**",
+      "subtitulo": "Falta-te sentir que podes desiludir alguém e continuar a ter **lugar**."
+    },
+    {
+      "tipo": "interior",
+      "titulo": "Pensas que o problema é não saberes dizer **não**.",
+      "corpo": "Por isso ensaias a frase, escolhes as palavras, esperas pelo momento certo. E quando chega a hora, sai um **sim**."
+    },
+    {
+      "tipo": "interior",
+      "titulo": "Um limite não é uma **rejeição.**",
+      "corpo": "É informação: mostra ao outro onde tu começas."
+    },
+    {
+      "tipo": "interior",
+      "titulo": "Não é fraqueza. É **proteção.**",
+      "corpo": "Quando aprendeste que o teu valor estava em seres útil aos outros, dizer não passou a ser sentido como perder o lugar. Por isso o corpo trava antes de a cabeça decidir."
+    },
+    {
+      "tipo": "interior",
+      "titulo": "Pedem-te para ficares com mais um projeto.",
+      "corpo": "Já estás no limite. Dizes \"claro, eu trato disso\". À noite, sentes cansaço e um **ressentimento** que não sabes onde pôr."
+    },
+    {
+      "tipo": "interior",
+      "titulo": "Frases feitas para dizer não.",
+      "corpo": "Mais técnicas de assertividade. Prometer a ti que da próxima vez é diferente. Enquanto o não for sentido como **perigo**, o sim volta a sair."
+    },
+    {
+      "tipo": "interior",
+      "titulo": "Perceber o que temes perder quando dizes **não.**",
+      "corpo": "E sustentar um não pequeno, sem te justificares demais, para aprenderes por experiência que continuas a ter **lugar**."
+    },
+    {
+      "tipo": "interior",
+      "titulo": "Completa esta frase: **«Se eu disser não, tenho medo de que…»**",
+      "corpo": "Escreve a primeira resposta que surgir. É aí que começa a raiz."
+    },
+    {
+      "tipo": "fecho",
+      "titulo": "O piloto automático protege-te. Mas não pode **decidir** a tua vida.",
+      "logotipo": "sem"
+    }
   ],
-  "legenda": "Dizer que sim quando querias dizer não não é falta de coragem nem de assertividade.\n\nQuando o teu valor ficou ligado a seres útil aos outros, cada não é sentido como um risco de perder o teu lugar. O corpo protege-te antes de a cabeça escolher.\n\nPor isso não chega saber a frase certa. O que começa a mudar é perceber o que temes perder e experimentar um não pequeno, sustentado, sem o justificar demais.\n\nHoje deixo-te só uma pergunta: se disseres não, tens medo de quê?\n\nGuarda para voltares a esta pergunta."
+  "legenda": "Dizer que sim quando querias dizer não não é falta de coragem nem de assertividade.\n\nQuando o teu valor ficou ligado a seres útil aos outros, cada não é sentido como um risco de perder o teu lugar. O corpo protege-te antes de a cabeça escolher.\n\nPor isso não chega saber a frase certa. O que começa a mudar é perceber o que temes perder e experimentar um não pequeno, sustentado, sem o justificar demais.\n\nHoje deixo-te só uma pergunta: se disseres não, tens medo de quê?\n\nGuarda para voltares a esta pergunta.",
+  "primeiro_comentario": "Em que situação o teu sim sai antes de pensares?"
 }
