@@ -1,0 +1,50 @@
+[
+  {
+    "dia": "2026-11-17",
+    "semana": "Semana Limites",
+    "receita": "S2 · Sequência de reconhecimento",
+    "funcao": "Atração",
+    "pilar": "Reconhecer o Piloto Automático",
+    "cta": "Interação: sondagem",
+    "notas": "Fundo Marfim ou uma foto calma, texto em EB Garamond. Um ecrã por story.",
+    "ecras": [
+      { "papel": "Cena ou frase interna", "texto": "Digo que sim antes de perceber se quero.", "autocolante": "", "nota": "Frase grande, ao centro." },
+      { "papel": "Sondagem", "texto": "Acontece-te?", "autocolante": "Sondagem: «Sim, acontece» / «Quase nunca»", "nota": "" },
+      { "papel": "Nomeação do padrão", "texto": "Tem nome: é o piloto automático a responder por ti.\nO sim sai antes de saberes o que queres.", "autocolante": "", "nota": "" },
+      { "papel": "Reinterpretação", "texto": "Não é falta de assertividade.\nÉ uma forma antiga de manter o teu lugar.", "autocolante": "", "nota": "Liga ao carrossel de segunda." },
+      { "papel": "Pergunta de observação", "texto": "Hoje, repara:\nem que momento o teu sim chega antes de ti?", "autocolante": "", "nota": "Sem pedir resposta: é só para observar." }
+    ]
+  },
+  {
+    "dia": "2026-11-19",
+    "semana": "Semana Limites",
+    "receita": "S3 · Sequência educativa",
+    "funcao": "Técnico",
+    "pilar": "Escolher e Sustentar",
+    "cta": "Interação: caixa de perguntas",
+    "notas": "Se receberes perguntas na caixa, podes trocar o ecrã 1 por uma pergunta real, sem nome nem detalhe que identifique quem a fez.",
+    "ecras": [
+      { "papel": "Mito", "texto": "«Se sinto culpa depois de dizer não, é porque fiz mal.»", "autocolante": "", "nota": "Entre aspas, como pensamento." },
+      { "papel": "Resposta curta", "texto": "Não.\nA culpa depois de um limite não significa que erraste.", "autocolante": "", "nota": "" },
+      { "papel": "Explicação", "texto": "Significa que saíste do conhecido.\nO corpo estranha aquilo que ainda não repetiu.", "autocolante": "", "nota": "" },
+      { "papel": "Exemplo", "texto": "Dizes «hoje não consigo» a um pedido.\nDurante horas, voltas ao assunto e pensas em mandar mensagem a desfazer.", "autocolante": "", "nota": "" },
+      { "papel": "Aplicação à vida", "texto": "Não precisas de esperar que a culpa passe para manter o teu não.\nCom a repetição, ela perde força.", "autocolante": "", "nota": "" },
+      { "papel": "Caixa de perguntas", "texto": "E tu, o que sentes depois de dizer não?", "autocolante": "Caixa de perguntas: «O que sentes depois de dizer não?»", "nota": "" }
+    ]
+  },
+  {
+    "dia": "2026-11-21",
+    "semana": "Semana Limites",
+    "receita": "S4 · Bastidores com significado",
+    "funcao": "Autoridade",
+    "pilar": "Escolher e Sustentar",
+    "cta": "Sem CTA",
+    "notas": "Por preencher por ti: só tu sabes o momento real que queres partilhar. Se não quiseres partilhar nenhum, este dia pode ficar sem stories.",
+    "ecras": [
+      { "papel": "Mostrar o momento real", "texto": "", "autocolante": "", "nota": "Escreve tu: um momento desta semana em que escolheste a partir de outro lugar (por exemplo, um pedido a que disseste não ou que adiaste). Foto ou vídeo curto do contexto, sem pessoas identificáveis." },
+      { "papel": "Porque é relevante", "texto": "", "autocolante": "", "nota": "Escreve tu: porque é que este momento importa para ti." },
+      { "papel": "Ligar ao método", "texto": "A ação cria evidência.\nA repetição transforma a identidade.", "autocolante": "", "nota": "Mecanismo do 2Life, sem mudar uma palavra." },
+      { "papel": "Reflexão curta", "texto": "", "autocolante": "", "nota": "Escreve tu uma frase curta. Sugestão, se te servir: «Cada não pequeno é uma prova de que continuas a ter lugar.» Sem CTA." }
+    ]
+  }
+]

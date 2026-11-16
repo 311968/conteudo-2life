@@ -17,8 +17,9 @@ Estado: **aplicado em produção** a 16/11/2026, a pedido da Simone. Cada script
 | 11 | `aplicar_mapa_menu.py` + `mapa_para_app.py` | Mapa das Fontes dentro da app: menu › Extras › Mapa das Fontes abre `/mapa.html` (atrás do login), com barra para voltar à app |
 | 12 | `aplicar_guardar_telemovel.py` | Botão «Guardar no telemóvel» depois de exportar: abre a folha de partilha do telemóvel com as imagens (Guardar imagens, Instagram); só em ecrãs tácteis |
 | 13 | `aplicar_zona_grelha.py` | Zona segura da grelha na capa: conteúdo a 170 px do topo e do fundo, para aparecer inteiro no recorte quadrado ou 3:4 da grelha do perfil |
+| 14 | `aplicar_stories.py` + `stories/` | Secção «Stories» (menu 3 · Criar): textos por dia, editáveis, Copiar, Guardar, Marcar como publicado; tabela `stories`; Semana Limites metida a partir de `../semana-limites-2026-11-16/stories-semana.json` |
 
-Os scripts `*_em_producao.sh` aplicam os passos 3 a 13. **Sempre que o mapa for atualizado, correr `publicar_mapa_na_app.sh`** para atualizar a cópia dentro da app. (o do passo 8 parte do `ia.js` anterior, guardado em `antes-genero/`) a partir deste computador.
+Os scripts `*_em_producao.sh` aplicam os passos 3 a 14. **Sempre que o mapa for atualizado, correr `publicar_mapa_na_app.sh`** para atualizar a cópia dentro da app. (o do passo 8 parte do `ia.js` anterior, guardado em `antes-genero/`) a partir deste computador.
 
 - `base/`: cópia dos ficheiros de produção antes do passo 1 (e `ia.js`, `layouts/post.js` antes dos passos 3 e 4).
 - `novo5/`: ficheiros depois do passo 5.
@@ -29,7 +30,8 @@ Os scripts `*_em_producao.sh` aplicam os passos 3 a 13. **Sempre que o mapa for 
 - `novo10/`: ficheiros depois do passo 10.
 - `novo11/`: ficheiros depois do passo 11.
 - `novo12/`: ficheiros depois do passo 12.
-- `novo13/`: ficheiros tal como estão em produção depois do passo 13 (o `mapa.html` gera-se com `mapa_para_app.py`).
+- `novo13/`: ficheiros depois do passo 13.
+- `novo14/`: ficheiros tal como estão em produção depois do passo 14 (o `mapa.html` gera-se com `mapa_para_app.py`).
 
 ## Causa do problema de 16/11
 
