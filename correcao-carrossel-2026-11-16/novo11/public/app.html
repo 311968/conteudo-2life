@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="/assets/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icone-192.png">
+<link rel="apple-touch-icon" href="/assets/icone-180.png">
+<meta name="theme-color" content="#F5F1EA">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="2Life">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>Conteúdo Negócio Enxuto</title>
+<link rel="stylesheet" href="/fontes/fontes.css">
+<link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+<button id="abrir-menu" class="abrir-menu" aria-label="Abrir menu">☰</button>
+
+<aside class="lateral" id="lateral">
+  <div class="marca">
+    <span class="eyebrow">Negócio Enxuto com IA</span>
+    <strong>Conteúdo</strong>
+  </div>
+
+  <nav class="abas">
+    <div class="grupo">
+      <button data-aba="comece" class="destaque">Tutorial</button>
+    </div>
+
+    <div class="grupo">
+      <span class="grupo-rot">1 · Configurar</span>
+      <button data-aba="identidade">Identidade</button>
+      <button data-aba="fotos">Fotos</button>
+      <button data-aba="visual">Cores</button>
+      <button data-aba="config">Chaves e ajustes</button>
+    </div>
+
+    <div class="grupo">
+      <span class="grupo-rot">2 · Alimentar</span>
+      <button data-aba="banco">Banco Central</button>
+    </div>
+
+    <div class="grupo">
+      <span class="grupo-rot">3 · Criar</span>
+      <button data-aba="produzir" class="ativa">Produzir</button>
+    </div>
+
+    <div class="grupo">
+      <span class="grupo-rot">4 · Publicar</span>
+      <button data-aba="calendario">Calendário</button>
+    </div>
+
+    <div class="grupo">
+      <span class="grupo-rot">5 · Acompanhar</span>
+      <button data-aba="carrosseis">Conteúdos</button>
+    </div>
+
+    <div class="grupo">
+      <span class="grupo-rot">Extras</span>
+      <button data-aba="extras">Capa de vídeo</button>
+      <a href="/mapa.html" style="display:block;padding:9px 12px;border-radius:9px;font-size:14.5px;font-weight:500;color:var(--petrol-lt);text-decoration:none">Mapa das Fontes</a>
+    </div>
+  </nav>
+
+  <button id="sair" class="link">Sair</button>
+</aside>
+
+<div class="veu-menu" id="veu-menu"></div>
+
+<main class="palco">
+  <!-- PRODUZIR -->
+  <section id="v-produzir" class="view ativa">
+    <div class="grade">
+      <div class="col">
+        <h2>1. O que você vai falar</h2>
+        <label>Formato</label>
+        <div class="pilulas" id="formatos">
+          <button class="pilula ativa" data-formato="carrossel">Carrossel</button>
+          <button class="pilula" data-formato="post">Post estático</button>
+          <button class="pilula" data-formato="reels">Reels</button>
+          <button class="pilula" data-formato="live">Live / YT</button>
+        </div>
+
+        <label for="tema">Tema</label>
+        <input id="tema" placeholder="Ex: o teto de operação que trava o faturamento">
+
+        <label for="serie">Faixa do topo (a série)</label>
+        <input id="serie" placeholder="Ex: Negócio Enxuto: dia 01">
+
+        <div id="bloco-live" class="oculto">
+          <label>A live ou o vídeo</label>
+          <div class="estrategia">
+            <div class="linha-est">
+              <span class="rot-est">Duração</span>
+              <div class="pilulas" id="duracoes-live"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="bloco-reels" class="oculto">
+          <label>O vídeo</label>
+          <div class="estrategia">
+            <div class="linha-est">
+              <span class="rot-est">Duração</span>
+              <div class="pilulas" id="duracoes"></div>
+            </div>
+            <div class="linha-est">
+              <span class="rot-est">Frase do CTA</span>
+              <input id="cta-reels" list="ctas" placeholder="opcional · ex: Leva esta pergunta contigo hoje.">
+              <datalist id="ctas"></datalist>
+            </div>
+            <div class="linha-est">
+              <span class="rot-est">Receita</span>
+              <select id="receita-reels"></select>
+            </div>
+          </div>
+        </div>
+
+        <label>Para quem fala, e para onde leva</label>
+        <div class="estrategia">
+          <div class="linha-est">
+            <span class="rot-est">Função ATA</span>
+            <div class="pilulas" id="funcoes"></div>
+          </div>
+          <div class="linha-est">
+            <span class="rot-est">Nível</span>
+            <div class="pilulas" id="niveis"></div>
+          </div>
+          <div class="dica" id="dica-nivel"></div>
+          <div class="linha-est">
+            <span class="rot-est">Próximo movimento</span>
+            <input id="avanco" list="avancos" placeholder="opcional · ex: Observação">
+            <datalist id="avancos"></datalist>
+          </div>
+        </div>
+
+        <label>Ideia central</label>
+        <div class="pilulas" id="modos">
+          <button class="pilula ativa" data-modo="escrever">Escrever</button>
+          <button class="pilula" data-modo="audio">Narrar por áudio</button>
+          <button class="pilula" data-modo="banco">Usar o Banco Central</button>
+        </div>
+
+        <div id="modo-escrever">
+          <textarea id="ideia" rows="7" placeholder="Fale como você falaria para uma cliente. O que você quer que ela entenda ao fim do carrossel?
+
+Pode ser uma frase ou um texto inteiro colado. Serve rascunho, trecho de aula, artigo, transcrição de vídeo."></textarea>
+        </div>
+
+        <div id="modo-audio" class="oculto">
+          <div class="gravador">
+            <button id="btn-gravar" class="botao">Gravar</button>
+            <span id="status-audio" class="dica">Clique em Gravar e narre a ideia.</span>
+          </div>
+          <textarea id="ideia-audio" rows="7" placeholder="A transcrição aparece aqui. Você pode corrigir antes de gerar."></textarea>
+        </div>
+
+        <div id="modo-banco" class="oculto">
+          <div class="dica">Marque o que serve de matéria prima. O texto que você escrever acima continua valendo.</div>
+          <div id="lista-banco-sel" class="lista-sel"></div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h2>2. Como vai parecer</h2>
+
+        <label id="rot-layout">Layout</label>
+        <div id="layouts" class="cards"></div>
+        <div id="estilos-post" class="cards oculto"></div>
+
+        <div id="bloco-tom">
+          <label>Paleta</label>
+          <div id="tons" class="pilulas"></div>
+        </div>
+
+        <div id="bloco-fotos">
+          <label id="rot-fotos">Foto da capa e do fechamento</label>
+          <div id="fotos-sel" class="fotos-grade"></div>
+        </div>
+
+        <button id="btn-gerar" class="botao grande">Gerar carrossel</button>
+        <div id="status-gerar" class="dica"></div>
+      </div>
+    </div>
+
+    <div id="opcoes-live" class="oculto">
+      <div class="linha-titulo">
+        <h2>3. Escolha a proposta</h2>
+        <span class="dica">Três recortes do mesmo tema. Clique no que você quer conduzir.</span>
+      </div>
+      <div id="lista-propostas" class="ganchos"></div>
+    </div>
+
+    <div id="opcoes-reels" class="oculto">
+      <div class="linha-titulo">
+        <h2>3. Escolhe a abertura</h2>
+        <span class="dica">Os dois primeiros segundos decidem se a pessoa fica. A abertura recomendada aparece assinalada.</span>
+      </div>
+      <div id="lista-ganchos" class="ganchos"></div>
+    </div>
+
+    <div id="opcoes-post" class="oculto">
+      <div class="linha-titulo">
+        <h2>3. Escolha o ângulo</h2>
+        <span class="dica">Três portas de entrada para o mesmo tema. Clique na que você quer.</span>
+      </div>
+      <div id="lista-opcoes" class="opcoes"></div>
+    </div>
+
+    <div id="editor" class="oculto">
+      <div class="linha-titulo">
+        <h2 id="titulo-editor">3. Revisar slide a slide</h2>
+        <div>
+          <button id="btn-voltar-angulos" class="botao fantasma oculto">Ver os outros ângulos</button>
+          <button id="btn-salvar" class="botao fantasma">Salvar</button>
+          <button id="btn-exportar" class="botao">Exportar imagens</button>
+        </div>
+      </div>
+      <div id="status-export" class="dica"></div>
+      <div id="resumo-live" class="oculto"></div>
+
+      <div id="bloco-roteiro" class="oculto">
+        <h3>Roteiro para gravar</h3>
+        <div id="roteiro"></div>
+      </div>
+
+      <div id="slides" class="slides"></div>
+      <button id="btn-add" class="botao fantasma">Adicionar slide</button>
+      <div id="bloco-youtube" class="oculto">
+        <div class="linha-titulo">
+          <h3>Para o YouTube</h3>
+          <button id="btn-capa-yt" class="botao mini fantasma">Gerar a capa</button>
+        </div>
+        <div class="yt-grade">
+          <div>
+            <div class="previa-yt" id="previa-yt"><span>a capa aparece aqui</span></div>
+            <div class="yt-campos">
+              <div><div class="rot">Chapéu</div><input id="yt-chapeu"></div>
+              <div><div class="rot">Título da capa · no máximo 6 palavras</div><input id="yt-titulo"></div>
+              <div><div class="rot">Linha de apoio</div><input id="yt-apoio"></div>
+              <div><div class="rot">Selo</div><input id="yt-selo"></div>
+            </div>
+          </div>
+          <div>
+            <div class="rot">Descrição do vídeo, com capítulos · copie e cole no YouTube</div>
+            <textarea id="yt-descricao" rows="16"></textarea>
+            <button id="btn-copiar-yt" class="botao mini fantasma">Copiar a descrição</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="bloco-perguntas" class="oculto">
+        <h3>Perguntas que devem aparecer</h3>
+        <div id="perguntas"></div>
+      </div>
+
+      <h2 id="rot-legenda">Legenda</h2>
+      <textarea id="legenda" rows="8"></textarea>
+      <h2>Primeiro comentário</h2>
+      <textarea id="comentario" rows="3"></textarea>
+      <div class="publicar">
+        <div class="linha-titulo">
+          <strong>Aprovar e mandar para o calendário</strong>
+          <button id="btn-conferir" class="botao mini fantasma">Conferir antes</button>
+        </div>
+        <div id="previa-pub" class="dica">Clique em conferir para ver o que está pronto.</div>
+        <div id="acao-pub" class="oculto">
+          <div class="linha-agenda">
+            <span class="rot-est">Publicar no dia</span>
+            <input type="date" id="dia-agenda">
+            <button id="btn-agendar" class="botao">Mandar para o calendário</button>
+          </div>
+          <div class="dica">De lá você publica quando quiser, com um clique.</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARROSSEIS -->
+  <section id="v-carrosseis" class="view">
+    <h2>Meus conteúdos</h2>
+    <div id="lista-carrosseis" class="lista"></div>
+  </section>
+
+  <!-- EXTRAS -->
+  <section id="v-extras" class="view">
+    <h2>Capa de vídeo</h2>
+    <p class="dica">
+      A capa 1280x720 para o YouTube, de qualquer vídeo: o que nasceu aqui e o que você
+      gravou por fora. Conte o que o vídeo fala e escolha entre três abordagens.
+    </p>
+
+    <div class="grade">
+      <div class="col">
+        <label for="capa-tema">Tema do vídeo</label>
+        <input id="capa-tema" placeholder="Ex: por que contratar não destrava o faturamento">
+
+        <label for="capa-conteudo">O que o vídeo fala</label>
+        <textarea id="capa-conteudo" rows="6" placeholder="Conte em poucas linhas o que você diz no vídeo. É daqui que sai a frase da capa, então quanto mais concreto, melhor."></textarea>
+
+        <label for="capa-duracao">Duração, para o selo</label>
+        <input id="capa-duracao" placeholder="Ex: live de 20 min">
+
+        <button id="btn-capas" class="botao grande">Gerar três capas</button>
+        <div id="status-capas" class="dica"></div>
+      </div>
+
+      <div class="col">
+        <label>Sua foto na capa</label>
+        <div id="capa-fotos" class="fotos-grade"></div>
+        <label>Paleta</label>
+        <div id="capa-tons" class="pilulas"></div>
+      </div>
+    </div>
+
+    <div id="capas-geradas" class="capas oculto"></div>
+  </section>
+
+  <!-- CALENDARIO -->
+  <section id="v-calendario" class="view">
+    <div class="linha-titulo">
+      <h2>Calendário</h2>
+      <div class="nav-mes">
+        <button id="mes-antes" class="botao mini fantasma">←</button>
+        <strong id="mes-nome"></strong>
+        <button id="mes-depois" class="botao mini fantasma">→</button>
+        <button id="marcar-pub" class="botao mini">Marcar o que postei</button>
+      </div>
+    </div>
+    <div id="grade-mes" class="grade-mes"></div>
+    <h3>Publicações do mês</h3>
+    <div id="lista-pub" class="lista"></div>
+  </section>
+
+  <!-- BANCO -->
+  <section id="v-banco" class="view">
+    <h2>Banco Central</h2>
+    <p class="dica">Tudo que você escreve, sobe em PDF ou manda por áudio vira matéria prima para os conteúdos.</p>
+    <div class="grade">
+      <div class="col">
+        <h3>Escrever</h3>
+        <label for="b-titulo">Título</label>
+        <input id="b-titulo" placeholder="Ex: história da cliente que demitiu metade do time">
+        <label for="b-conteudo">Conteúdo</label>
+        <textarea id="b-conteudo" rows="10"></textarea>
+        <button id="b-salvar" class="botao">Guardar no banco</button>
+      </div>
+      <div class="col">
+        <h3>Subir arquivo</h3>
+        <p class="dica">PDF, áudio (m4a, mp3, wav), txt ou md. Áudio é transcrito automaticamente.</p>
+        <input type="file" id="b-arquivo" accept=".pdf,.txt,.md,audio/*">
+        <input id="b-arquivo-titulo" placeholder="Título (opcional)">
+        <button id="b-enviar" class="botao">Enviar</button>
+        <div id="b-status" class="dica"></div>
+      </div>
+    </div>
+    <h3>O que já está no banco</h3>
+    <div id="lista-banco" class="lista"></div>
+  </section>
+
+  <!-- IDENTIDADE -->
+  <section id="v-identidade" class="view">
+    <div class="linha-titulo">
+      <h2>Identidade</h2>
+      <button id="recarregar-fonte" class="botao fantasma">Recarregar da fonte oficial</button>
+    </div>
+    <p class="dica">Isto é o que a IA lê antes de escrever qualquer coisa. Veio de ~/meu-negocio/_fonte/ e pode ser editado aqui.</p>
+    <div id="lista-identidade"></div>
+  </section>
+
+  <!-- FOTOS -->
+  <section id="v-fotos" class="view">
+    <h2>Suas fotos</h2>
+    <p class="dica">Usadas como fundo da capa e do fechamento. Você escolhe qual na hora de produzir.</p>
+    <div class="upload-linha">
+      <input type="file" id="f-arquivo" accept="image/png,image/jpeg">
+      <input id="f-rotulo" placeholder="Nome (ex: sentada, blusa bege)">
+      <button id="f-enviar" class="botao">Adicionar foto</button>
+    </div>
+    <div id="lista-fotos" class="fotos-grade grande"></div>
+  </section>
+
+  <!-- COMECE AQUI -->
+  <section id="v-comece" class="view">
+    <h2>Tutorial</h2>
+    <p class="dica">O que falta para o app trabalhar do seu jeito, e como fazer cada coisa.</p>
+    <div id="checklist" class="checklist"></div>
+
+    <h2 style="margin-top:44px">Como se faz</h2>
+    <p class="dica">Abra o que você precisa. Fica tudo aqui, para consultar quando esquecer.</p>
+
+    <details class="tutorial">
+      <summary><strong>Criar as suas chaves de IA</strong><span class="tempo-tut">uns 15 minutos</span></summary>
+      <div class="tut-corpo">
+        <p>
+          O app usa duas inteligências, e as chaves são suas: o gasto vai para o seu cartão e
+          ninguém mais usa a sua cota.
+        </p>
+
+        <h4>Anthropic · quem escreve os seus conteúdos</h4>
+        <ol>
+          <li>Entre em <strong>console.anthropic.com</strong> e crie a conta</li>
+          <li>Vá em <strong>Billing</strong> e coloque um crédito. Cinco dólares rende muito conteúdo</li>
+          <li>Vá em <strong>API Keys</strong>, clique em criar e dê um nome qualquer</li>
+          <li><strong>Copie na hora.</strong> Depois que você fecha, a chave não aparece de novo</li>
+        </ol>
+
+        <h4>Google Gemini · quem transcreve áudio e cria imagens</h4>
+        <ol>
+          <li>Entre em <strong>aistudio.google.com/apikey</strong> com a sua conta Google</li>
+          <li>Clique em criar chave de API</li>
+          <li>Copie e guarde</li>
+        </ol>
+
+        <h4>Colar no app</h4>
+        <p>
+          Vá em <strong>Chaves e ajustes</strong>, cole as duas e salve. Depois disso o
+          navegador só te mostra os quatro últimos caracteres: elas ficam guardadas no
+          servidor, não no seu computador.
+        </p>
+
+        <p class="atencao">
+          <strong>Quanto custa de verdade:</strong> um carrossel escrito sai por alguns
+          centavos de dólar, e as imagens por cerca de um real. Um conteúdo por dia, o mês
+          inteiro, fica abaixo do preço de um almoço.
+        </p>
+      </div>
+    </details>
+
+    <details class="tutorial">
+      <summary><strong>Escrever a sua identidade</strong><span class="tempo-tut">uns 40 minutos</span></summary>
+      <div class="tut-corpo">
+        <p>
+          É o que decide a qualidade de tudo que sai daqui. A IA não inventa o seu jeito:
+          ela copia o que está escrito nesses blocos.
+        </p>
+        <h4>Os sete blocos</h4>
+        <ul>
+          <li><strong>Posicionamento</strong> · o que você faz, para quem, e o que você defende que o seu mercado não defende</li>
+          <li><strong>Persona</strong> · a sua cliente ideal descrita como pessoa real, com o que ela não admite em voz alta</li>
+          <li><strong>Tom de voz</strong> · como você fala, as frases que se repetem, o que você nunca diria</li>
+          <li><strong>Método</strong> · os seus passos, na sua ordem, com o nome que você dá a eles</li>
+          <li><strong>Produtos</strong> · o que você vende, para quem, por quanto, e o que está incluído</li>
+          <li><strong>Regras da marca</strong> · o que a IA precisa respeitar sempre: palavras proibidas, como chamar a cliente, promessas que você não faz</li>
+          <li><strong>Provas</strong> · casos reais. O app tem ordem de nunca inventar cliente, então só existe o que estiver aqui</li>
+        </ul>
+        <p class="atencao">
+          <strong>O erro mais comum:</strong> escrever bonito. Escreva como você fala, com as
+          suas palavras tortas mesmo. É disso que sai o texto que parece seu.
+        </p>
+        <p>
+          Se preferir, abra o Claude Code e peça para ele te entrevistar sobre cada bloco.
+          Depois cole as respostas aqui.
+        </p>
+      </div>
+    </details>
+
+    <details class="tutorial">
+      <summary><strong>Colocar as suas cores</strong><span class="tempo-tut">uns 10 minutos</span></summary>
+      <div class="tut-corpo">
+        <p>
+          São cinco paletas, e todo conteúdo usa uma delas. Elas vêm com as cores de fábrica,
+          e você troca pelas suas em <strong>Cores</strong>.
+        </p>
+        <h4>Cada cor tem um papel</h4>
+        <ul>
+          <li><strong>Fundo</strong> · a cor da lâmina inteira</li>
+          <li><strong>Texto</strong> e <strong>Título</strong> · precisam contrastar com o fundo</li>
+          <li><strong>Caixa de destaque</strong> e <strong>Texto na caixa</strong> · andam juntas, uma sobre a outra</li>
+          <li><strong>Acento</strong> · o detalhe, a fita, o marcador</li>
+        </ul>
+        <p>
+          Troque poucas de cada vez e gere um conteúdo para ver. Se ficar ruim, o botão
+          <strong>Voltar ao padrão</strong> desfaz tudo.
+        </p>
+        <p class="atencao">
+          Duas paletas são de fundo escuro e três de fundo claro. Mantenha essa variação:
+          é ela que faz o seu feed ter ritmo em vez de parecer uma coisa só.
+        </p>
+      </div>
+    </details>
+
+    <details class="tutorial">
+      <summary><strong>Fazer um conteúdo, do começo ao fim</strong><span class="tempo-tut">uns 10 minutos</span></summary>
+      <div class="tut-corpo">
+        <h4>Os quatro formatos</h4>
+        <ul>
+          <li><strong>Carrossel</strong> · de 7 a 9 lâminas, com três narrativas diferentes para escolher</li>
+          <li><strong>Post estático</strong> · uma frase que para o scroll. O raciocínio inteiro vai na legenda</li>
+          <li><strong>Reels</strong> · roteiro com tempo, fala, texto de tela e direção de câmera, mais a capa</li>
+          <li><strong>Live / YT</strong> · roteiro em tópicos com interação e retenção, mais a capa do YouTube e a descrição com capítulos</li>
+        </ul>
+
+        <h4>O caminho</h4>
+        <ol>
+          <li>Escolha o formato e escreva o <strong>tema</strong></li>
+          <li>Conte a <strong>ideia central</strong>: escrevendo, gravando um áudio ou marcando algo do Banco Central</li>
+          <li>Diga <strong>para quem fala</strong>: a função e o nível de consciência dela</li>
+          <li>Escolha o <strong>layout</strong>, a <strong>paleta</strong> e a <strong>foto</strong></li>
+          <li>Clique em gerar e espere o contador</li>
+          <li>Revise com a prévia mudando ao vivo. Dá para trocar o tipo de cada lâmina, e a IA reescreve mantendo a ideia</li>
+          <li><strong>Exportar imagens</strong>, e depois <strong>Baixar tudo</strong> ou mandar para o calendário</li>
+        </ol>
+
+        <p class="atencao">
+          <strong>O nível de consciência é o que mais muda o texto.</strong> No nível 1 ela
+          não cita método nem produto, porque a pessoa ainda nem sabe que tem um problema.
+          No nível 5 ela fala da sua oferta pelo nome.
+        </p>
+      </div>
+    </details>
+
+    <details class="tutorial">
+      <summary><strong>Postar direto no Instagram</strong><span class="tempo-tut">uns 30 minutos, uma vez só</span></summary>
+      <div class="tut-corpo">
+        <p>
+          Dá para usar o app inteiro sem isso: você exporta, baixa e posta pelo celular.
+          Configure quando quiser que a publicação saia daqui, com um clique.
+        </p>
+
+        <h4>1 · A sua conta precisa ser profissional</h4>
+        <p>No app do Instagram: Configurações, Tipo de conta e ferramentas, mudar para conta
+        profissional. Escolha <strong>Criador de conteúdo</strong> ou <strong>Empresa</strong>.</p>
+
+        <h4>2 · Vincular a uma Página do Facebook</h4>
+        <p>Ainda no Instagram: Editar perfil, Página, e conecte a uma Página do Facebook.
+        Se você não tem, crie uma, mesmo que nunca poste nela. A Meta exige esse vínculo
+        para liberar a publicação por aplicativo.</p>
+
+        <h4>3 · Criar o aplicativo na Meta</h4>
+        <p>Entre em <strong>developers.facebook.com</strong> com o Facebook ligado ao seu Instagram.
+        Vá em Meus Apps, Criar aplicativo, escolha o tipo <strong>Empresa</strong> e dê um
+        nome qualquer, tipo "Conteúdo do meu negócio". Depois adicione o produto
+        <strong>Instagram</strong>.</p>
+
+        <h4>4 · Gerar o token de acesso</h4>
+        <p>No painel do aplicativo, abra a <strong>Ferramenta Explorador da API</strong>
+        (Graph API Explorer). Selecione o seu aplicativo e peça estas permissões:</p>
+        <ul class="permissoes">
+          <li><code>instagram_basic</code></li>
+          <li><code>instagram_content_publish</code></li>
+          <li><code>pages_show_list</code></li>
+          <li><code>pages_read_engagement</code></li>
+        </ul>
+        <p>Clique em gerar token e autorize. Copie o texto longo que aparecer:
+        <strong>esse é o seu token</strong>.</p>
+        <p class="atencao">
+          O token que sai dali dura pouco. No mesmo painel, procure a ferramenta de
+          depuração de token e clique em estender. Guarde o token estendido.
+        </p>
+
+        <h4>5 · Descobrir o número da sua conta</h4>
+        <p>Ainda no Explorador, com o token selecionado, cole isto no campo de consulta
+        e execute:</p>
+        <pre class="comando">me/accounts?fields=name,instagram_business_account</pre>
+        <p>A resposta traz o nome da sua página e, dentro de
+        <code>instagram_business_account</code>, um <code>id</code> com uns 17 números.
+        <strong>Esse é o número da sua conta.</strong></p>
+
+        <h4>6 · Colar no app</h4>
+        <p>Vá em <strong>Chaves e ajustes</strong> e preencha os dois campos do Instagram:
+        o token e o número da conta. Salve.</p>
+        <p>Pronto: o botão de publicar passa a aparecer depois do Conferir.</p>
+
+        <h4>Quando der errado</h4>
+        <ul>
+          <li><strong>"Application does not have permission"</strong> · falta uma das quatro permissões. Gere o token de novo marcando todas</li>
+          <li><strong>A consulta não traz <code>instagram_business_account</code></strong> · a conta ainda não é profissional, ou não está vinculada à Página</li>
+          <li><strong>Funcionou e depois parou</strong> · o token venceu. Gere outro e estenda</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- IDENTIDADE VISUAL -->
+  <section id="v-visual" class="view">
+    <h2>As suas cores</h2>
+    <p class="dica">
+      Todo conteúdo que você gerar usa estas cores. Peça ao Claude Code e cole aqui: o app
+      cuida do resto.
+    </p>
+
+    <div class="colar-marca">
+      <h3>Diga como é a sua marca</h3>
+      <p class="dica">
+        Escreva com as suas palavras. Se souber os códigos das cores, cole. Se não souber,
+        descreva: <em>"verde escuro com dourado e fundo creme"</em>, ou até
+        <em>"sóbrio e elegante, sem cor gritante"</em>.
+      </p>
+      <textarea id="colar-cores" rows="3" placeholder="Ex: terracota queimado, fundo areia, detalhes em dourado envelhecido"></textarea>
+      <div class="linha-colar">
+        <button id="btn-colar" class="botao">Usar estas cores</button>
+        <button id="restaurar-cores" class="botao fantasma">Voltar ao padrão</button>
+      </div>
+      <span id="status-cores" class="dica"></span>
+    </div>
+
+    <h3 style="margin-top:34px">Como fica</h3>
+    <p class="dica">Cinco variações, que você escolhe na hora de criar cada conteúdo.</p>
+    <div id="amostras" class="amostras"></div>
+
+    <details class="ajuste-fino">
+      <summary><strong>Mexer cor por cor</strong><span class="tempo-tut">só se você quiser</span></summary>
+      <div class="montar-marca">
+        <div class="cores-marca">
+          <label class="cor"><span>Escura</span>
+            <input type="color" id="m-escura" value="#1A3E46">
+            <input type="text" class="hex" id="m-escura-hex" value="#1A3E46" maxlength="7"></label>
+          <label class="cor"><span>Clara, de fundo</span>
+            <input type="color" id="m-clara" value="#F2EDE3">
+            <input type="text" class="hex" id="m-clara-hex" value="#F2EDE3" maxlength="7"></label>
+          <label class="cor"><span>Acento</span>
+            <input type="color" id="m-acento" value="#CFBE96">
+            <input type="text" class="hex" id="m-acento-hex" value="#CFBE96" maxlength="7"></label>
+          <label class="cor"><span>Apoio</span>
+            <input type="color" id="m-apoio" value="#AC816B">
+            <input type="text" class="hex" id="m-apoio-hex" value="#AC816B" maxlength="7"></label>
+        </div>
+        <button id="btn-montar" class="botao">Refazer com estas quatro</button>
+      </div>
+      <div id="lista-paletas" class="paletas"></div>
+      <button id="salvar-cores" class="botao">Salvar as cores</button>
+    </details>
+  </section>
+
+  <!-- CONFIG -->
+  <section id="v-config" class="view">
+    <h2>Configurações</h2>
+    <p class="dica">As chaves ficam no servidor. O navegador só vê os últimos quatro caracteres.</p>
+    <div class="col estreita">
+      <label for="c-handle">Seu @ no rodapé dos slides</label>
+      <input id="c-handle">
+      <label for="c-marca">Marca</label>
+      <input id="c-marca">
+      <h3>Chaves de API</h3>
+      <label for="c-anthropic">Anthropic (escreve o conteúdo)</label>
+      <input id="c-anthropic" placeholder="sk-ant-...">
+      <label for="c-gemini">Gemini (transcreve os áudios)</label>
+      <input id="c-gemini" placeholder="AIza...">
+      <label for="c-openai">OpenAI (reservado)</label>
+      <input id="c-openai">
+      <label for="c-elevenlabs">ElevenLabs (reservado, voz)</label>
+      <input id="c-elevenlabs">
+      <label for="c-meta">Token da Meta (para publicar no Instagram)</label>
+      <input id="c-meta" placeholder="EAA...">
+      <label for="c-ig">Número da sua conta do Instagram</label>
+      <input id="c-ig" placeholder="17841400000000000">
+      <button id="c-salvar" class="botao">Salvar</button>
+      <div id="c-status" class="dica"></div>
+    </div>
+  </section>
+</main>
+
+<div id="modal-publicar" class="modal oculto">
+  <div class="modal-caixa">
+    <div class="modal-topo">
+      <span class="eyebrow">Publicar no Instagram</span>
+      <strong id="modal-conta">@seu_instagram</strong>
+    </div>
+    <div class="modal-corpo">
+      <div id="modal-imagens" class="modal-imagens"></div>
+      <div class="modal-legenda">
+        <div class="rot">Legenda</div>
+        <div id="modal-texto"></div>
+      </div>
+    </div>
+    <div class="modal-aviso" id="modal-aviso"></div>
+    <div class="modal-pe">
+      <button id="modal-cancelar" class="botao fantasma">Cancelar</button>
+      <button id="modal-ok" class="botao">Publicar agora</button>
+    </div>
+  </div>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
