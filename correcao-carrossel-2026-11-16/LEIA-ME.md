@@ -12,14 +12,16 @@ Estado: **aplicado em produção** a 16/11/2026, a pedido da Simone. Cada script
 | 6 | `aplicar_corte.py` | Capa do Modelo 2Life: escolha «Foto esbatida (modelo 01)», por defeito, ou «Corte reto (modelo 02)»; sem foto, a capa continua editorial |
 | 7 | `aplicar_gramatica.py` | Revisão da construção das frases com a IA, em todos os formatos (caso que falhou: «O piloto automático dizer sim por ti teve sempre uma função.»); ignora pedaços que continuam noutro campo |
 | 8 | `aplicar_genero.py` | Revisão de género nova: não troca de género (usa substantivos e verbos); frases detetadas pelas regras vão marcadas; regras novas (enumerações, «ser/seres/ficar + palavra em -o/-a», «ti próprio», voz interior na primeira pessoa); a frase anterior vai como contexto; cada reescrita volta a passar pelas regras; frases sobre outra pessoa e a Simone a falar de si ficam iguais |
+| 9 | `aplicar_consumo.py` + `consumo.js` | Registo do consumo de IA: modelo, etapa, tokens de entrada e de saída e custo estimado em dólares de cada chamada à Anthropic, agrupados por geração e ligados ao conteúdo; em Conteúdos, «Custo estimado de IA» com o detalhe por geração. Só dados de consumo: sem chaves, prompts nem textos |
 
-Os scripts `*_em_producao.sh` aplicam os passos 3 a 8 (o do passo 8 parte do `ia.js` anterior, guardado em `antes-genero/`) a partir deste computador.
+Os scripts `*_em_producao.sh` aplicam os passos 3 a 9 (o do passo 8 parte do `ia.js` anterior, guardado em `antes-genero/`) a partir deste computador.
 
 - `base/`: cópia dos ficheiros de produção antes do passo 1 (e `ia.js`, `layouts/post.js` antes dos passos 3 e 4).
 - `novo5/`: ficheiros depois do passo 5.
 - `novo6/`: ficheiros depois do passo 6.
 - `novo7/`: ficheiros depois do passo 7.
-- `novo8/`: ficheiros tal como estão em produção depois do passo 8 (impressões digitais iguais às do servidor).
+- `novo8/`: ficheiros depois do passo 8.
+- `novo9/`: ficheiros tal como estão em produção depois do passo 9 (impressões digitais iguais às do servidor).
 
 ## Causa do problema de 16/11
 
@@ -32,3 +34,7 @@ Rascunho 30 (carrossel, opções por defeito: Modelo 2Life, Marfim, foto-12), gu
 ## Género no post (resolvido a 16/11)
 
 Testado com as frases que falharam («seres generosa», «sentes-te mais cansado», «seres necessário», «ser mais assertiva», «menos amado», «ser vista», «Ser julgada», «Só honesto.», «contra ti próprio», «porque estou tão cansada»): todas sem marca de género e sem troca de género. O rascunho 30 e as frases sobre outra pessoa ficam iguais. Validado no fluxo normal: três ângulos do post sem marca de género.
+
+## Custo estimado de IA (16/11)
+
+Tabela `consumo_ia` na base de dados da app. Preços usados: tabela da Anthropic de 03/11/2026 (claude-sonnet-5: US$ 2 por milhão de tokens de entrada, US$ 10 por milhão de saída). Validado com dados de teste (cliente simulado, base de dados à parte; contas certas à mão; pedidos em simultâneo separados; nenhum texto guardado). A primeira medição real é o próximo carrossel gerado. Não regista as imagens do Gemini (só usadas noutros layouts e na transcrição de áudio).
