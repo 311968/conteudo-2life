@@ -13,15 +13,17 @@ Estado: **aplicado em produção** a 16/11/2026, a pedido da Simone. Cada script
 | 7 | `aplicar_gramatica.py` | Revisão da construção das frases com a IA, em todos os formatos (caso que falhou: «O piloto automático dizer sim por ti teve sempre uma função.»); ignora pedaços que continuam noutro campo |
 | 8 | `aplicar_genero.py` | Revisão de género nova: não troca de género (usa substantivos e verbos); frases detetadas pelas regras vão marcadas; regras novas (enumerações, «ser/seres/ficar + palavra em -o/-a», «ti próprio», voz interior na primeira pessoa); a frase anterior vai como contexto; cada reescrita volta a passar pelas regras; frases sobre outra pessoa e a Simone a falar de si ficam iguais |
 | 9 | `aplicar_consumo.py` + `consumo.js` | Registo do consumo de IA: modelo, etapa, tokens de entrada e de saída e custo estimado em dólares de cada chamada à Anthropic, agrupados por geração e ligados ao conteúdo; em Conteúdos, «Custo estimado de IA» com o detalhe por geração. Só dados de consumo: sem chaves, prompts nem textos |
+| 10 | `aplicar_app_telemovel.py` + `assets/` | Ícone próprio (logótipo completo sobre Marfim) e modo de app no telemóvel (manifest em `/assets`, sem login); sem service worker |
 
-Os scripts `*_em_producao.sh` aplicam os passos 3 a 9 (o do passo 8 parte do `ia.js` anterior, guardado em `antes-genero/`) a partir deste computador.
+Os scripts `*_em_producao.sh` aplicam os passos 3 a 10 (o do passo 8 parte do `ia.js` anterior, guardado em `antes-genero/`) a partir deste computador.
 
 - `base/`: cópia dos ficheiros de produção antes do passo 1 (e `ia.js`, `layouts/post.js` antes dos passos 3 e 4).
 - `novo5/`: ficheiros depois do passo 5.
 - `novo6/`: ficheiros depois do passo 6.
 - `novo7/`: ficheiros depois do passo 7.
 - `novo8/`: ficheiros depois do passo 8.
-- `novo9/`: ficheiros tal como estão em produção depois do passo 9 (impressões digitais iguais às do servidor).
+- `novo9/`: ficheiros depois do passo 9.
+- `novo10/`: ficheiros tal como estão em produção depois do passo 10 (impressões digitais iguais às do servidor).
 
 ## Causa do problema de 16/11
 
