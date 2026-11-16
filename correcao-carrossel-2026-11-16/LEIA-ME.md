@@ -11,13 +11,15 @@ Estado: **aplicado em produção** a 16/11/2026, a pedido da Simone. Cada script
 | 5 | `aplicar_sintese.py` | Frase-síntese da capa em linhas equilibradas |
 | 6 | `aplicar_corte.py` | Capa do Modelo 2Life: escolha «Foto esbatida (modelo 01)», por defeito, ou «Corte reto (modelo 02)»; sem foto, a capa continua editorial |
 | 7 | `aplicar_gramatica.py` | Revisão da construção das frases com a IA, em todos os formatos (caso que falhou: «O piloto automático dizer sim por ti teve sempre uma função.»); ignora pedaços que continuam noutro campo |
+| 8 | `aplicar_genero.py` | Revisão de género nova: não troca de género (usa substantivos e verbos); frases detetadas pelas regras vão marcadas; regras novas (enumerações, «ser/seres/ficar + palavra em -o/-a», «ti próprio», voz interior na primeira pessoa); a frase anterior vai como contexto; cada reescrita volta a passar pelas regras; frases sobre outra pessoa e a Simone a falar de si ficam iguais |
 
-Os scripts `*_em_producao.sh` aplicam os passos 3 a 7 a partir deste computador.
+Os scripts `*_em_producao.sh` aplicam os passos 3 a 8 (o do passo 8 parte do `ia.js` anterior, guardado em `antes-genero/`) a partir deste computador.
 
 - `base/`: cópia dos ficheiros de produção antes do passo 1 (e `ia.js`, `layouts/post.js` antes dos passos 3 e 4).
 - `novo5/`: ficheiros depois do passo 5.
 - `novo6/`: ficheiros depois do passo 6.
-- `novo7/`: ficheiros tal como estão em produção depois do passo 7 (impressões digitais iguais às do servidor).
+- `novo7/`: ficheiros depois do passo 7.
+- `novo8/`: ficheiros tal como estão em produção depois do passo 8 (impressões digitais iguais às do servidor).
 
 ## Causa do problema de 16/11
 
@@ -27,6 +29,6 @@ O separador da app da Simone tinha sido aberto a 15/11 às 19:31 UTC, antes da i
 
 Rascunho 30 (carrossel, opções por defeito: Modelo 2Life, Marfim, foto-12), guardado, reaberto em Conteúdos e exportado; post 24 (logótipo grande sobre a foto); rascunho 31 com «Corte reto», guardado, reaberto e exportado (escolha preservada na imagem); rascunho 32, cópia do 31, com corte reto e selo no fecho, exportado (selo no canto inferior direito, igual à pré-visualização). Revisão da construção validada no fluxo do post (42 frases lidas, 2 corrigidas).
 
-## Pendente
+## Género no post (resolvido a 16/11)
 
-Género nos ângulos do post: a revisão deteta «seres generosa», mas a reescrita troca de género em vez de tirar a marca; ficam também «sentes-te mais cansado» e «ser mais assertiva». Comparação com as referências do Mapa: https://claude.ai/artifact/EELivLrEsXWDmndWjKsAD4
+Testado com as frases que falharam («seres generosa», «sentes-te mais cansado», «seres necessário», «ser mais assertiva», «menos amado», «ser vista», «Ser julgada», «Só honesto.», «contra ti próprio», «porque estou tão cansada»): todas sem marca de género e sem troca de género. O rascunho 30 e as frases sobre outra pessoa ficam iguais. Validado no fluxo normal: três ângulos do post sem marca de género.
