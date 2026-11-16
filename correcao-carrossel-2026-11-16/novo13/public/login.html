@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="/assets/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icone-192.png">
+<link rel="apple-touch-icon" href="/assets/icone-180.png">
+<meta name="theme-color" content="#F5F1EA">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="2Life">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>Conteúdo Negócio Enxuto</title>
+<link rel="stylesheet" href="/fontes/fontes.css">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--bg:#F2EDE3;--bg2:#E9E2D4;--cream:#FBF8F2;--petrol:#1A3E46;--petrol-dk:#122027;--petrol-lt:#245258;--kraft:#CFBE96;--gold:#B8935A}
+  body{min-height:100vh;display:grid;place-items:center;font-family:'Inter',system-ui,sans-serif;
+    background:radial-gradient(120% 90% at 50% 30%,#FBF8F2 0%,var(--bg) 55%,var(--bg2) 100%);color:var(--petrol-dk);padding:24px}
+  .caixa{width:100%;max-width:420px;background:var(--cream);border:1px solid #E0D7C6;border-radius:20px;padding:44px 38px;
+    box-shadow:0 24px 60px rgba(18,32,39,.10)}
+  .eyebrow{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    font-size:13px;color:var(--gold);text-align:center}
+  h1{font-family:'Playfair Display',serif;font-weight:900;text-transform:uppercase;letter-spacing:-.012em;
+    line-height:1.05;font-size:30px;text-align:center;margin:10px 0 28px}
+  label{display:block;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--petrol-lt);margin:0 0 7px}
+  input{width:100%;padding:14px 16px;border:1px solid #DCD2BF;border-radius:11px;background:#fff;
+    font-family:inherit;font-size:16px;color:var(--petrol-dk);margin-bottom:18px}
+  input:focus{outline:2px solid var(--petrol);outline-offset:1px}
+  button{width:100%;padding:15px;border:0;border-radius:11px;background:var(--petrol);color:var(--cream);
+    font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.09em;text-transform:uppercase;font-size:16px;cursor:pointer}
+  button:hover{background:var(--petrol-lt)}
+  .erro{color:#9A3412;font-size:14px;text-align:center;margin-top:14px;min-height:20px}
+</style>
+</head>
+<body>
+  <form class="caixa" id="f">
+    <div class="eyebrow">Negócio Enxuto com IA</div>
+    <h1>Conteúdo</h1>
+    <label for="u">Usuário</label>
+    <input id="u" autocomplete="username" autofocus>
+    <label for="s">Senha</label>
+    <input id="s" type="password" autocomplete="current-password">
+    <button type="submit">Entrar</button>
+    <div class="erro" id="e"></div>
+  </form>
+<script>
+document.getElementById('f').addEventListener('submit', async (ev) => {
+  ev.preventDefault();
+  const e = document.getElementById('e'); e.textContent = '';
+  const r = await fetch('/api/login', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({usuario:u.value, senha:s.value})
+  });
+  if (r.ok) location.replace('/');
+  else e.textContent = (await r.json()).erro || 'Não consegui entrar.';
+});
+</script>
+</body>
+</html>
